@@ -1,5 +1,4 @@
 import pandas as pd
-
 class ChildNutritionAnalyzer:
     def __init__(self,child_data):
         self.child_data= child_data
