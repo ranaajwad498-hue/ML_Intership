@@ -45,11 +45,19 @@ class children:
         self.create_risk_category_chart()
         print("Creating Chart 3: Age Distribution...")
         self.create_age_distribution_chart()
+        print("Height and Weight Chart")
+        self.create_height_weight_chart()
 
-        
-        
-
+#Bonus Task:
+    def create_height_weight_chart(self):
+        plt.scatter(self.df["Height_cm"], self.df["Weight_kg"])
+        plt.xlabel("Height (cm)")
+        plt.ylabel("Weight (kg)")
+        plt.title("Height vs Weight")
+        plt.savefig("charts/Height_Weight.png")
+        plt.show()
 
 df = pd.read_csv("malnutrition_children_ethiopia.csv")
 child = children(df)
 child.create_all_charts()
+
