@@ -33,10 +33,12 @@ class ChildNutritionEDA:
         for col in self.df:
             print(f"Uniques Values in {col}:", self.df[col].unique())
 
-    # def analyze_relationships(self):
-    #     print("Most Malnutrition cases occur in Male children.")
-    #     print("Children Weight Greator Than ")
-
+    def analyze_relationships(self):
+        print("Nutrition Status According to Age\n",self.df.groupby('Age (months)')['Nutrition_Status'].value_counts().unstack().sort_values)
+        print("Nutrition Status According to Gender\n",self.df.groupby("Gender")["Nutrition_Status"].value_counts().sort_values)
+        print("Nutrition Status According to Weight\n",self.df.groupby("Weight_kg")["Nutrition_Status"].value_counts().unstack().sort_values)
+        print("Nutrition Status According to Height\n",self.df.groupby("Height_cm")["Nutrition_Status"].value_counts().unstack().sort_values)
+        
     
     def display_report(self):
         print("              ---        First Five Records \n", self.display_first_records())
@@ -48,7 +50,8 @@ class ChildNutritionEDA:
         print(self.display_unique_values())
         print("Summary Statistics of our DataSet\n", self.display_summary_statistics() )
         print("Duplicate Reords: ", self.check_duplicate_records())
-        print()
+        print("Summary Statistics Generated Successfully")
+        self.analyze_relationships()
 
 
 
@@ -56,4 +59,5 @@ class ChildNutritionEDA:
 df = pd.read_csv("malnutrition_children_ethiopia.csv")
 child = ChildNutritionEDA(df)
 child.display_report()
+
 
