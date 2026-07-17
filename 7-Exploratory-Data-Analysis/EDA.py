@@ -1,6 +1,6 @@
 import pandas as pd 
 import matplotlib.pyplot as plt
-
+import seaborn as sns
 class ChildNutritionEDA:
     def __init__(self,df):
         self.df = df
@@ -53,11 +53,13 @@ class ChildNutritionEDA:
         print("Summary Statistics Generated Successfully")
         self.analyze_relationships()
 
+    
 
 
 
 df = pd.read_csv("malnutrition_children_ethiopia.csv")
 child = ChildNutritionEDA(df)
-child.display_report()
-
-
+print(df["Gender"].value_counts())
+print(df.loc[df["Gender"] == "Male"].shape[0])
+print(len(df["Gender"]))
+# child.analyze_relationships()
