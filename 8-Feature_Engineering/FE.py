@@ -1,48 +1,77 @@
-import pandas as pd
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import StandardScaler , MinMaxScaler
+import pandas as pd 
 
-df= pd.read_csv("malnutrition_children_ethiopia.csv")
-print(df.head())
-# Feature Engineering
-# df_encoded = df.copy()
-# label_encoder = LabelEncoder()
-# print(df.head())
-# label encodeing
-# df_encoded["gender"] = label_encoder.fit_transform(df_encoded["Gender"]) # only use fit_transform in trainig data and transform in testing data
-# print(df_encoded.head())
+class ChildFeatureEngineer:
+    def __init__(self , df):
+        self.df=df
 
-# label encoding (ordinal form)
-# eduaction = {"No education": 0, "Higher":1, "Secondary":2}
-# df_encoded["Edu_Rank"] = df_encoded["Mother_Education"].map(eduaction)
-# print(df_encoded.head())
+    def display_columns(self):
+        print(self.df.columns)
 
+    def display_first_records(self):
+        print(self.df.head())
 
-# one hot encodeing
-# df_encoded = pd.get_dummies(df_encoded, columns=["Region"], prefix="Region")
-# print(df_encoded.head())
+    def create_bmi(self):
+        self.df["BMI"] = self.df["Weight_kg"] / ((self.df["Height_cm"] / 100) ** 2)
+        self.df["BMI"] = self.df["BMI"].round(2)
+        return self.df
 
-# Frequency Encoding
-# nutrition = df["Nutrition_Status"].value_counts().to_dict()
-# df_encoded["nutrition_status"] = df_encoded["Nutrition_Status"].map(nutrition)
-# print(df_encoded.head())
+    def create_weight_status(self):
+        self.create_bmi()
+        bins = [1, 20, 40, 60]
+        labels = ["Under_Weight", "Normal", "Over_Weight"]
+        self.df["Weight_Status"] = pd.cut(self.df["BMI"], bins=bins, labels=labels)
+        return self.df
 
-# Targeting Encoding
-# education = df_encoded.groupby("Mother_Education")["Stunting"].mean().to_dict()
-# df_encoded["edu"] = df_encoded["Mother_Education"].map(education)
-# print(df_encoded.head())
+    def create_age_group(self):
 
-# Frequency Scaling
-# df_scaled = df.copy()
+        bins= [-1, 12, 24, 60]
+        labels = ["Infant", "Toddler", "Preschool"]
+        self.df["Age_Group"] = pd.cut(self.df["Age (months)"], bins= bins, labels=labels)
+        return self.df
 
-#   Standerdization
-# standard_scaler = StandardScaler()
-# df_scaled["Standard_height_cm"] = standard_scaler.fit_transform(df_scaled[["Height_cm"]]) # Note: double brackets
+    def create_risk_score(self):
+        self.create_weight_status()
+        self.create_age_group()
+        self.create_bmi()
+        nutrtion_score = {"Under_Weight":35, "Normal":0, "Over_Weight":40}
+        self.df["weight_score"]= self.df["Weight_Status"].map(nutrtion_score).astype(int)
 
-# #   Noramlization
-# minmax_scaler = MinMaxScaler()
-# df_scaled["MinMax_Height_cm"] = minmax_scaler.fit_transform(df_scaled[["Height_cm"]]) # Note: double brackets
-# print(df_scaled[["Height_cm", "Standard_height_cm", "MinMax_Height_cm"]].head())
+        age_score = {"Infant":30, "Toddler":20, "Preschool":10}
+        self.df["Age_Score"]= self.df["Age_Group"].map(age_score).astype(int)
 
+        def bmi_score(bmi):
+            if bmi < 15:
+                return 30
+            elif bmi < 25:
+                return 10
+            else:
+                return 25
+        self.df["BMI_Score"] = self.df["BMI"].apply(bmi_score)
 
+        self.df["Risk_Score"]= self.df["BMI"] + self.df["nutrtion_score"] + self.df["Age_Score"]
+        return self.df["Risk_Score"]
+        
+
+    def save_dataset(self):
+        self.create_bmi()
+        self.create_weight_status()
+        self.create_age_group()
+        self.create_risk_score()
+        add_feature = self.df
+        add_feature.to_csv("child_malnutrition_features.csv")
+
+    def display_report(self):
+        print("                     ===== Child Nutrition Feature Engineering =====")
+        self.create_bmi()
+        self.create_weight_status()
+        self.create_age_group()
+        self.create_risk_score()
+        print(self.df)
+        self.save_dataset()
+        print("Dataset Saved Successfully")
+        
+
+df = pd.read_csv("malnutrition_children_ethiopia.csv")
+child = ChildFeatureEngineer(df)
+child.display_report()
 
