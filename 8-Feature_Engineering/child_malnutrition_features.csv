@@ -1,4 +1,4 @@
-,ID,Age (months),Gender,Region,Mother_Education,Household_Wealth_Index,Height_cm,Weight_kg,Stunting,Underweight,Overweight,Anemia,Malaria,Diarrhea,TB,Nutrition_Status,BMI,Weight_Status,Age_Group,nutrtion_score,Age_Score,BMI_Score,Risk_Score
+,ID,Age (months),Gender,Region,Mother_Education,Household_Wealth_Index,Height_cm,Weight_kg,Stunting,Underweight,Overweight,Anemia,Malaria,Diarrhea,TB,Nutrition_Status,BMI,Weight_Status,Age_Group,weight_score,Age_Score,BMI_Score,Risk_Score
 0,1,31,Male,Amhara,Higher,Middle,84.1,19.2,1,1,0,1,1,1,1,At_Risk,27.15,Normal,Preschool,0,10,25,37.15
 1,2,38,Female,Tigray,Higher,Middle,91.0,6.3,0,0,0,0,1,1,0,Normal,7.61,Under_Weight,Preschool,35,10,30,52.61
 2,3,7,Female,SNNPR,Secondary,Middle,61.4,5.8,1,1,1,1,1,0,1,Normal,15.38,Under_Weight,Infant,35,30,10,80.38

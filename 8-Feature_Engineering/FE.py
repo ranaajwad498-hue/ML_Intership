@@ -13,28 +13,27 @@ class ChildFeatureEngineer:
     def create_bmi(self):
         self.df["BMI"] = self.df["Weight_kg"] / ((self.df["Height_cm"] / 100) ** 2)
         self.df["BMI"] = self.df["BMI"].round(2)
-        return self.df
+        return self.df["BMI"]
 
     def create_weight_status(self):
         self.create_bmi()
         bins = [1, 20, 40, 60]
         labels = ["Under_Weight", "Normal", "Over_Weight"]
         self.df["Weight_Status"] = pd.cut(self.df["BMI"], bins=bins, labels=labels)
-        return self.df
+        return self.df["Weight_Status"]
 
     def create_age_group(self):
-
         bins= [-1, 12, 24, 60]
         labels = ["Infant", "Toddler", "Preschool"]
         self.df["Age_Group"] = pd.cut(self.df["Age (months)"], bins= bins, labels=labels)
-        return self.df
+        return self.df["Age_Group"]
 
     def create_risk_score(self):
         self.create_weight_status()
         self.create_age_group()
         self.create_bmi()
-        nutrtion_score = {"Under_Weight":35, "Normal":0, "Over_Weight":40}
-        self.df["weight_score"]= self.df["Weight_Status"].map(nutrtion_score).astype(int)
+        weight_score = {"Under_Weight":35, "Normal":0, "Over_Weight":40}
+        self.df["weight_score"]= self.df["Weight_Status"].map(weight_score).astype(int)
 
         age_score = {"Infant":30, "Toddler":20, "Preschool":10}
         self.df["Age_Score"]= self.df["Age_Group"].map(age_score).astype(int)
@@ -48,7 +47,7 @@ class ChildFeatureEngineer:
                 return 25
         self.df["BMI_Score"] = self.df["BMI"].apply(bmi_score)
 
-        self.df["Risk_Score"]= self.df["BMI"] + self.df["nutrtion_score"] + self.df["Age_Score"]
+        self.df["Risk_Score"]= self.df["BMI"] + self.df["weight_score"] + self.df["Age_Score"]
         return self.df["Risk_Score"]
         
 
