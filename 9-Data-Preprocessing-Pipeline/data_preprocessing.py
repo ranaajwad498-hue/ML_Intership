@@ -38,41 +38,54 @@ class ChildDataPreprocessor:
         self.df= self.df.drop(columns=['ID' ,'Anemia', 'Malaria', 'Diarrhea', 'TB'])
         numeric_columns=self.df.select_dtypes(include="int64")
         for col in numeric_columns:
-            self.df[col] = self.df[col].fillna(self.df[col].mean(),inplace=True)
+            self.df[col] = self.df[col].fillna(self.df[col].mean())
         categorical_columns= self.df.select_dtypes(include="str")
         for col in categorical_columns:
-            self.df[col] = self.df[col].fillna(self.df[col].mode()[0],inplace=True)
+            self.df[col] = self.df[col].fillna(self.df[col].mode()[0])
             return self.df.shape
 
     def select_target(self):
-        self.target = self.df["Nutrition_Status"]
-        print(f"Our target Column is: {self.target}")
+        self.target = "Nutrition_Status"
 
     def split_features_target(self):
+        self.select_target()
         X = self.df.drop(columns=[self.target])
         Y = self.df[self.target]
+        self.X = X
+        self.Y = Y
+        print("Trainig Data Shape (X):", X.shape)
+        print("Testing Data Shape (Y):", Y.shape)
+        return len(self.X.columns)
 
     def encode_categorical_features(self):
         self.X = pd.get_dummies(self.X)
         if self.Y.dtype == "str":
             self.label_encoder = LabelEncoder()
             self.Y = self.label_encoder.fit_transform(self.Y)
-
+        return len(self.X.columns)
+         
     def scale_numerical_features(self):
         numeric_columns=self.df.select_dtypes(include="int64")
         minmax= MinMaxScaler()
         self.X = minmax.fit_transform(self.X[numeric_columns])
 
-    # def split_training_testing_data(self):
-        # X_train, X_test, Y_train, Y_test = (self.X, self.Y, test_size=0.2, random_state= 42, stratify=y)
+    def split_training_testing_data(self):
+        self.X_train, self.X_test, self.Y_train, self.Y_test =train_test_split (self.X, self.Y, test_size=0.2, random_state= 42, stratify=self.Y)
 
     def display_report(self):
         print("Orignal Shape of our DataSet:",self.df.shape)
         print("Cleaned DataSet Shape:", self.clean_data())
+        print("Number of Input Feature:",self.split_features_target() )
+        print("Number of Encoded Feature:", self.encode_categorical_features())
+        self.select_target()
+        print("Target Class:",self.target)
+       
 
 
 child = ChildDataPreprocessor()
 df = child.load_data()
 child.display_report()
+# child.split_features_target()
+
 
 
