@@ -1,24 +1,42 @@
-# Personal Portfolio Website
+# 🚀 Personal Portfolio Website
 
-A clean, responsive, and modern single-page personal portfolio website built using **HTML** and **Tailwind CSS**. This project highlights my front-end skills, completed projects, and core technical competencies.
+A modern, responsive, and high-performance personal portfolio website built with **HTML5** and **Tailwind CSS**. Designed with a dark slate and indigo aesthetic, smooth scrolling, and accessible interactive elements.
 
-## 🚀 Features
-* **Responsive Design:** Fully optimized for mobile, tablet, and desktop screens using Tailwind's responsive utilities (`sm:`, `md:`, `lg:`).
-* **Modern UI/UX:** Styled with a dark-mode theme, crisp typography, and balanced spacing.
-* **Semantic HTML:** Structured logically using native HTML5 elements (`<section>`, `<nav>`, `<footer>`).
+---
+
+## 📌 Overview
+
+This portfolio serves as an interactive showcase of my work, technical skills, and academic journey as a Computer Science student. It features a single-page architecture with fast loading times and zero heavy external framework dependencies.
+
+### Key Features
+* 📱 **Fully Responsive Layout:** Optimized across desktop, tablet, and mobile displays.
+* 🎨 **Modern Dark Theme:** Styled with Tailwind CSS (`slate-900` palette with indigo accent glows).
+* ⚡ **Zero Build Setup:** Utilizes Tailwind CSS via CDN for fast prototyping and instant browser deployment.
+* 🧭 **Smooth Navigation:** Fixed backdrop-blur navbar with smooth anchor scrolling across sections.
+* 📩 **Interactive Contact Form:** Designed with accessible focus rings and custom inputs.
+
+---
+
+## 📂 Page Architecture
+
+The template is organized into 7 distinct sections within a single `index.html` file:
+
+| Section | Description |
+| :--- | :--- |
+| **Navbar** | Fixed navigation header with backdrop blur effect and section jump links. |
+| **Hero** | Main landing intro featuring call-to-action buttons and availability badge. |
+| **About** | Summary of degree program (NUML Islamabad), academic focus, and key stats. |
+| **Projects** | Card grid showcasing machine learning models, mobile apps, and systems tools. |
+| **Skills** | Categorized technical skill blocks (Data/ML, Mobile/Web, Databases, Core CS). |
+| **Contact** | Form with custom input focus states and location/contact info. |
+| **Footer** | Social media profile links (GitHub, LinkedIn, Email) and copyright details. |
 
 ---
 
 ## 🛠️ Built With
-* **HTML5:** For core page structure and semantic markup.
-* **Tailwind CSS:** For rapid utility-first styling and layout management.
-* **Git & GitHub:** For version control and deployment.
+
+* **HTML5** – Semantic markup and accessibility standards.
+* **Tailwind CSS** – Utility-first CSS framework.
+* **Google Fonts (Inter)** – Modern sans-serif typography.
 
 ---
-
-## 📂 Website Sections
-1. **Home:** Welcoming landing banner featuring my name, brief intro, and profile placeholder.
-2. **About Me:** A concise 4–5 line summary outlining my background, drive, and aspirations.
-3. **Skills:** Visually organized badges showcasing my technical stack (HTML, CSS, Tailwind CSS, Git/GitHub).
-4. **Projects:** Cards demonstrating at least 2 sample projects with titles, short descriptions, and link placeholders.
-5. **Contact:** Clear action pathways including Email, Phone, and active Social media linkages.
