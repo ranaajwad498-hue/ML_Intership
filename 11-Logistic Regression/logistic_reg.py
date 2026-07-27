@@ -61,6 +61,10 @@ class ChildRiskLogisticRegression():
         self.make_predictions()
         print("Model: Logistic Regression ")
         self.evaluate_model()
+        self.predict_single_child()
+        self.save_predictions()
+        self.save_model()
+
 
     def predict_single_child(self ):
         new_child = pd.DataFrame([{'Age (months)':54,'Gender':0,'Region':3,'Mother_Education':1,
@@ -89,6 +93,3 @@ class ChildRiskLogisticRegression():
 
 child = ChildRiskLogisticRegression("x_train.csv", "x_test.csv", "y_train.csv", "y_test.csv")
 child.pipeline() 
-child.predict_single_child()
-child.save_predictions()
-child.save_model()
