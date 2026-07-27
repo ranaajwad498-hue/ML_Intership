@@ -39,7 +39,7 @@ class ChildRiskLogisticRegression():
 
     def train_model(self):
         print("Model Training is Loading....")
-        self.model.fit(self.xtrain, self.ytrain.values.ravel())  # Added .values.ravel() to handle y_train shape
+        self.model.fit(self.xtrain, self.ytrain.values.ravel()) 
         print("Model Trained Successfully")
 
     def make_predictions(self):
