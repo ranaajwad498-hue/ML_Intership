@@ -28,6 +28,8 @@ class ChildRiskLogisticRegression:
 
     def make_predictions(self):
         self.prediction=self.model.predict(self.x_test)
+        print("Testing Data\n",self.prediction)
+        print("Actual Data\n",self.y_test)
         return self.prediction
 
     def predict_proba(self):
@@ -62,5 +64,3 @@ pipline.train_model()
 pipline.make_predictions()
 pipline.predict_proba()
 pipline.evaluate_model()
-
-
