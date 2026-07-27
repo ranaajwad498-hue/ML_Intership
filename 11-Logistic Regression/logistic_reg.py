@@ -1,7 +1,6 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
-import numpy as np
 import joblib
 
 class ChildRiskLogisticRegression():
@@ -54,7 +53,7 @@ class ChildRiskLogisticRegression():
         print("Confusion Matrix:\n", confusion_matrix(self.ytest, self.prediction))
         print("Classification Report\n", classification_report(self.ytest, self.prediction))
 
-    def pipeline(self):  # Fixed typo from 'pipline' to 'pipeline'
+    def pipeline(self):  
         print("===== Logistic Regression Model Evaluation =====")
         self.load_data()
         self.create_model()
