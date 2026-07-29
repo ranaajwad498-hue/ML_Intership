@@ -22,15 +22,6 @@ class ChildRiskLogisticRegression():
         self.xtest = pd.read_csv(self.xtest_file)
         self.ytrain = pd.read_csv(self.ytrain_file)
         self.ytest = pd.read_csv(self.ytest_file)
-        # print("First Five Records of X_Test Data\n",self.xtest.head())
-        # print("First Five Records of X_Train Data\n",self.xtrain.head())
-        # print("First Five Records of Y_Test Data\n",self.ytest.head())
-        # print("First Five Records of Y_Train Data\n",self.ytrain.head())
-        # print("Shape of Each DataSet ")
-        # print("X_train shape:", self.xtrain.shape)
-        # print("y_train shape:", self.ytrain.shape)
-        # print("X_test shape: ", self.xtest.shape)  
-        # print("y_test shape: ", self.ytest.shape)
 
     def create_model(self):
         self.model = LogisticRegression(max_iter=1000)
