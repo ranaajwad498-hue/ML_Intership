@@ -6,14 +6,14 @@ import joblib
 class ChildRiskLogisticRegression():
     def __init__(self, xtrain="x_train.csv", xtest="x_test.csv", ytrain="y_train.csv", ytest="y_test.csv"):
         self.xtrain_file = xtrain  
-        self.xtest_file = xtest    
+        self.xtest_file  = xtest    
         self.ytrain_file = ytrain  
-        self.ytest_file = ytest    
+        self.ytest_file  = ytest    
         self.xtrain = None
-        self.xtest = None
+        self.xtest  = None
         self.ytrain = None
-        self.ytest = None
-        self.model = None
+        self.ytest  = None
+        self.model  = None
         self.prediction = None
 
     def load_data(self):
