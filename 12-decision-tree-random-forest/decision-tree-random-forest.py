@@ -48,14 +48,14 @@ class ChildRiskModelComparison:
         print("Decison Tree Model")
         self.dt_model= Pipeline(steps=[
            ("preprocessing", self.preprocessor),
-           ("classfier", DecisionTreeClassifier(random_state=42, max_depth=10, min_samples_split=5, min_samples_leaf=10))
+           ("classfier", DecisionTreeClassifier(random_state=42, max_depth=None, min_samples_split=2, min_samples_leaf=2))
         ])
 
     def create_random_forest_model(self):
         print("Random Forest Model")
         self.rf_model= Pipeline([
             ("preprocessing", self.preprocessor),
-            ("classfier", RandomForestClassifier(n_estimators=500,random_state=42 ,max_depth=10, min_samples_split=5,min_samples_leaf=10))
+            ("classfier", RandomForestClassifier(n_estimators=500,random_state=42 ,max_depth=None, min_samples_split=2,min_samples_leaf=2))
         ])
 
     def  train_models(self):
@@ -93,8 +93,13 @@ class ChildRiskModelComparison:
     def compare_models(self):
         print("Decison Tree Testing Accuracy Score:",accuracy_score(self.ytest, self.dt_prediction))
         print("Random Forest Classifier Testing Accuracy Score:",accuracy_score(self.ytest, self.dt_prediction))
-        print("Decison Tree F1 Score:",accuracy_score(self.ytest, self.rf_prediction))
-        print("Random Forest F1 Accuracy Score:",accuracy_score(self.ytest, self.rf_prediction))
+        print("Decison Tree Precision Score:",precision_score(self.ytest, self.dt_prediction))
+        print("Random Forest Precision Score:",precision_score(self.ytest, self.rf_prediction))
+        print("Decison Tree Recall Score:",recall_score(self.ytest, self.dt_prediction))
+        print("Random Forest Recall Score:",recall_score(self.ytest, self.rf_prediction))
+        print("Decison Tree F1 Score:",f1_score(self.ytest, self.dt_prediction))
+        print("Random Forest F1 Accuracy Score:",f1_score(self.ytest, self.rf_prediction))
+     
 
     def display_feature_importance(self):
         dt_importances = self.dt_model.named_steps["classfier"].feature_importances_

@@ -42,11 +42,11 @@ The dataset contains child-level demographic, anthropometric, and household data
 
 | Metric | Decision Tree | Random Forest |
 | :--- | :---: | :---: |
-| **Training Accuracy** | **57.96%** | **79.90%** |
-| **Testing Accuracy** | **50.85%** | **52.80%** |
-| **Precision** | **51.00%** | **53.10%** |
-| **Recall** | **61.50%** | **54.00%** |
-| **F1-Score** | **55.76%** | **53.54%** |
+| **Training Accuracy** | **90.97%** | **99.76%** |
+| **Testing Accuracy** | **47.68%** | **52.20%** |
+| **Precision** | **47.75%** | **52.52%** |
+| **Recall** | **41.16%** | **53.03%** |
+| **F1-Score** | **44.21%** | **52.77%** |
 
 ---
 
