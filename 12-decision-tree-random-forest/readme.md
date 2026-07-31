@@ -22,18 +22,18 @@ The dataset contains child-level demographic, anthropometric, and household data
 ### Decision Tree Classifier
 * **Preprocessing:** `StandardScaler` (numerical), `OrdinalEncoder` (ordinal), `OneHotEncoder(drop='if_binary')` (nominal)
 * **Hyperparameters:**
-  * `max_depth`: 10
-  * `min_samples_split`: 5
-  * `min_samples_leaf`: 10
+  * `max_depth`: none
+  * `min_samples_split`: 2
+  * `min_samples_leaf`: 2
   * `random_state`: 42
 
 ### Random Forest Classifier
 * **Preprocessing:** Identical preprocessing pipeline via `ColumnTransformer`
 * **Hyperparameters:**
   * `n_estimators`: 500
-  * `max_depth`: 10
-  * `min_samples_split`: 5
-  * `min_samples_leaf`: 10
+  * `max_depth`: None
+  * `min_samples_split`: 2
+  * `min_samples_leaf`: 2
   * `random_state`: 42
 
 ---
