@@ -69,8 +69,8 @@ Using `.named_steps['classfier'].feature_importances_`, feature importances reve
 
 ## 7. Overfitting & Model Observations
 
-* **Decision Tree:** Shows moderate underfitting/poor generalization. While train accuracy (57.96%) and test accuracy (50.85%) are relatively close, the overall test performance is barely better than random guessing (50%).
-* **Random Forest:** Displays **significant overfitting**. The model achieves **~79.90%** accuracy on the training set but drops drastically to **~52.80%** on the test set—a performance gap of over 27 percentage points. 
+* **Decision Tree:** Shows moderate underfitting/poor generalization. While train accuracy (90.97%) and test accuracy (47.68%) are relatively close, the overall test performance is barely better than random guessing (50%).
+* **Random Forest:** Displays **significant overfitting**. The model achieves **~99.76%** accuracy on the training set but drops drastically to **~52.20%** on the test set—a performance gap of over 27 percentage points. 
 
 Both models suffer from predicting the majority/positive class far too aggressively, leading to high False Positive rates.
 
@@ -80,16 +80,15 @@ Both models suffer from predicting the majority/positive class far too aggressiv
 
 **Neither model is currently suitable for deployment.** However, if forced to select based on balance:
 
-* **Decision Tree** is slightly preferable for clinical identification if **Recall** is prioritized (61.50% recall vs. 54.00% in Random Forest), ensuring fewer stunted children are missed (fewer False Negatives).
-* **Random Forest** provides marginally better overall test accuracy (52.80% vs 50.85%), but its severe overfitting makes it unreliable without hyperparameter re-tuning.
+* **Decision Tree** is slightly preferable for clinical identification if **Recall** is prioritized (41.16% recall vs. 53.03% in Random Forest), ensuring fewer stunted children are missed (fewer False Negatives).
+* **Random Forest** provides marginally better overall test accuracy (47..68% vs 52.20%), but its severe underfitting makes it unreliable without hyperparameter re-tuning.
 
 ---
 
 ## 9. Model Limitations & Future Improvements
 
 1. **Near-Random Performance:** Both models perform near a 50% baseline (coin flip), indicating current features or hyperparameters are insufficient to capture stunting dynamics.
-2. **Hyperparameter Constraints:** `max_depth=10` combined with `min_samples_leaf=10` restricted model flexibility while failing to stop Random Forest from memorizing training noise.
-3. **Class Imbalance / Feature Engineering:** The model requires explicit feature engineering (e.g., WHO Height-for-Age Z-scores calculated directly) rather than raw height and age values.
+2. **Class Imbalance / Feature Engineering:** The model requires explicit feature engineering (e.g., WHO Height-for-Age Z-scores calculated directly) rather than raw height and age values.
 
 ### Recommended Next Steps
 * Compute standard WHO Growth Standard Z-scores ($HAZ$ / $WAZ$).
