@@ -151,6 +151,6 @@ class ChildRiskModelComparison:
         self.save_predictions()
         self.save_models()
 
-
-child = ChildRiskModelComparison("x_train.csv", "x_test.csv", "y_train.csv", "y_test.csv")
-child.pipline()
+if __name__ == "__main__":
+    child = ChildRiskModelComparison("x_train.csv", "x_test.csv", "y_train.csv", "y_test.csv")
+    child.pipline()
