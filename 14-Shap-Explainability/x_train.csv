@@ -1,3279 +1,801 @@
 Age (months),Gender,Mother_Education,Household_Wealth_Index,Height_cm,Weight_kg
-54,Male,Higher,Low,61.0,15.3
-32,Male,Primary,Middle,91.4,17.1
-50,Male,Primary,Middle,81.4,7.3
-36,Female,No education,High,62.0,7.2
-3,Male,Primary,Low,81.0,15.6
-13,Female,Primary,High,74.4,18.7
-44,Female,No education,High,102.8,10.9
-6,Female,No education,Low,105.8,11.3
-11,Female,Primary,Low,62.3,11.0
-59,Female,Secondary,High,77.2,13.9
-51,Male,Secondary,Low,86.4,7.4
-47,Female,Secondary,Middle,92.7,8.6
-22,Male,Primary,Low,109.9,7.9
-34,Male,Higher,Low,108.1,15.8
-20,Male,No education,High,74.1,7.1
-33,Male,Higher,High,72.9,17.2
-29,Male,Secondary,High,61.5,6.7
-58,Female,Secondary,High,108.2,5.1
-51,Male,Secondary,Middle,96.5,10.7
-13,Female,Primary,Low,82.6,7.7
-58,Female,Secondary,High,80.8,11.0
-6,Male,No education,Middle,70.5,17.5
-35,Female,Secondary,Low,106.3,8.3
-3,Male,Higher,High,77.0,17.8
-37,Female,Higher,Low,68.3,18.5
-37,Male,Secondary,Middle,83.3,11.0
-16,Female,No education,High,109.1,19.1
-3,Male,Higher,Low,76.7,11.0
-38,Male,Primary,Low,72.0,19.8
-32,Male,No education,High,109.2,10.8
-41,Male,Primary,Low,101.1,6.9
-18,Male,Primary,High,103.8,19.0
-17,Male,No education,Low,98.0,17.4
-2,Female,No education,Low,83.0,13.0
-4,Female,Secondary,Low,92.8,7.6
-1,Female,Higher,Low,70.6,12.3
-59,Male,Higher,Middle,90.9,15.5
-29,Male,Higher,Low,103.2,15.4
-37,Female,No education,Middle,62.0,13.2
-25,Male,No education,Middle,73.5,14.3
-35,Male,Primary,Middle,85.0,8.2
-27,Male,Primary,Middle,90.2,10.5
-32,Female,Primary,High,66.1,15.0
-21,Male,No education,Low,74.5,18.9
-21,Male,Secondary,High,108.7,14.5
-45,Male,Higher,High,89.6,8.8
-1,Male,No education,High,93.8,10.3
-47,Female,No education,High,98.4,7.1
-54,Female,Secondary,Middle,93.4,5.8
-37,Male,Higher,Middle,109.7,17.2
-53,Male,Secondary,Low,61.3,11.4
-53,Female,Secondary,High,89.2,15.0
-6,Male,No education,Middle,104.0,10.3
-6,Female,Primary,High,106.8,8.0
-58,Male,Secondary,Middle,105.9,11.2
-9,Male,Secondary,Low,63.1,15.7
-26,Male,Higher,Middle,73.8,11.5
-14,Male,Secondary,High,104.0,6.0
-7,Male,Primary,Low,77.5,13.7
-10,Female,Primary,Low,84.3,16.7
-47,Male,Primary,Middle,94.8,5.8
-18,Male,Higher,Middle,100.9,12.8
-8,Female,No education,High,102.6,10.8
-21,Male,No education,Middle,108.3,19.8
-1,Male,No education,High,62.2,8.5
-3,Male,No education,Low,101.6,15.0
-18,Male,No education,Low,93.9,11.7
-16,Male,Higher,Low,86.1,11.8
-55,Male,Secondary,High,70.0,14.7
-38,Female,Secondary,Low,73.9,16.8
-35,Female,Primary,Middle,103.1,16.2
-16,Male,Higher,Low,90.5,14.3
-49,Female,No education,Middle,108.8,5.8
-14,Male,Secondary,Low,78.4,9.1
-49,Male,Higher,Low,95.5,18.9
-24,Male,Secondary,Middle,98.6,11.6
-56,Male,Secondary,High,70.2,6.8
-54,Female,Secondary,Low,97.7,5.5
-4,Male,Primary,Middle,62.2,11.1
-44,Male,No education,Middle,84.5,11.4
-50,Male,Higher,Middle,68.7,11.8
-59,Female,Higher,Middle,88.7,10.0
-48,Male,Primary,Middle,67.0,10.6
-30,Male,No education,Middle,77.1,18.5
-28,Male,No education,High,89.3,7.6
-3,Male,Secondary,Low,80.6,8.1
-40,Female,Higher,High,94.7,19.4
-59,Female,No education,High,96.9,5.2
-23,Female,No education,High,75.0,9.7
-57,Female,Primary,Middle,89.0,17.3
-44,Male,Secondary,Middle,90.1,5.2
-6,Male,Secondary,Low,96.5,11.3
-12,Male,No education,Low,102.4,15.6
-34,Male,No education,Middle,98.4,15.7
-33,Female,Secondary,High,88.8,10.5
-31,Male,Higher,Middle,84.1,19.2
-33,Female,Higher,Low,73.2,17.8
-18,Female,Secondary,Low,88.4,9.2
-7,Female,Higher,Middle,94.0,12.8
-49,Male,Secondary,Middle,90.4,9.3
-17,Male,No education,High,90.9,17.1
-20,Female,Secondary,Low,85.3,18.0
-52,Male,Higher,Low,96.3,19.3
-41,Male,Higher,Low,89.8,14.8
-31,Female,Higher,High,78.1,6.5
-53,Male,No education,High,63.5,11.4
-47,Female,Higher,Low,63.7,9.6
-45,Female,No education,High,85.2,12.8
-21,Female,Secondary,Low,105.3,11.5
-21,Female,Higher,Middle,71.6,10.2
-6,Female,Higher,Middle,79.9,15.7
-48,Female,Secondary,Middle,88.1,9.0
-22,Male,Primary,Low,102.9,10.1
-20,Male,Secondary,Low,105.0,15.6
-58,Female,Higher,Middle,60.1,13.0
-29,Female,Primary,Low,81.5,12.8
-14,Male,Primary,High,91.0,15.0
-37,Female,Secondary,Middle,104.5,14.5
-20,Male,No education,Low,75.1,15.5
-12,Female,Secondary,Low,81.4,8.3
-38,Female,Secondary,Middle,73.4,10.7
-22,Female,Higher,Middle,97.0,7.1
-19,Male,No education,High,68.4,15.4
-51,Male,No education,High,61.8,11.1
-19,Female,Secondary,High,70.6,8.5
-10,Male,Primary,Middle,108.0,12.5
-18,Female,Higher,High,103.3,17.2
-56,Male,No education,Middle,75.5,19.2
-16,Female,Higher,Low,76.1,11.5
-27,Male,Higher,Low,67.3,10.2
-21,Male,Secondary,Middle,108.4,19.0
-58,Male,Secondary,Middle,66.4,11.5
-2,Male,Secondary,Low,96.2,12.1
-10,Male,No education,High,72.6,8.0
-0,Female,No education,High,88.8,5.7
-2,Male,Higher,High,64.3,5.3
-59,Female,Primary,Low,96.8,14.4
-0,Male,Higher,Middle,61.4,7.1
-9,Female,Primary,Low,88.4,19.7
-25,Female,Higher,High,76.7,7.0
-16,Male,No education,Low,73.0,19.5
-4,Male,No education,Middle,73.5,13.4
-23,Female,Primary,High,99.2,19.4
-6,Male,Primary,Middle,91.3,15.3
-50,Female,No education,Low,97.5,13.2
-18,Male,No education,High,95.6,18.4
-7,Male,Secondary,Low,91.7,16.2
-39,Male,Higher,High,89.1,17.2
-37,Male,No education,Low,88.6,17.3
-40,Male,Secondary,High,71.0,12.6
-0,Female,Higher,Middle,86.4,9.1
-45,Male,Primary,Middle,103.0,12.5
-36,Female,Primary,Low,71.8,16.1
-24,Male,Secondary,High,100.3,11.3
-31,Male,No education,Middle,104.6,11.7
-55,Female,Secondary,Middle,66.7,15.4
-10,Female,Primary,Middle,98.8,13.4
-31,Male,Primary,Low,72.3,19.2
-20,Female,Secondary,Low,96.8,8.5
-16,Female,No education,High,73.4,11.8
-16,Male,No education,High,60.0,17.3
-59,Male,No education,High,76.8,19.4
-6,Male,Secondary,Low,107.9,8.3
-1,Female,No education,Middle,83.8,11.4
-39,Male,Secondary,Low,105.4,8.1
-34,Female,Secondary,Middle,81.2,7.1
-31,Female,Secondary,High,62.4,7.3
-2,Female,Secondary,High,108.5,7.8
-25,Male,Higher,Low,81.4,6.7
-54,Male,Secondary,High,91.5,19.1
-25,Male,Higher,Middle,76.3,8.0
-23,Female,Secondary,Middle,78.5,7.6
-40,Male,No education,High,72.5,5.7
-26,Female,Secondary,High,105.9,17.9
-21,Male,No education,High,100.4,5.1
-3,Female,Primary,High,72.4,10.0
-43,Male,Higher,High,106.3,11.9
-38,Female,Higher,Middle,87.4,14.3
-18,Male,Higher,High,78.7,9.2
-47,Male,Secondary,Middle,105.5,13.0
-30,Female,No education,High,62.5,16.8
-45,Female,Secondary,Low,73.2,10.3
-12,Female,Higher,High,103.5,12.9
-42,Female,No education,High,93.7,8.0
-8,Male,Primary,Middle,67.7,12.4
-0,Male,Primary,High,73.5,13.5
-0,Male,No education,High,87.5,13.0
-1,Female,Secondary,High,90.0,7.0
-26,Female,No education,High,70.6,11.4
-51,Female,No education,Middle,73.2,13.4
-46,Male,No education,Low,70.0,6.9
-50,Male,No education,Low,109.2,9.2
-26,Female,No education,Middle,84.3,11.7
-47,Female,Secondary,Low,99.5,7.2
-1,Female,Primary,Middle,60.8,13.0
-56,Male,No education,Middle,90.6,18.8
-22,Female,Higher,Low,94.1,5.2
-24,Female,Secondary,Low,81.3,11.7
-1,Female,Primary,High,73.7,12.2
-0,Female,Higher,High,78.9,10.4
-19,Male,Secondary,Middle,81.5,11.1
-23,Female,Secondary,Low,99.1,8.8
-39,Female,Primary,Middle,84.8,5.8
-46,Male,Primary,High,74.4,6.3
-8,Female,Primary,Middle,88.4,8.0
-37,Male,Higher,High,68.5,15.9
-35,Female,Primary,Middle,74.7,8.0
-40,Female,Higher,Middle,108.3,8.2
-36,Male,Primary,Low,63.3,10.9
-18,Female,Higher,Low,65.2,9.2
-57,Male,No education,Low,86.1,14.2
-12,Male,Secondary,Middle,71.8,16.2
-24,Female,Secondary,Middle,65.5,6.1
-27,Female,Secondary,Low,105.5,14.2
-19,Male,No education,Middle,69.5,18.0
-58,Male,Secondary,Low,97.3,5.6
-46,Male,Primary,High,105.6,13.4
-29,Male,Secondary,Middle,67.2,18.1
-5,Male,No education,Middle,100.7,16.8
-47,Male,Primary,Middle,78.8,18.7
-27,Female,Secondary,High,73.6,10.6
-11,Female,Primary,Low,103.6,5.7
-29,Female,Secondary,Low,76.1,5.1
-16,Male,No education,Low,109.2,16.8
-27,Female,Higher,High,94.4,13.0
-26,Male,Primary,High,65.9,9.2
-38,Female,Higher,High,71.7,15.5
-51,Female,Primary,Middle,92.2,10.2
-40,Male,Secondary,Middle,104.3,18.0
-26,Male,Higher,Middle,99.0,11.8
-57,Male,Primary,High,92.5,13.8
-59,Female,Higher,High,66.6,5.7
-34,Female,Primary,High,74.6,8.4
-2,Male,Primary,High,75.0,9.7
-17,Female,Higher,High,108.0,17.1
-1,Male,Secondary,Low,101.2,17.4
-28,Male,Secondary,Middle,66.2,5.2
-56,Female,Higher,Low,69.8,18.1
-28,Male,Higher,Middle,78.3,17.5
-58,Female,No education,Low,93.8,19.8
-22,Male,Higher,Low,90.3,7.5
-14,Female,Primary,High,92.6,5.5
-19,Male,Higher,High,99.9,20.0
-56,Male,Secondary,High,65.0,10.3
-46,Male,No education,Middle,74.2,8.5
-51,Male,No education,High,62.5,5.9
-43,Female,Primary,High,75.8,17.6
-59,Male,Secondary,High,72.9,14.8
-1,Female,No education,Low,70.5,9.6
-40,Female,Primary,Middle,70.2,18.5
-43,Male,Primary,Low,88.2,12.8
-52,Female,No education,Low,91.6,6.9
-9,Male,No education,Low,104.1,7.0
-47,Female,Secondary,Low,94.2,6.1
-55,Female,Secondary,Middle,100.3,8.2
-9,Female,Secondary,Low,76.0,19.9
-24,Male,Secondary,Middle,99.5,5.7
-57,Female,Primary,Low,88.5,11.0
-25,Female,No education,Low,109.3,6.4
-34,Male,Secondary,High,102.0,8.1
-9,Female,Higher,High,77.8,7.7
-57,Female,Secondary,Low,82.5,8.6
-59,Male,Secondary,Low,71.9,11.0
-16,Female,Higher,High,61.9,9.4
-59,Female,No education,Low,68.0,5.0
-22,Male,Secondary,Low,105.5,10.4
-18,Female,Secondary,Low,79.3,6.5
-56,Male,Higher,Low,68.5,11.5
-49,Female,Higher,Low,107.3,9.1
-5,Male,Higher,Low,95.4,11.2
-49,Male,No education,Low,76.6,13.0
-11,Female,Higher,Middle,71.9,17.1
-18,Male,Secondary,Middle,74.8,5.0
-43,Female,Secondary,Low,67.4,14.9
-54,Male,No education,Low,98.9,15.1
-17,Female,Secondary,Middle,107.0,15.8
-26,Female,Higher,Middle,70.6,17.5
-52,Male,Secondary,Middle,99.8,10.3
-20,Female,Higher,High,64.6,19.7
-40,Male,Secondary,Middle,106.5,19.1
-31,Female,Primary,High,65.5,8.7
-27,Male,Secondary,Middle,100.6,9.7
-46,Female,Secondary,High,81.7,15.3
-16,Female,Secondary,Middle,78.6,15.7
-15,Male,Primary,Low,71.1,15.9
-2,Female,Primary,Low,77.1,19.0
-40,Female,No education,Middle,92.4,17.7
-41,Male,Higher,Low,98.9,6.7
-38,Male,Primary,Middle,74.7,16.1
-24,Male,Primary,Low,83.1,17.4
-34,Female,Primary,Low,86.7,13.2
-44,Female,No education,Low,108.8,14.9
-14,Female,Primary,High,97.8,16.8
-50,Female,Higher,Low,70.1,12.8
-33,Male,Primary,Middle,100.1,19.8
-58,Female,Secondary,High,74.9,18.3
-47,Male,Secondary,Middle,73.3,17.5
-46,Male,Secondary,Low,66.9,5.2
-24,Male,Secondary,Middle,81.2,7.8
-14,Female,Primary,High,74.5,9.5
-22,Male,Higher,High,80.5,14.7
-3,Male,No education,Low,73.8,17.0
-41,Female,No education,Middle,67.2,14.3
-20,Female,Primary,High,107.6,13.5
-51,Male,Primary,High,97.6,14.5
-32,Male,Primary,High,64.3,5.1
-44,Male,Primary,Low,104.5,11.4
-57,Female,Secondary,High,93.5,18.8
-20,Male,Higher,Low,109.7,6.1
-19,Female,Secondary,High,67.1,19.8
-41,Male,Secondary,Low,99.9,9.1
-44,Male,Higher,Middle,91.7,15.4
-41,Female,Higher,Middle,70.3,19.6
-5,Female,Secondary,Low,96.1,18.1
-1,Female,Higher,Middle,101.8,11.3
-28,Male,Higher,Middle,103.1,15.0
-12,Male,Higher,High,87.1,6.7
-1,Male,No education,High,62.0,16.7
-59,Female,No education,Low,73.3,9.6
-57,Female,Primary,Low,84.4,17.7
-46,Female,Secondary,Middle,60.2,14.6
-6,Male,Primary,Low,73.9,7.2
-15,Female,Primary,Low,94.9,19.3
-10,Male,Secondary,Middle,97.0,12.4
-27,Male,Higher,High,106.7,18.5
-59,Female,No education,High,77.2,18.1
-39,Female,Primary,Low,65.5,8.9
-41,Female,Higher,Middle,66.0,14.2
-56,Female,No education,Middle,93.8,13.2
-43,Male,Primary,Low,79.3,16.7
-55,Female,Secondary,Low,108.1,5.5
-25,Male,No education,High,104.8,8.7
-0,Female,No education,High,92.1,6.7
-11,Female,Primary,Low,108.1,13.1
-53,Female,Secondary,Low,104.7,11.4
-3,Male,Secondary,Low,105.6,17.2
-50,Male,Higher,Low,101.5,11.4
-20,Male,No education,Middle,83.8,18.9
-53,Female,Higher,Middle,98.0,12.6
-51,Female,No education,High,106.5,6.7
-32,Male,Primary,High,85.0,7.9
-35,Female,Higher,Middle,107.4,16.4
-43,Male,Higher,Middle,89.1,13.9
-57,Male,Higher,High,80.0,19.2
-0,Female,Primary,High,91.3,17.8
-24,Female,Higher,Middle,78.7,7.1
-53,Female,Higher,Middle,75.1,19.4
-19,Male,Higher,Middle,75.1,13.5
-21,Female,No education,Low,97.5,13.1
-58,Female,Higher,High,66.9,18.2
-42,Male,Secondary,High,63.5,8.9
-30,Female,Higher,Low,88.1,9.5
-55,Male,Higher,Middle,80.6,11.9
-42,Male,Higher,Low,61.7,14.6
-11,Male,Higher,Middle,82.0,14.0
-58,Male,Higher,Low,83.4,19.9
-9,Male,Higher,Low,86.9,19.1
-20,Female,Secondary,Middle,84.6,7.8
-2,Female,Primary,High,106.1,8.6
-58,Male,Higher,Low,97.3,16.8
-32,Male,Primary,Middle,108.0,11.4
-16,Female,Secondary,Middle,108.6,8.8
-6,Female,No education,High,76.8,19.3
-42,Male,No education,Middle,99.6,7.5
-13,Female,Primary,Low,86.1,15.4
-50,Female,No education,Low,67.6,9.6
-24,Male,No education,Middle,81.9,16.7
-28,Female,Secondary,Low,93.7,10.7
-46,Male,Higher,High,97.0,9.8
-40,Female,Secondary,High,60.1,19.5
-9,Female,Higher,Middle,61.9,9.5
-22,Male,Primary,Low,89.7,7.9
-59,Female,Higher,High,66.2,6.1
-13,Female,No education,Middle,109.9,8.5
-38,Female,No education,Low,97.6,18.3
-6,Female,Secondary,High,65.7,6.8
-31,Female,Primary,High,102.2,12.3
-23,Male,Secondary,High,99.8,10.4
-36,Male,Secondary,Middle,75.8,9.2
-47,Male,Higher,Middle,95.5,6.3
-11,Female,Secondary,High,60.8,14.3
-27,Male,Higher,Low,73.7,8.1
-3,Male,Higher,Middle,62.8,6.7
-31,Female,Primary,Middle,62.3,15.4
-30,Female,Higher,High,91.0,17.9
-7,Female,Higher,Low,82.0,17.3
-28,Female,Primary,Middle,83.1,18.8
-19,Male,Secondary,Middle,60.0,10.1
-17,Female,Secondary,Low,66.5,6.9
-55,Male,Higher,Low,105.2,13.4
-24,Female,Primary,High,75.7,17.7
-11,Female,Higher,Middle,82.0,19.8
-38,Male,Secondary,High,65.3,8.4
-15,Female,Primary,High,77.4,8.8
-55,Male,Higher,Low,79.5,7.4
-22,Male,No education,High,92.1,7.4
-40,Female,Primary,High,75.4,6.2
-41,Male,Higher,Low,60.8,13.5
-24,Female,No education,Low,76.2,18.5
-56,Female,Primary,Low,70.5,19.5
-53,Male,Higher,Low,85.7,13.6
-36,Male,Primary,Low,99.8,18.0
-33,Male,Higher,Low,67.7,7.6
-13,Male,Secondary,Low,70.5,14.2
-31,Male,Primary,Low,99.4,17.0
-27,Female,No education,High,61.3,16.6
-9,Female,No education,Low,82.6,13.3
-19,Male,Primary,Middle,97.1,9.5
-4,Male,Higher,Low,83.9,10.5
-46,Male,No education,Low,98.7,11.7
-6,Male,Primary,Middle,72.0,13.3
-53,Female,No education,High,65.3,12.1
-34,Female,Secondary,Low,79.6,17.9
-48,Female,No education,High,94.1,9.4
-4,Female,Secondary,Middle,101.8,11.0
-2,Female,Higher,Low,60.0,10.8
-39,Male,Higher,Low,81.7,7.1
-50,Male,No education,High,101.8,17.3
-53,Female,Primary,Low,96.6,10.1
-4,Male,No education,High,94.2,14.7
-46,Female,Higher,High,106.3,15.1
-11,Male,Higher,Middle,89.4,13.4
-25,Male,Higher,Middle,76.6,17.0
-51,Male,Higher,Low,92.3,5.0
-47,Male,Higher,High,61.2,13.7
-42,Male,Secondary,High,88.0,20.0
-33,Female,Primary,Middle,92.6,12.6
-44,Female,Secondary,Low,83.6,19.5
-59,Female,Higher,Middle,72.8,5.1
-27,Female,Secondary,Middle,83.2,9.1
-50,Male,Higher,Middle,82.4,11.3
-27,Male,Primary,Middle,95.5,19.6
-34,Female,Higher,Low,103.2,14.8
-30,Male,No education,Middle,84.3,19.8
-0,Female,No education,High,104.2,16.8
+44,Female,Primary,High,65.6,6.5
 51,Male,No education,Low,101.7,9.2
-31,Male,Higher,Middle,88.8,16.1
-48,Male,No education,High,81.3,19.3
-2,Male,Primary,Middle,86.0,15.2
-12,Female,Higher,High,108.9,5.5
-26,Male,No education,Low,62.4,12.5
-11,Male,Primary,Middle,86.9,7.8
-50,Female,Primary,Middle,92.2,10.0
-58,Male,No education,Middle,90.1,11.6
-15,Male,No education,High,74.6,10.6
-14,Male,Higher,High,90.2,7.9
-54,Female,No education,Middle,64.6,19.5
-9,Female,Secondary,Middle,105.2,7.3
-31,Male,No education,High,64.4,19.3
-58,Male,No education,Middle,94.8,6.4
-29,Female,Secondary,High,107.7,19.4
-47,Female,Secondary,High,90.7,9.6
-11,Female,Primary,Low,108.2,6.0
-38,Female,Higher,Low,69.1,8.5
-57,Male,Secondary,High,79.1,18.3
-56,Female,Higher,Middle,63.0,14.0
-5,Male,Primary,Low,95.8,18.6
-21,Male,Secondary,Middle,87.6,10.6
-59,Male,No education,Low,97.7,16.9
-30,Female,No education,Middle,106.0,7.0
-19,Female,Higher,Middle,71.3,9.0
-21,Male,No education,Low,83.5,5.0
-46,Female,Higher,High,95.8,19.4
-49,Female,No education,Low,81.4,15.8
-0,Male,Higher,Low,66.5,8.8
-9,Male,Higher,High,93.4,9.0
-23,Female,No education,Middle,105.7,15.0
-22,Female,Higher,Middle,74.2,12.2
-1,Male,Secondary,Middle,96.8,17.7
-15,Female,No education,Low,66.7,19.6
-54,Male,Higher,Low,106.4,7.2
-20,Male,Secondary,Middle,72.2,13.6
-55,Male,Higher,High,67.8,8.3
-27,Female,Higher,Low,98.5,7.5
-59,Male,Primary,Low,100.8,9.9
-41,Male,Primary,High,77.6,16.5
-6,Male,Secondary,Middle,83.8,12.2
-3,Male,Secondary,Low,90.7,14.9
-57,Female,Primary,High,79.3,7.9
-55,Female,Secondary,Middle,61.1,6.3
-55,Female,Secondary,Middle,87.3,11.9
-49,Female,Secondary,Middle,87.7,8.3
-54,Male,Primary,Middle,79.8,16.0
-56,Male,Higher,Middle,70.2,10.9
-54,Female,Higher,High,81.3,5.5
 26,Male,No education,Middle,108.3,9.1
-14,Female,No education,Low,83.7,9.7
-27,Female,No education,Middle,93.3,10.4
-28,Female,Secondary,Middle,75.4,6.2
-7,Female,Primary,Middle,90.4,11.1
-22,Female,No education,High,91.3,9.0
-39,Female,Higher,High,90.0,18.8
-25,Female,Higher,Low,107.3,9.8
-4,Female,Higher,Middle,74.3,16.4
-28,Female,Secondary,Low,95.7,8.1
-25,Female,Secondary,High,98.6,16.9
-27,Female,Higher,High,71.7,11.7
-23,Female,Higher,Middle,91.3,18.8
-55,Female,No education,Low,91.1,10.7
-46,Female,Higher,High,76.0,12.8
-48,Male,Secondary,Low,64.2,8.8
-56,Male,No education,High,64.9,14.2
-21,Male,Secondary,Middle,62.1,12.1
-43,Female,No education,Middle,96.1,11.8
-39,Female,No education,High,97.3,14.8
-31,Male,Secondary,Middle,76.3,8.9
-19,Male,Higher,Low,75.3,13.8
-54,Female,Primary,Middle,88.7,18.4
-59,Female,Primary,High,75.8,6.4
-20,Female,No education,Low,71.7,17.9
-40,Male,Secondary,Low,79.7,14.2
-30,Female,No education,Low,86.5,8.8
-59,Female,Primary,Low,93.4,13.8
-50,Female,Primary,High,96.4,9.8
-23,Female,Secondary,Low,66.6,16.6
-58,Female,Higher,Middle,98.2,16.6
-48,Female,Higher,Low,101.3,14.4
-6,Male,Higher,High,98.4,12.6
-8,Male,Primary,High,74.9,10.0
-43,Male,Secondary,High,88.2,6.6
-30,Male,Primary,High,63.3,17.9
-23,Female,Secondary,Low,79.6,10.9
-39,Male,Primary,High,88.3,6.6
-49,Female,Secondary,High,74.4,17.4
-2,Female,Primary,High,62.6,7.9
-24,Male,Higher,High,91.9,17.0
-26,Male,Primary,Middle,62.5,17.1
-50,Male,Primary,High,61.8,7.8
-1,Male,Higher,Middle,96.8,13.6
-48,Female,Secondary,Middle,84.1,9.8
-54,Female,Secondary,Low,95.3,15.6
-10,Female,No education,Middle,95.2,8.7
-20,Male,Primary,Low,64.6,18.3
-42,Female,Higher,Low,63.4,17.1
-46,Female,Primary,High,99.2,19.1
-5,Female,No education,High,63.0,17.6
-18,Female,No education,Low,95.2,8.5
-6,Female,No education,Middle,75.2,16.9
-49,Male,Higher,Low,80.7,14.9
-40,Female,Higher,Middle,105.3,11.0
-40,Female,Higher,Middle,79.4,5.8
-18,Female,Primary,Middle,64.1,6.6
-52,Male,Primary,Low,71.7,6.5
-19,Female,Secondary,High,78.6,6.2
-30,Male,Secondary,Low,69.2,6.2
-32,Female,Primary,Low,81.6,13.3
-11,Male,Primary,Low,105.0,10.6
-34,Male,Higher,Low,100.9,17.5
-19,Female,No education,High,67.2,11.2
-20,Female,No education,High,88.6,9.5
-43,Female,No education,Low,98.5,9.0
-36,Female,Primary,Middle,64.3,6.6
-49,Female,Higher,Middle,64.6,9.7
-56,Male,Higher,Low,77.7,15.2
-42,Female,Secondary,High,95.0,19.6
-7,Male,Primary,High,102.5,11.5
-54,Female,Primary,Middle,73.2,8.2
-49,Male,Higher,Low,78.1,13.9
-31,Male,Primary,High,85.3,13.9
-34,Female,Secondary,High,64.5,15.0
-56,Female,No education,High,82.8,7.3
-5,Female,No education,Low,76.1,5.2
-23,Female,Secondary,High,91.7,5.0
-28,Male,Primary,Low,64.6,7.6
-26,Male,No education,Middle,95.5,15.0
-13,Male,No education,Middle,82.1,13.1
-12,Female,Primary,Middle,97.4,19.9
-14,Female,Higher,Low,65.4,7.4
-18,Male,Secondary,High,88.3,14.0
-33,Male,Secondary,Low,60.8,5.1
-23,Male,Secondary,Middle,101.1,13.5
-2,Male,Primary,Middle,68.2,9.4
-20,Female,Primary,Low,107.6,18.1
-37,Female,Higher,High,93.1,11.8
-6,Female,No education,High,104.5,12.7
-56,Male,Higher,Middle,83.7,17.1
-12,Male,Higher,Low,102.7,13.0
-47,Male,Primary,High,63.5,15.6
-54,Female,Primary,High,64.5,5.9
-26,Female,Higher,Middle,63.9,10.6
-21,Female,Secondary,Middle,104.5,19.3
-24,Male,No education,Low,81.6,8.2
-58,Male,Primary,Middle,98.3,12.7
-32,Female,Secondary,High,80.8,17.4
-10,Male,Primary,High,72.7,11.0
-20,Male,Primary,Middle,98.9,11.5
-45,Male,Secondary,Middle,85.3,5.1
-0,Female,Primary,High,101.3,8.4
-38,Female,Higher,Middle,85.6,12.3
-45,Male,No education,High,89.7,19.2
-45,Female,Secondary,Low,100.0,11.9
-50,Female,Primary,Middle,102.6,12.3
-35,Male,No education,Low,98.1,12.8
-55,Male,Secondary,Low,98.2,8.0
-40,Female,Higher,High,67.2,12.2
-55,Female,Primary,Low,103.5,12.7
-23,Female,Higher,Middle,99.8,18.7
-59,Male,Secondary,High,103.6,7.3
-0,Male,No education,Low,68.0,17.8
-0,Female,Higher,High,108.4,14.7
-17,Male,Higher,Middle,84.0,19.3
-54,Male,Primary,Low,109.7,8.8
-5,Female,Secondary,Middle,73.4,10.4
-32,Male,Primary,High,85.3,17.8
-57,Female,No education,High,61.9,11.1
-23,Female,Higher,Middle,68.1,17.0
-1,Female,Higher,Low,88.7,16.2
-56,Female,Primary,Low,108.6,9.5
-16,Male,Higher,Low,65.5,13.9
-22,Male,Higher,Low,106.5,16.1
-6,Female,Primary,High,68.8,5.3
-51,Female,No education,High,105.7,7.4
-54,Female,Primary,Low,63.7,14.3
-41,Male,Higher,High,75.9,19.3
-1,Male,Higher,Low,99.0,12.9
-4,Female,Higher,High,65.1,9.4
-39,Female,No education,High,98.0,5.3
-56,Male,No education,Middle,67.2,13.0
-36,Female,Primary,Middle,90.1,12.6
-18,Male,Higher,Middle,82.4,15.7
-2,Female,Primary,Low,102.4,7.7
-11,Female,Higher,Low,98.3,18.2
-27,Male,Higher,Middle,61.2,5.6
-47,Male,Higher,Low,99.3,18.6
-46,Female,Secondary,Middle,92.7,13.9
-46,Female,Higher,Middle,83.7,5.1
-30,Male,Higher,Low,97.2,10.4
-8,Female,Secondary,Middle,91.0,16.6
-9,Female,Primary,High,68.1,9.4
-42,Male,Primary,Middle,61.6,8.1
-4,Female,Primary,High,69.0,16.5
-22,Female,No education,Low,86.0,5.9
-47,Female,No education,Middle,68.2,14.4
-56,Male,No education,High,72.8,18.2
-38,Male,Primary,Middle,72.2,17.5
-31,Female,Higher,High,63.9,17.2
-23,Male,Primary,Middle,92.4,10.5
-39,Female,Secondary,Low,87.5,17.1
-10,Female,Primary,Middle,73.0,6.5
-30,Male,Primary,Low,62.0,17.5
-19,Male,Secondary,Low,84.8,6.8
-30,Male,Higher,Middle,100.0,16.1
-30,Male,Primary,Low,70.4,6.0
-33,Female,Higher,High,68.9,18.7
-8,Female,No education,Middle,106.7,16.8
-23,Male,Secondary,Low,94.6,14.6
-47,Female,Higher,Middle,107.7,14.6
-31,Female,Primary,High,60.8,12.8
-35,Male,Higher,Low,94.3,6.9
-52,Female,No education,High,90.0,9.4
-1,Female,No education,High,68.3,9.6
-18,Male,Primary,High,105.9,20.0
-4,Male,Secondary,Low,66.7,13.2
-35,Female,Primary,Middle,79.5,5.4
-12,Female,No education,Middle,73.6,17.8
-16,Female,Primary,High,108.6,9.2
-58,Female,No education,Low,86.7,18.8
-14,Female,Higher,Middle,70.6,12.1
-35,Female,Secondary,High,81.5,17.7
-3,Female,No education,Middle,92.2,14.8
-46,Male,Higher,High,108.2,14.6
-47,Female,Secondary,Low,67.2,13.4
-25,Male,Primary,High,93.5,14.5
-45,Female,Higher,Middle,101.4,6.4
-28,Female,Primary,High,82.1,6.1
-58,Male,Primary,High,62.8,18.9
-41,Female,Primary,Low,70.7,8.8
-35,Female,Higher,High,65.8,14.0
-52,Male,No education,High,78.8,16.9
-59,Female,Secondary,High,104.1,11.3
-17,Female,Higher,Low,83.7,8.0
-15,Female,Secondary,Low,96.8,16.4
-46,Female,Higher,High,66.9,9.5
-11,Male,No education,Middle,66.0,9.7
-25,Male,Primary,Middle,63.0,9.1
-7,Female,Secondary,High,62.2,11.3
-48,Female,Secondary,Low,64.5,13.5
-7,Female,No education,Low,83.2,8.5
-53,Male,No education,Middle,85.4,5.8
-22,Male,Primary,Low,63.1,12.1
-14,Female,Higher,High,65.8,7.7
-33,Female,Primary,High,92.2,14.2
-1,Female,Higher,Low,65.2,11.2
-3,Male,Primary,High,60.5,8.3
-51,Male,Higher,Low,84.0,18.0
-50,Male,Primary,High,84.3,5.2
-26,Female,Secondary,Middle,68.9,16.8
-12,Male,Higher,Middle,89.9,6.0
-19,Female,Secondary,Low,74.7,8.2
-5,Male,No education,High,66.8,7.1
-3,Female,No education,Low,89.5,14.7
-50,Male,Primary,Middle,94.6,8.6
-55,Male,No education,Middle,93.8,7.4
-23,Male,Primary,Middle,91.1,16.9
-0,Male,No education,Middle,105.2,9.3
-46,Female,Primary,High,75.4,7.3
-38,Male,Primary,Middle,101.7,17.4
-38,Female,Higher,High,97.6,16.0
-33,Male,No education,High,73.4,11.6
-8,Male,No education,Middle,99.6,5.8
-51,Male,Higher,High,64.5,17.8
-18,Male,Secondary,Middle,96.2,15.1
-16,Female,No education,Middle,61.3,7.2
-14,Female,Primary,Low,68.3,10.5
-23,Male,Higher,High,95.6,19.9
-2,Female,No education,Middle,103.5,16.6
-58,Male,No education,High,69.2,7.8
-28,Female,Secondary,Middle,86.9,7.2
-55,Female,Secondary,Low,64.6,10.2
-4,Male,No education,Middle,93.6,19.4
-33,Male,No education,Middle,99.4,13.2
-7,Female,Higher,Middle,62.3,18.9
-41,Female,Primary,High,72.4,20.0
-37,Female,Higher,High,85.2,17.9
-20,Female,Primary,High,78.6,14.4
-8,Female,Primary,Low,109.0,11.5
-27,Female,Secondary,High,104.9,11.5
-13,Male,No education,Middle,107.5,19.5
-46,Female,Secondary,Low,84.6,8.6
-51,Female,Higher,High,82.0,10.4
-11,Male,Primary,High,83.2,6.1
-32,Female,Primary,Middle,62.0,19.3
-18,Female,Secondary,Low,73.2,6.8
-41,Female,Primary,Middle,83.6,8.0
-55,Male,No education,High,106.7,17.6
-28,Female,Primary,Low,106.7,7.2
-56,Male,Primary,Low,107.4,13.8
-8,Male,No education,High,78.2,14.7
-35,Male,Primary,Low,101.2,12.0
-58,Female,Higher,Low,90.4,17.6
-20,Male,No education,High,73.4,6.1
-46,Female,Secondary,Middle,75.0,18.9
-50,Male,Primary,Low,60.8,6.1
-37,Female,Higher,Low,93.9,12.7
-54,Female,Higher,Low,84.2,11.0
-43,Male,Higher,High,96.5,9.3
-43,Male,No education,Low,78.0,10.7
-23,Male,No education,Low,66.1,17.6
-1,Male,Higher,Middle,69.6,15.0
-22,Female,Higher,High,65.0,12.9
-21,Male,Secondary,High,104.7,19.9
-53,Female,Secondary,Low,90.1,17.8
-31,Male,No education,Low,68.2,8.2
-14,Male,Higher,High,72.9,17.7
-53,Female,No education,Middle,83.0,17.8
-36,Male,Higher,High,108.8,18.2
-12,Male,No education,Low,66.6,11.9
-16,Female,Secondary,Middle,82.6,17.6
-47,Male,Primary,Low,107.6,18.5
-31,Male,Primary,Middle,99.2,12.8
-16,Male,No education,Middle,72.6,6.5
-29,Female,Higher,Middle,97.2,12.0
-37,Male,No education,High,104.7,15.0
-36,Female,Primary,Low,100.9,8.7
-36,Male,No education,High,99.1,6.0
-0,Male,No education,Low,100.2,6.8
-10,Male,Higher,High,90.0,15.8
-52,Male,Higher,Low,75.3,17.4
-18,Male,Secondary,High,92.0,10.6
-34,Female,Secondary,Low,72.4,6.8
-58,Female,No education,Middle,109.4,16.6
-56,Male,Secondary,Middle,65.3,19.5
-23,Male,Higher,Low,105.9,14.7
-14,Female,Secondary,High,95.4,14.7
-51,Female,Primary,High,68.1,19.6
-31,Male,Higher,Low,68.5,16.5
-3,Female,Primary,Middle,68.0,7.6
-38,Male,Primary,Middle,76.4,19.5
-34,Female,Primary,Low,109.9,16.7
-42,Male,No education,Middle,68.6,7.5
-25,Female,Secondary,High,94.2,6.5
-33,Female,Higher,High,74.2,14.9
-14,Female,Secondary,Low,60.4,15.6
-47,Female,Primary,Low,82.1,6.9
-44,Male,Secondary,Middle,108.4,17.7
-16,Male,Secondary,High,62.7,6.3
-57,Male,No education,Middle,103.5,5.5
-24,Male,Secondary,High,82.6,18.0
-55,Male,Higher,High,99.4,13.2
-27,Male,Primary,High,62.3,19.9
-18,Male,Secondary,High,63.1,7.9
-22,Male,Primary,High,90.8,19.2
-21,Female,No education,Low,66.2,11.1
-46,Female,No education,High,62.4,19.7
-51,Female,Primary,Middle,90.1,17.7
-30,Male,Higher,Low,74.3,18.9
-51,Male,No education,High,100.4,15.1
-49,Female,Secondary,High,86.5,5.8
-3,Female,No education,Middle,73.8,10.6
-40,Male,Secondary,Low,93.9,12.8
-5,Male,Secondary,Low,107.7,5.3
-15,Male,Higher,Middle,88.0,6.2
-28,Female,Secondary,Middle,68.8,10.5
-59,Female,Secondary,Middle,84.1,15.2
-7,Female,Secondary,High,66.6,7.5
-19,Female,Secondary,Middle,60.6,7.5
-44,Female,No education,High,67.4,15.2
-34,Female,No education,Middle,95.7,7.8
-44,Male,Higher,Middle,96.8,18.7
-33,Male,Higher,High,90.3,9.5
-41,Female,Higher,High,63.7,5.6
-58,Female,Higher,High,63.1,15.5
-49,Male,Higher,High,78.5,19.1
-33,Female,Primary,Low,95.3,16.5
-36,Male,No education,Low,64.3,17.1
-6,Female,Higher,Middle,94.0,15.3
-33,Female,Secondary,Middle,68.1,9.2
-52,Female,Secondary,Low,69.4,10.4
-49,Male,Higher,Low,106.7,8.8
-19,Female,Higher,Low,76.4,13.8
-22,Male,Higher,Low,81.2,17.1
-47,Female,Primary,High,84.2,5.9
-20,Male,No education,Middle,81.6,16.4
-31,Male,Secondary,High,68.4,13.9
-19,Female,Higher,Low,62.8,16.3
-58,Male,Higher,High,70.9,15.0
-50,Female,Primary,Low,95.9,14.5
-9,Male,No education,Low,81.2,13.3
-48,Male,Primary,Middle,60.5,16.4
-29,Female,Higher,Middle,65.3,7.1
-2,Male,Higher,Middle,77.5,19.1
-5,Male,Secondary,Low,88.5,10.8
-21,Male,Primary,Low,108.1,14.6
-10,Male,Secondary,Middle,74.0,6.3
-3,Female,Secondary,Middle,65.3,9.2
-35,Male,Secondary,Middle,74.8,18.3
-30,Male,Secondary,Middle,77.9,5.2
-56,Male,No education,High,71.4,18.6
-48,Female,Higher,High,80.4,6.0
-20,Male,Higher,Middle,106.1,19.9
-28,Female,Higher,Middle,87.4,19.7
-56,Female,Higher,Middle,83.0,18.1
-45,Female,Higher,Middle,65.3,17.2
-26,Female,Secondary,Middle,74.3,16.4
-40,Male,Secondary,Low,79.0,12.9
-46,Male,Primary,Low,101.5,18.0
-18,Female,Primary,High,87.4,17.7
-50,Male,No education,Low,72.2,6.1
-36,Male,Higher,High,72.3,11.0
-15,Female,No education,Low,74.3,11.2
-19,Female,No education,High,101.2,6.3
-51,Male,Secondary,High,81.2,17.1
-58,Male,Secondary,Low,91.2,14.7
-29,Male,No education,High,83.5,12.8
-0,Male,Primary,High,92.5,6.8
-37,Female,Higher,Middle,94.0,17.6
-48,Female,Secondary,Middle,68.2,16.3
-54,Female,Secondary,Low,87.3,7.7
-53,Female,Primary,Low,79.2,9.1
-27,Male,No education,Low,77.8,14.9
-33,Female,Higher,Middle,100.3,17.6
-42,Male,Higher,High,70.7,7.9
-50,Male,Secondary,Middle,70.2,13.2
-10,Male,No education,Middle,100.1,15.5
-23,Female,Secondary,High,91.6,13.8
-23,Male,Primary,Middle,94.4,18.4
-51,Male,No education,High,93.3,9.5
-32,Female,Primary,Middle,61.5,6.4
-11,Male,Higher,High,63.0,16.0
-8,Male,Higher,High,94.2,16.0
-30,Male,Secondary,Middle,96.1,5.7
-0,Female,Primary,Low,64.2,6.8
-7,Male,Secondary,Low,95.7,7.0
-22,Female,Primary,Middle,71.9,10.9
-57,Female,Secondary,Middle,80.2,15.0
-19,Male,Secondary,Middle,69.6,7.0
-14,Male,Secondary,Middle,69.1,9.7
-34,Female,Primary,High,71.4,19.7
-42,Male,Secondary,Middle,78.6,19.9
-31,Female,Primary,Middle,107.6,11.1
-46,Male,Secondary,High,105.0,11.0
-42,Male,Primary,Low,103.9,7.4
-18,Female,Secondary,High,66.9,12.4
-21,Female,Higher,Middle,104.4,7.4
-59,Female,No education,Middle,91.6,10.8
-20,Male,Primary,Low,85.4,19.0
-20,Male,No education,Low,99.1,9.3
-50,Male,Primary,Low,63.6,14.5
-0,Female,Secondary,Middle,80.6,11.0
-34,Male,Primary,High,109.0,11.6
-24,Female,Secondary,High,105.2,8.7
-49,Female,Higher,Low,80.0,13.3
-11,Female,Higher,Middle,67.8,8.7
-40,Female,Secondary,High,90.1,11.9
-22,Female,Secondary,Middle,98.5,6.6
-6,Male,No education,High,78.0,12.8
-28,Male,Higher,High,95.1,19.6
-26,Male,Secondary,High,92.8,17.7
-59,Female,Secondary,Low,78.8,13.8
-18,Male,Primary,Middle,79.9,8.0
-35,Male,Secondary,Low,66.4,14.7
-54,Male,Primary,Low,74.4,6.3
-6,Male,Higher,High,69.1,9.9
-37,Male,Higher,High,77.0,19.9
-6,Male,No education,Middle,75.7,9.6
-51,Female,Higher,Middle,83.3,14.7
-35,Male,Primary,Low,91.7,15.7
-53,Male,Higher,High,72.1,8.7
-11,Male,Secondary,High,104.0,6.0
-31,Female,Primary,High,88.4,13.6
-25,Male,Secondary,Middle,67.4,17.7
-16,Female,Higher,Low,94.9,10.2
-47,Female,Primary,High,104.0,5.9
-33,Male,Secondary,Low,69.7,19.4
-12,Male,Higher,Low,77.1,7.1
-0,Male,Higher,Low,102.9,15.8
-28,Male,Higher,Low,106.2,19.5
-13,Female,Secondary,Low,96.6,10.5
-31,Male,Primary,High,78.9,17.2
-36,Female,Higher,Middle,68.4,18.8
-6,Male,Primary,High,74.7,18.9
-3,Female,Higher,Low,104.8,15.5
-53,Female,Higher,High,85.3,9.3
-41,Female,No education,High,61.3,11.8
-19,Female,Secondary,Low,67.4,5.1
-20,Female,Higher,High,77.2,6.2
-51,Male,Primary,Low,66.6,7.6
-1,Female,Secondary,High,97.0,10.2
-28,Male,Higher,High,107.1,7.8
-1,Female,Primary,Middle,83.4,19.0
-46,Male,Higher,Low,81.5,15.6
-0,Male,Secondary,Low,67.6,16.0
-49,Male,Primary,Middle,93.0,19.5
-22,Female,No education,Middle,66.4,12.4
-23,Male,Higher,Middle,68.6,7.4
-52,Female,Secondary,Middle,72.4,11.3
-6,Male,Primary,Low,70.2,11.9
-24,Female,Secondary,High,69.7,18.9
-50,Male,No education,High,68.9,13.5
-39,Female,Primary,High,91.6,18.4
-29,Male,No education,Middle,79.1,5.5
-16,Female,Secondary,Low,81.9,11.9
-17,Female,Secondary,High,72.6,14.7
-41,Female,Higher,Low,68.6,6.8
-24,Female,No education,High,101.7,9.6
-25,Male,Primary,High,85.9,15.0
-37,Female,Higher,High,61.6,7.7
-42,Female,Primary,Middle,84.3,19.4
-38,Male,Secondary,High,102.1,17.5
-21,Male,Higher,Middle,61.4,17.5
-27,Male,No education,Low,84.0,6.0
-17,Male,Primary,High,106.8,10.7
-21,Female,Primary,Low,86.8,17.0
-26,Male,Secondary,High,75.4,18.4
-57,Male,No education,Low,107.4,5.2
-29,Male,Secondary,High,100.8,9.9
-56,Female,Secondary,Middle,64.0,16.7
-12,Male,Secondary,Low,63.9,18.3
-4,Male,Secondary,Middle,100.6,19.6
-45,Female,No education,Low,67.7,6.2
-7,Male,Higher,Middle,64.3,18.5
-56,Female,No education,Low,92.6,19.0
-23,Female,Higher,Middle,96.4,14.3
-21,Male,No education,Low,95.3,16.4
-44,Female,No education,Middle,66.6,12.8
-47,Male,Higher,Middle,93.9,10.1
-12,Male,No education,High,107.0,7.6
-6,Female,No education,High,81.7,13.9
-44,Female,No education,Middle,108.4,10.5
-43,Male,No education,Low,71.9,12.5
-11,Female,No education,Low,102.9,11.2
-35,Male,No education,High,90.4,9.1
-16,Male,Primary,Middle,76.5,6.2
-11,Male,Secondary,High,60.9,18.4
-18,Female,No education,High,94.1,19.6
-12,Male,Secondary,Low,89.3,14.0
-44,Male,No education,High,85.2,9.3
-55,Female,Secondary,High,77.5,7.9
-46,Male,Higher,High,97.0,10.6
-11,Male,Higher,Middle,103.5,5.6
-38,Male,No education,Middle,75.2,12.2
-8,Male,Higher,High,85.6,19.5
-30,Female,No education,Low,100.7,15.3
-1,Female,Higher,Low,74.0,10.1
-23,Male,Secondary,High,67.5,14.3
-6,Male,Higher,Middle,80.6,13.6
-42,Female,No education,Low,109.4,17.7
-5,Male,Secondary,Low,101.4,9.2
-7,Male,No education,Low,81.2,9.3
-27,Male,Higher,High,97.1,14.4
-32,Male,Secondary,Middle,107.3,18.3
-4,Female,Primary,Middle,68.7,14.4
-12,Male,No education,High,73.8,6.4
-6,Male,No education,Low,95.1,17.2
-33,Male,Primary,Middle,78.8,8.9
-53,Female,Higher,Low,104.1,17.9
-55,Female,Primary,Low,75.5,6.0
-18,Female,Higher,Low,108.4,9.0
-9,Female,No education,High,100.8,14.4
-32,Male,Primary,High,95.7,17.4
-27,Female,Secondary,High,73.6,13.9
-2,Female,Secondary,High,65.6,8.5
-28,Female,Secondary,Low,69.3,18.7
-4,Female,Primary,Middle,82.3,16.8
-22,Female,Higher,High,85.8,7.2
-41,Female,Higher,High,68.7,18.9
-28,Female,Primary,High,104.9,10.8
-11,Male,Higher,Middle,103.9,9.3
-38,Female,Primary,Low,71.7,12.2
-37,Female,Higher,High,80.6,15.8
-37,Male,Primary,Middle,61.6,9.5
-53,Male,Higher,Middle,60.9,10.3
-16,Female,Secondary,Low,100.8,8.3
-17,Male,Primary,Middle,63.5,17.5
-33,Female,Secondary,High,63.0,16.9
-43,Female,Primary,Low,73.9,18.9
-54,Female,Higher,Middle,84.4,18.4
-59,Female,Secondary,Low,84.4,8.3
-49,Female,Secondary,High,108.4,14.0
-7,Female,Secondary,Low,89.7,6.1
-55,Male,Secondary,Middle,61.2,6.4
-39,Female,Primary,Low,108.3,9.1
-49,Female,Higher,Low,109.0,19.5
-17,Female,Higher,High,77.1,16.4
-51,Male,Secondary,Low,72.9,5.9
-17,Male,No education,Middle,66.1,9.5
-5,Male,Secondary,High,79.7,13.2
-9,Male,No education,Low,86.7,9.6
-21,Male,Higher,High,63.3,11.5
-53,Male,Higher,High,100.9,16.1
-16,Male,Primary,Low,71.9,18.1
-27,Female,Secondary,Low,73.0,16.9
-48,Male,Primary,High,103.2,19.1
-26,Male,No education,High,69.1,15.3
-7,Male,Primary,Middle,106.9,19.5
-53,Male,No education,Low,101.0,16.6
-55,Female,Primary,High,92.6,17.4
-42,Female,Secondary,Low,103.8,8.4
-47,Female,Higher,Middle,92.7,6.2
-32,Male,No education,Low,95.6,12.1
-24,Male,No education,Low,60.3,14.5
-29,Male,Primary,Middle,77.0,9.2
-0,Male,No education,Low,73.6,19.9
-52,Male,Secondary,Low,62.9,18.5
-44,Male,Secondary,High,86.7,19.0
-11,Female,Secondary,Middle,85.9,17.9
-34,Female,No education,High,66.2,13.5
-30,Female,Secondary,Middle,86.6,13.5
-29,Male,Secondary,Low,109.5,19.1
-27,Male,No education,Low,93.0,13.5
-20,Male,Secondary,Low,97.4,15.4
-14,Male,Higher,Middle,100.0,7.0
-5,Male,Secondary,High,81.1,13.0
-14,Female,No education,High,93.6,6.0
-29,Male,Secondary,High,65.9,15.0
-16,Female,Primary,Middle,64.6,5.4
-38,Female,Primary,High,109.2,9.3
-50,Female,Secondary,Low,69.5,17.3
-32,Female,Higher,Low,94.8,18.1
-52,Male,Higher,Low,100.0,7.2
-48,Male,Primary,Low,79.5,11.6
-14,Female,No education,Low,82.1,19.5
-1,Male,Primary,High,63.8,14.9
-44,Male,Primary,Low,82.1,15.1
-22,Female,Secondary,Low,84.6,11.2
-7,Female,Primary,Low,78.1,5.1
-47,Female,Higher,Middle,98.1,12.7
-45,Male,Higher,High,62.9,19.8
-10,Male,Secondary,Middle,79.2,13.7
-11,Female,Higher,Low,61.2,9.0
-32,Female,Primary,Low,71.9,14.1
-36,Female,No education,High,99.1,5.0
-4,Male,Secondary,Middle,68.1,17.7
-43,Female,Primary,Low,62.9,9.6
-50,Male,No education,Middle,73.2,17.9
-24,Female,No education,Low,66.6,9.9
-11,Male,Primary,Low,106.0,16.8
-14,Female,No education,High,76.1,13.2
-53,Female,Secondary,Middle,89.3,14.9
-36,Male,No education,Low,101.2,7.1
-33,Male,Primary,High,78.9,9.7
-25,Male,Primary,Low,94.2,7.4
-16,Male,Primary,Middle,77.0,19.3
-43,Male,Secondary,High,71.7,10.9
-41,Male,No education,Low,81.8,8.0
-39,Male,Secondary,Low,92.3,18.1
-6,Female,Primary,Low,81.3,5.0
-28,Male,No education,Low,82.3,14.1
-38,Female,Higher,Middle,66.8,18.0
-30,Female,Primary,Middle,73.9,18.7
-20,Male,Secondary,Low,90.8,12.5
-26,Male,Primary,Middle,87.0,13.1
-15,Male,Primary,High,72.5,14.5
-58,Female,Primary,Low,85.9,10.5
-0,Male,No education,Middle,109.5,6.0
-7,Male,Primary,Middle,65.3,19.1
-23,Female,Secondary,High,81.0,10.9
-15,Female,No education,High,92.0,11.9
-56,Female,Higher,High,100.3,8.9
-14,Female,Secondary,Middle,97.5,9.3
-20,Female,Primary,Low,106.3,14.9
-4,Female,Higher,High,90.0,14.4
-42,Female,Secondary,High,60.3,11.6
-35,Female,Secondary,Middle,73.1,13.4
-5,Male,Higher,Middle,65.2,18.9
-32,Male,Secondary,Middle,77.3,11.5
-17,Male,Secondary,Low,102.8,7.1
-48,Male,Secondary,Middle,98.1,6.3
-38,Male,No education,Low,67.9,8.9
-29,Male,No education,Low,109.2,5.4
-44,Male,Secondary,Middle,94.2,6.6
-32,Male,Secondary,Low,91.9,10.1
-22,Female,Primary,Middle,66.4,18.3
-39,Male,No education,High,79.2,8.1
-50,Male,Secondary,Low,78.9,10.5
-8,Female,No education,High,71.2,14.6
-22,Female,Secondary,Low,91.8,7.4
-8,Female,Primary,High,83.6,8.2
-13,Female,No education,Low,104.3,11.7
-53,Male,Primary,Low,90.8,6.0
-11,Female,Higher,Low,95.7,17.4
-55,Male,No education,Low,84.2,17.5
-39,Female,Higher,High,84.6,14.9
-3,Male,No education,Low,70.6,15.4
-21,Male,No education,Middle,101.1,10.1
-25,Female,Secondary,Middle,107.5,14.4
-49,Female,No education,Low,69.5,6.6
-38,Male,Higher,High,66.9,13.3
-27,Female,Primary,Low,79.5,19.0
-11,Male,Primary,Low,100.7,16.6
-43,Male,Secondary,Low,106.0,5.4
-15,Female,No education,Middle,97.5,13.2
-18,Female,Primary,Low,96.0,11.4
-30,Male,Secondary,High,95.1,12.9
-21,Male,No education,Low,97.8,6.5
-47,Male,No education,Low,98.3,6.0
-20,Female,No education,Low,87.6,6.3
-17,Female,Secondary,Middle,86.4,11.2
-26,Male,Secondary,Low,84.6,11.7
-25,Female,No education,High,106.4,12.8
-29,Male,Secondary,High,87.6,6.5
-38,Male,Secondary,Middle,67.8,17.5
-44,Male,No education,Middle,65.6,5.2
-43,Female,Higher,High,80.5,8.1
-55,Female,No education,High,80.4,10.1
-20,Male,Primary,Middle,101.1,8.2
-23,Female,Primary,High,95.9,12.9
-22,Male,Primary,Middle,104.3,8.0
-14,Female,Higher,Middle,103.8,19.4
-23,Female,No education,Middle,88.8,6.4
-11,Female,Higher,Low,101.5,12.0
-49,Female,Higher,High,105.6,11.9
-56,Female,Higher,Low,63.7,16.4
-46,Female,Secondary,Middle,70.2,18.2
-11,Male,Secondary,High,99.3,15.4
-42,Male,Higher,Low,75.1,10.8
-38,Male,No education,Middle,107.5,10.7
-27,Male,Higher,Low,89.7,11.7
-0,Female,No education,Low,93.8,6.4
-20,Female,Higher,Middle,70.8,19.2
-45,Male,Primary,Low,65.3,19.6
-57,Female,Primary,High,63.1,10.9
-12,Female,No education,High,95.5,19.6
-26,Female,Higher,Middle,70.2,12.4
-15,Male,Secondary,High,64.8,7.4
-27,Male,No education,Middle,83.4,12.9
-26,Male,Higher,Middle,92.3,7.8
-53,Male,No education,High,78.2,11.1
-34,Female,Secondary,Middle,76.8,9.3
-52,Male,Primary,Middle,97.6,6.0
-19,Male,Higher,Low,76.9,18.7
-22,Male,Secondary,High,64.6,14.2
-1,Male,Higher,Low,65.7,19.2
-23,Female,Secondary,High,81.2,6.3
-4,Female,No education,Middle,106.1,16.6
-14,Male,No education,Middle,69.2,19.8
-33,Female,Secondary,Middle,108.6,18.8
-40,Female,Primary,Low,103.2,11.8
-35,Female,Primary,Middle,85.5,5.4
-48,Female,Secondary,Middle,94.8,12.8
-55,Male,Primary,Low,63.9,17.0
-2,Male,No education,Low,82.7,14.3
-32,Female,Higher,Middle,78.9,7.2
-30,Male,Primary,High,80.0,19.6
-29,Female,Secondary,Middle,73.7,8.9
-15,Female,Primary,Low,80.0,16.2
-50,Female,Higher,High,86.7,17.6
-0,Female,Secondary,Middle,95.3,17.1
-22,Female,Secondary,Middle,93.3,6.5
-42,Female,Secondary,Middle,61.4,9.6
-34,Female,No education,Low,91.5,19.1
-53,Male,Primary,Low,60.5,6.8
-2,Male,No education,Low,85.8,15.3
-50,Male,Higher,High,82.4,19.9
-22,Female,Secondary,Middle,93.8,13.4
-51,Female,No education,Middle,66.6,6.5
-8,Male,Primary,High,67.4,5.9
-25,Male,No education,High,66.8,12.6
-24,Male,Higher,Low,107.5,5.9
-22,Female,Secondary,Middle,68.4,7.4
-50,Male,No education,High,96.6,16.0
-13,Female,Secondary,High,64.7,10.4
-54,Male,Higher,Middle,65.2,11.3
-11,Female,Higher,Low,78.1,12.6
-12,Female,Higher,Low,94.3,19.9
-17,Male,Primary,Low,109.3,12.6
-38,Male,Primary,High,86.2,5.8
-4,Male,Secondary,Low,96.3,10.9
-35,Female,Higher,Middle,72.3,17.0
-14,Female,Higher,Low,83.7,10.9
-0,Male,Secondary,Low,63.4,11.5
-34,Male,Higher,Low,76.1,7.8
-47,Female,Higher,High,104.5,5.4
-8,Female,No education,Middle,65.7,17.1
-58,Male,Secondary,Middle,92.2,10.7
-8,Male,Primary,Middle,98.6,17.9
-5,Male,Primary,High,96.8,10.5
-30,Male,Primary,Middle,75.3,17.9
-17,Female,Higher,Middle,64.7,9.1
-0,Male,Primary,Middle,106.7,16.6
-20,Male,Secondary,Middle,85.5,14.0
-58,Male,Higher,High,67.4,6.6
-28,Male,No education,Low,65.7,10.8
-34,Male,Higher,High,68.8,19.4
-50,Female,Primary,Low,77.2,18.4
-34,Female,Primary,High,108.3,14.1
-43,Male,Secondary,Low,88.2,13.0
-54,Male,Secondary,High,93.8,8.0
+10,Female,Primary,Low,84.3,16.7
 54,Male,Primary,Middle,73.3,10.6
-12,Male,Secondary,Low,85.7,6.6
-59,Female,Primary,Middle,71.5,11.7
-42,Female,Secondary,Middle,68.8,7.2
-25,Female,Primary,High,67.9,18.1
-7,Female,Secondary,Low,108.9,10.9
-20,Female,Secondary,Middle,96.9,5.5
-39,Female,Higher,High,85.8,17.4
-30,Male,Higher,Middle,77.6,14.9
-37,Female,Secondary,High,63.3,18.1
-37,Male,Primary,Low,97.8,12.8
-52,Female,No education,Low,81.1,8.8
-34,Female,Primary,Low,106.6,18.9
-3,Male,Secondary,High,103.1,7.9
-30,Male,Secondary,High,107.5,12.3
-2,Male,Secondary,Low,93.3,10.8
-6,Male,Primary,High,107.4,12.6
-56,Male,Secondary,Low,63.5,16.4
-41,Female,Secondary,Middle,78.8,18.4
-19,Male,No education,High,83.9,7.9
-51,Female,Primary,High,96.8,18.9
-46,Female,Primary,Middle,103.2,13.9
-57,Female,Higher,Low,75.8,17.5
-44,Female,No education,Middle,66.5,14.4
-48,Female,Higher,Middle,66.3,18.3
-0,Male,Higher,Middle,101.6,14.5
-1,Male,Secondary,Low,75.2,6.4
-28,Female,No education,Low,60.2,5.2
-34,Female,Primary,Low,73.7,14.8
-42,Female,No education,High,101.6,6.8
-27,Male,Secondary,Low,65.2,11.9
-33,Female,Primary,Middle,89.2,17.3
-18,Female,Secondary,Middle,97.1,16.4
-30,Male,Secondary,High,78.9,12.7
-24,Male,Secondary,High,74.8,15.0
-57,Male,Higher,High,97.3,8.0
-26,Male,Primary,Middle,72.3,18.1
-27,Male,Primary,High,61.9,8.1
-31,Male,No education,High,61.4,5.3
-36,Female,No education,Middle,83.2,14.4
-23,Female,Primary,High,66.5,19.3
-9,Male,Secondary,Low,88.5,15.0
-42,Male,Secondary,Low,61.4,9.0
-17,Male,Higher,Low,61.4,8.8
-26,Female,Secondary,Middle,90.7,10.6
-32,Male,No education,Middle,68.9,18.8
-53,Female,Higher,Low,109.9,7.7
-30,Male,Higher,Middle,70.8,19.2
-53,Female,Higher,High,69.7,9.2
-37,Male,Primary,Low,99.4,6.8
-18,Female,Primary,Low,64.1,11.7
-33,Female,Higher,Low,70.9,6.5
-34,Male,Secondary,High,82.6,10.4
-8,Male,No education,Middle,86.6,5.6
-45,Female,Primary,Low,95.6,19.9
-56,Female,No education,Middle,87.1,15.1
-34,Male,Secondary,High,92.0,9.4
-19,Female,No education,Low,68.0,15.6
-42,Male,Secondary,Low,90.2,13.1
-26,Male,No education,High,94.7,10.1
-34,Male,No education,Low,98.3,8.0
-51,Female,Secondary,Low,83.5,12.4
-18,Male,Higher,Low,101.4,15.5
-56,Female,Primary,High,62.0,8.1
-9,Male,Primary,High,109.2,14.4
-50,Male,No education,Low,108.5,12.5
-3,Female,Higher,Middle,85.7,10.0
-54,Male,Secondary,High,104.3,15.4
-5,Male,Higher,Low,70.1,19.8
-53,Female,Primary,High,82.9,7.9
-48,Female,No education,High,65.8,7.9
-29,Female,No education,Middle,77.9,19.0
-4,Male,Primary,Middle,96.8,19.8
-49,Female,Higher,Middle,107.6,7.2
-59,Female,Higher,Middle,102.8,16.2
-53,Female,No education,Low,65.7,6.2
-15,Female,Higher,High,101.8,14.5
-7,Male,Primary,High,102.7,16.1
-42,Female,Primary,Low,93.1,15.6
-29,Male,No education,Middle,62.2,8.8
-54,Male,Higher,Low,96.2,7.4
-27,Male,Higher,Middle,71.9,11.4
-36,Male,Primary,Low,65.6,19.8
-4,Female,Higher,High,68.7,16.8
-37,Male,Secondary,High,74.4,18.1
-5,Female,Primary,Low,89.1,14.7
-34,Male,No education,High,62.5,19.1
-3,Female,Primary,Low,63.3,19.8
-18,Male,Primary,High,71.5,13.7
-25,Male,Secondary,High,86.2,18.4
-29,Female,Primary,Low,106.7,12.2
-11,Male,No education,High,108.2,16.1
-41,Male,Higher,Low,105.4,13.2
-43,Female,Primary,Middle,60.8,16.5
-45,Female,No education,Low,97.9,13.4
-19,Male,Secondary,High,95.2,17.3
-25,Female,Secondary,High,105.6,7.1
-31,Male,No education,High,103.6,9.1
-8,Female,Primary,Low,88.7,14.8
-8,Female,Primary,Middle,61.4,5.2
-49,Male,No education,Low,61.5,19.5
-2,Female,Higher,High,94.3,11.1
-16,Female,Secondary,High,97.9,11.5
-6,Male,Higher,High,108.5,5.3
-23,Male,Secondary,High,93.0,15.3
-20,Male,Secondary,Middle,74.2,6.4
-50,Male,Higher,Middle,85.1,18.3
-37,Female,Secondary,Middle,75.2,9.4
-42,Female,Secondary,Middle,109.3,12.1
-39,Female,Secondary,Middle,66.5,7.8
-58,Male,No education,High,83.4,9.1
-59,Male,Higher,Middle,90.5,17.6
-29,Female,Higher,High,107.4,16.6
-16,Female,No education,Low,71.9,11.2
-48,Male,Higher,Middle,74.9,6.1
-22,Female,Higher,Low,62.5,11.0
-2,Female,Primary,High,78.8,15.8
-33,Male,Higher,Middle,72.0,14.8
-35,Male,Secondary,Middle,103.5,7.1
-49,Female,Secondary,Middle,107.1,8.8
-26,Male,Primary,Low,99.5,11.6
-4,Male,Primary,Middle,86.8,11.8
-39,Female,Primary,Middle,72.8,5.4
-11,Female,No education,Middle,100.2,8.1
-7,Female,Secondary,Middle,72.0,19.9
-40,Female,Secondary,Low,106.6,19.7
-15,Female,Higher,Low,88.0,15.8
-46,Male,Primary,Middle,92.2,15.4
-16,Male,Higher,High,77.4,18.4
-0,Male,Primary,Middle,100.4,9.4
-53,Male,No education,High,68.9,15.5
-51,Female,Secondary,Low,95.1,9.6
-37,Female,Primary,Middle,82.9,9.0
-35,Female,No education,Middle,62.2,8.9
-44,Male,No education,Low,97.2,10.6
-40,Male,Higher,Middle,79.0,19.8
-43,Male,Secondary,Low,109.6,19.0
-59,Female,Higher,Low,63.6,7.9
-44,Female,Primary,Low,64.6,12.9
-0,Male,Secondary,Low,96.8,14.2
-28,Female,No education,Middle,97.5,8.7
-55,Male,Primary,Low,61.5,18.1
-26,Female,Primary,Middle,109.3,11.8
-11,Female,No education,Low,96.5,14.7
-59,Female,Primary,High,86.9,8.1
-9,Male,Primary,High,75.2,15.7
-34,Female,No education,High,68.2,15.9
-2,Male,Secondary,Low,73.9,8.8
-19,Male,Secondary,Middle,60.6,11.1
-26,Female,Secondary,Low,83.0,15.8
-19,Male,Primary,Middle,104.5,12.9
-10,Female,Primary,Middle,108.7,17.9
-4,Female,Primary,High,108.7,11.6
-54,Female,Secondary,High,97.7,10.5
-30,Male,Higher,High,69.3,18.9
-36,Female,Primary,High,65.7,15.0
-38,Female,Secondary,Low,101.1,15.4
-50,Female,No education,Middle,65.3,5.6
-53,Male,Secondary,High,100.3,9.8
-34,Male,No education,Middle,63.5,18.3
-11,Male,Higher,Low,84.2,7.2
-48,Male,Higher,Middle,91.6,7.6
-7,Female,Secondary,Low,70.4,14.9
-48,Female,No education,Low,85.9,9.1
-43,Male,No education,Low,85.0,19.1
-49,Male,Secondary,Low,76.2,17.1
-51,Male,Primary,High,61.1,19.6
-50,Male,Primary,Middle,91.2,13.0
-43,Female,Higher,High,102.6,10.2
-9,Male,Higher,Low,105.1,5.8
-51,Male,Secondary,High,96.5,19.1
-52,Male,Secondary,Middle,76.7,6.9
-3,Female,Primary,High,66.3,10.8
-36,Female,No education,Low,104.8,11.5
-24,Male,Higher,High,88.8,11.8
-24,Female,Primary,High,90.2,7.3
-52,Male,No education,High,101.8,10.2
-17,Male,Secondary,Low,98.0,9.2
-45,Male,Secondary,High,94.4,19.6
-49,Female,Secondary,Low,65.3,10.6
-36,Female,Primary,High,65.0,15.8
-39,Male,Secondary,Middle,72.3,12.2
-14,Female,Higher,Low,99.3,19.9
-57,Female,Higher,Middle,83.3,17.0
-0,Male,Higher,High,68.1,15.0
-10,Male,Primary,Low,85.0,13.1
-38,Female,Secondary,Low,88.0,18.2
-31,Female,Primary,Low,73.6,12.3
-17,Male,Higher,High,94.8,13.5
-20,Male,No education,High,66.2,10.9
-45,Male,Primary,Low,86.7,7.8
-48,Male,Higher,Low,87.0,12.0
-34,Male,Higher,Low,62.3,14.5
-5,Male,Secondary,Middle,62.2,11.9
-54,Male,Higher,High,63.9,18.0
-51,Male,Primary,High,90.3,8.2
-51,Female,Secondary,High,60.3,19.6
-17,Female,Primary,High,102.1,18.1
-1,Female,No education,Low,79.0,15.6
-33,Female,Secondary,High,103.5,14.6
-15,Female,No education,High,82.8,19.5
-37,Female,Secondary,Middle,104.2,10.3
-29,Female,No education,High,81.8,19.9
-1,Female,Higher,Low,105.1,15.6
-37,Male,Secondary,High,65.3,13.5
-50,Female,Higher,Middle,75.1,18.1
-47,Male,Secondary,Low,103.2,6.7
-12,Female,No education,Middle,107.0,9.2
-32,Female,Higher,Low,108.6,13.8
-17,Female,Secondary,Middle,61.1,9.3
-17,Female,Higher,Low,84.3,18.9
-33,Male,Primary,Middle,80.5,9.3
-46,Female,Higher,High,96.6,19.3
-39,Male,Primary,High,90.9,13.7
-37,Female,Higher,High,75.8,12.7
-11,Female,Higher,Middle,71.4,15.8
-21,Female,No education,Low,60.6,14.8
-2,Female,No education,Low,94.0,17.6
-41,Male,Secondary,Middle,71.2,6.3
-25,Male,Primary,High,82.7,9.1
-10,Female,Primary,Middle,80.7,10.8
-26,Female,Primary,High,84.3,5.6
-7,Female,Primary,Middle,84.6,7.2
-23,Male,Primary,Low,104.0,8.0
-35,Female,Primary,Low,72.9,19.2
-7,Female,Higher,Low,103.0,11.2
-9,Male,No education,Middle,92.9,18.9
-11,Male,Higher,Low,83.7,17.0
-8,Female,No education,High,60.7,16.2
-21,Male,Secondary,Low,77.9,9.7
-34,Female,Higher,Low,83.5,18.3
-22,Female,Secondary,High,78.9,17.8
-51,Male,No education,Middle,60.9,18.5
-9,Male,Higher,Low,88.8,18.5
-14,Female,No education,High,102.3,16.6
-17,Male,Primary,Middle,90.9,6.7
-5,Male,Secondary,High,108.4,8.4
-27,Female,Primary,Low,82.6,7.6
-43,Female,Primary,Low,105.6,12.6
-28,Female,Secondary,High,87.1,9.7
-29,Male,Primary,Middle,97.6,14.5
-55,Female,Primary,Low,60.9,7.0
-24,Female,No education,Low,78.5,11.1
-10,Female,Primary,Low,93.4,17.0
-49,Male,Higher,Middle,61.3,7.5
-9,Female,No education,High,86.2,15.4
-8,Male,Higher,High,97.9,16.8
-2,Male,No education,Low,69.0,9.4
-32,Male,Secondary,Middle,77.2,9.6
-39,Female,No education,High,67.3,13.9
-2,Male,Primary,High,74.6,10.3
-15,Female,No education,High,88.5,16.0
-53,Male,No education,Low,78.2,6.6
-54,Female,Primary,Low,74.0,8.9
-49,Female,Primary,Middle,76.7,14.0
-41,Male,Primary,High,69.9,8.1
-29,Female,Higher,Middle,101.8,17.6
-16,Male,Primary,Middle,104.1,18.9
-2,Male,Primary,High,108.5,14.1
-32,Male,Secondary,Low,60.0,18.7
-52,Male,No education,High,72.3,16.1
-13,Female,Primary,Low,85.4,18.0
-47,Female,Higher,High,99.2,15.3
-40,Female,Secondary,Middle,61.5,11.7
-20,Male,No education,Middle,60.9,19.0
-46,Female,No education,High,61.1,7.6
-35,Male,Secondary,Low,91.1,15.5
-30,Male,No education,Low,62.3,9.5
-57,Female,No education,Low,65.5,14.2
-17,Female,Higher,Low,61.3,11.5
-4,Male,No education,Low,62.5,12.0
-15,Female,Primary,High,73.0,11.0
-8,Male,Secondary,High,103.5,14.9
-42,Male,Primary,High,86.0,8.8
-46,Male,No education,High,76.7,19.4
-3,Female,Secondary,Middle,71.3,14.1
-13,Male,Secondary,High,108.3,12.3
-24,Male,No education,High,71.4,5.0
-37,Male,No education,Middle,82.1,7.0
-3,Female,Primary,Middle,79.5,6.8
-52,Male,No education,Low,98.8,19.3
-3,Female,Higher,Low,83.8,13.5
-23,Female,Higher,Middle,65.9,19.6
-2,Male,Secondary,Low,109.0,7.8
-4,Male,Primary,Middle,100.3,9.5
-48,Female,No education,High,72.0,15.2
-49,Male,Higher,High,98.7,14.0
-25,Male,No education,Low,74.4,15.6
-30,Male,No education,Low,64.1,12.4
-10,Male,Secondary,High,101.0,7.2
-37,Female,Secondary,Low,63.9,6.4
-13,Male,Higher,Middle,88.4,6.6
-28,Female,Secondary,High,90.2,5.9
-45,Female,Secondary,High,76.7,18.8
-4,Female,Higher,Low,81.5,13.1
-31,Male,Higher,Middle,66.9,14.5
-4,Male,Primary,Low,101.1,19.7
-16,Male,Secondary,Middle,71.1,10.9
-29,Male,Higher,Low,97.5,11.1
-47,Female,Secondary,High,74.0,13.6
-47,Female,Primary,Low,89.4,12.9
-19,Male,Secondary,Middle,97.9,14.9
-22,Male,Primary,Low,97.4,11.6
-23,Female,Primary,High,70.8,9.7
-51,Female,Higher,Low,67.7,9.2
-42,Male,Higher,Middle,84.5,10.9
-40,Female,Higher,Low,67.5,9.9
-56,Female,No education,Middle,74.0,16.8
-53,Female,Secondary,High,106.0,6.7
-58,Female,No education,Middle,72.9,6.5
-38,Female,Higher,High,81.7,16.9
-29,Male,No education,High,99.8,9.8
-34,Male,Higher,Middle,87.5,16.5
-27,Male,Primary,Low,101.8,16.2
-2,Female,No education,High,74.2,11.1
-54,Male,Primary,Middle,73.0,11.3
-59,Female,No education,High,87.2,17.5
-37,Female,Secondary,High,95.7,12.7
-11,Female,Secondary,Low,87.1,12.5
-34,Male,No education,Middle,81.3,17.7
-55,Female,Secondary,Low,68.2,14.8
-57,Female,Higher,Middle,68.6,13.3
-51,Female,Primary,High,86.0,9.9
-24,Male,Secondary,High,71.3,6.8
-9,Male,Higher,High,98.9,9.9
-31,Male,Primary,High,76.0,14.6
-13,Male,No education,Low,68.7,8.0
-28,Female,Primary,Low,84.7,19.8
-6,Female,Higher,High,89.3,8.2
-50,Male,No education,Middle,102.7,5.3
-20,Male,No education,High,84.2,12.2
-21,Male,Secondary,Low,73.2,11.5
-7,Male,Primary,Low,89.4,19.7
-1,Male,Primary,Low,79.8,7.7
-7,Male,No education,High,64.6,9.0
-51,Male,Secondary,Low,76.1,12.1
-28,Female,No education,High,60.2,16.6
-32,Male,Higher,Middle,70.6,12.6
-8,Female,No education,Middle,72.4,6.7
-27,Male,Secondary,Low,61.0,15.7
-57,Male,Higher,Middle,62.3,6.6
-29,Male,Secondary,Low,99.1,10.3
-55,Male,Secondary,High,97.0,16.7
-40,Female,Primary,High,67.9,16.6
-11,Female,Primary,High,93.1,7.1
-52,Female,Secondary,High,105.9,6.2
-8,Male,Secondary,High,82.1,20.0
-36,Female,No education,Low,84.7,17.6
-42,Male,Higher,Low,87.3,18.3
-47,Male,Higher,Middle,105.9,7.3
-5,Female,Secondary,Middle,96.6,12.3
-59,Female,Higher,High,88.5,13.8
-38,Female,Primary,Low,99.8,9.1
-45,Male,No education,Low,90.8,5.3
-27,Female,Primary,Middle,68.9,15.8
-7,Female,Secondary,Middle,61.4,5.8
-24,Male,Secondary,Low,96.7,14.6
-20,Male,No education,High,99.6,15.4
-19,Male,Primary,Middle,65.7,18.4
-43,Male,Higher,Low,95.0,10.5
-56,Female,Secondary,Low,90.6,7.8
-11,Female,Primary,Middle,80.4,13.9
-50,Male,Primary,Middle,78.5,18.0
-2,Female,Higher,High,98.6,18.8
-5,Male,Primary,Low,84.2,19.9
-40,Male,Primary,High,84.7,19.8
-26,Female,No education,Middle,89.2,12.9
-41,Female,No education,Low,93.2,13.0
-51,Female,Secondary,Middle,95.3,13.0
-7,Female,Secondary,High,108.9,14.6
-6,Male,No education,High,67.5,14.8
-17,Male,No education,Middle,74.8,16.7
-39,Male,Primary,High,95.0,10.6
-17,Male,Higher,Middle,61.3,6.3
-36,Female,Secondary,High,102.2,9.4
-3,Female,No education,High,108.1,5.4
-56,Male,Secondary,Low,92.5,6.5
-12,Male,Higher,Low,99.1,10.9
-50,Male,No education,Middle,76.4,12.7
-18,Female,Primary,Middle,72.1,8.0
-4,Male,Higher,Low,81.2,12.0
-41,Female,Secondary,Low,72.2,19.4
-28,Male,No education,High,93.3,19.7
-41,Male,Secondary,Middle,60.5,14.7
-36,Female,Higher,Low,68.5,5.5
-22,Female,Higher,High,71.1,12.9
-52,Female,Primary,Middle,77.7,6.0
-39,Male,Higher,High,107.4,6.7
-1,Female,No education,High,99.3,15.8
-42,Male,Higher,High,70.1,8.7
-0,Male,No education,Low,67.5,13.1
-53,Male,Higher,Low,68.5,8.4
-4,Male,No education,Low,62.1,20.0
-2,Male,Secondary,Middle,94.9,18.3
-2,Female,Secondary,High,94.8,5.6
-38,Female,Higher,High,89.0,9.6
-6,Male,Secondary,Middle,97.1,10.7
-17,Male,Primary,Low,71.7,19.7
-48,Male,No education,High,105.4,14.0
-41,Male,No education,Middle,78.1,5.1
-12,Male,Primary,High,91.6,18.1
-15,Male,Higher,Low,64.0,17.9
-29,Female,Primary,Low,95.5,11.9
-24,Male,No education,Low,60.8,5.7
-19,Female,No education,High,61.1,14.0
-49,Male,Higher,Low,90.0,11.9
-9,Male,Primary,Middle,66.2,19.4
-55,Male,Secondary,Middle,81.4,17.9
-27,Male,Higher,Low,73.9,16.6
-58,Female,Higher,Middle,102.2,6.3
-48,Male,No education,Middle,77.8,12.5
-9,Female,No education,Middle,97.0,10.6
-6,Female,Primary,High,105.0,17.3
-6,Male,No education,Middle,100.5,19.5
-40,Male,Higher,High,80.0,15.5
-10,Male,Secondary,Low,102.1,17.1
-9,Male,Higher,Middle,74.9,13.1
-20,Male,No education,Middle,72.9,9.6
-30,Male,Primary,Low,77.9,12.6
-8,Female,Secondary,Low,68.2,5.9
-20,Male,No education,Low,109.3,7.4
-43,Female,No education,Low,71.9,18.0
-55,Male,Secondary,Middle,94.8,11.4
-14,Female,No education,Middle,75.8,8.9
-55,Male,No education,High,76.5,7.4
-4,Female,Higher,Middle,99.3,14.9
-38,Male,Higher,Middle,78.1,19.8
-48,Female,Primary,Low,62.1,14.8
-5,Female,Secondary,Middle,98.7,18.4
-31,Male,Secondary,High,88.6,7.0
-58,Male,Primary,High,84.2,16.5
-53,Female,No education,Low,100.2,19.7
-54,Male,Primary,Low,83.0,8.3
-15,Female,Higher,Low,85.7,12.0
-2,Male,Primary,High,70.9,16.2
-13,Female,Primary,Low,66.2,11.3
-56,Male,Primary,Low,90.0,11.2
-38,Male,Primary,Middle,68.2,11.6
-20,Male,Higher,High,105.5,13.8
-16,Male,Higher,Low,65.3,7.0
-54,Female,Secondary,Low,95.0,12.6
-50,Female,No education,Low,74.5,6.1
-7,Female,Higher,Low,61.3,11.0
-8,Male,Primary,Middle,82.3,8.6
-55,Male,Secondary,Low,101.2,8.7
-50,Male,No education,High,93.0,10.3
-8,Male,Primary,High,90.3,6.6
-5,Female,Secondary,Low,104.2,10.8
-42,Female,Primary,High,84.9,7.6
-37,Female,Secondary,Low,78.2,7.5
-41,Female,Secondary,High,105.7,12.6
-42,Male,Primary,High,75.4,15.6
-52,Female,Primary,Low,103.3,8.0
-8,Female,No education,Middle,86.0,17.2
-51,Male,Primary,Low,74.5,19.1
-7,Female,Primary,Middle,96.2,18.3
-42,Female,Secondary,Middle,69.8,13.9
-40,Female,Secondary,High,93.9,18.5
-23,Female,No education,Low,65.2,16.7
-50,Female,No education,Middle,80.6,16.8
-29,Female,Higher,Low,65.6,6.2
-38,Male,Higher,High,93.8,6.3
-15,Female,No education,Middle,89.0,7.5
-24,Female,Higher,High,64.7,16.9
-57,Female,Higher,Middle,70.9,14.5
-28,Male,Higher,High,88.5,18.6
-8,Male,No education,Low,104.3,8.9
-8,Male,Secondary,High,64.3,9.6
-19,Male,Primary,High,70.4,14.6
-20,Female,Secondary,High,102.8,15.5
-35,Female,Secondary,Low,62.9,19.6
-10,Female,Higher,High,70.2,11.1
-20,Female,No education,Middle,87.2,11.1
-20,Female,Higher,Low,101.4,5.5
-18,Female,Secondary,Middle,84.5,10.8
-46,Female,No education,Middle,105.6,19.9
-56,Female,Higher,Low,64.7,13.9
-2,Female,Higher,Low,75.5,7.9
-19,Female,Primary,Middle,84.2,5.6
-10,Male,Primary,Low,104.4,6.6
-11,Male,Primary,Low,71.0,12.7
-49,Male,Secondary,Low,75.8,18.4
-43,Female,Primary,Middle,68.4,19.5
-35,Female,Secondary,Low,89.9,10.1
-14,Female,Higher,Middle,73.6,6.7
-19,Male,Higher,High,105.8,14.1
-41,Female,Primary,Middle,63.5,11.3
-8,Male,Secondary,Low,92.4,14.8
-12,Female,Higher,Low,69.0,8.4
-17,Male,Secondary,High,98.0,12.8
-36,Male,No education,Low,107.8,17.4
-48,Male,No education,High,102.4,16.4
-37,Male,Higher,Low,85.5,16.1
-53,Male,Secondary,Middle,96.8,11.7
-37,Male,No education,Low,79.6,10.7
-47,Female,Primary,High,94.1,17.4
-10,Male,No education,Middle,92.6,14.8
-13,Male,Primary,Middle,85.5,15.2
-45,Female,Primary,Low,103.1,11.7
-59,Male,Secondary,Low,97.8,15.5
-24,Male,Higher,High,107.6,15.7
-32,Male,Higher,High,105.7,10.7
-57,Male,Secondary,High,65.9,9.4
-18,Male,No education,Middle,62.3,13.8
-48,Female,No education,High,99.8,6.7
-13,Female,Primary,High,80.7,11.5
-1,Male,Higher,Middle,102.1,15.3
-40,Female,Primary,Middle,74.6,14.5
-18,Female,Higher,High,68.0,6.1
-48,Male,Primary,Low,109.3,13.1
-5,Male,Primary,Low,103.6,18.9
-30,Male,Primary,Low,108.4,11.8
-26,Female,No education,Middle,74.9,14.5
-54,Male,Higher,High,91.6,6.0
-9,Female,No education,Middle,102.1,16.0
-36,Male,Secondary,Middle,77.9,8.5
-16,Female,Primary,Middle,71.8,17.7
-16,Female,Primary,High,83.2,13.8
-50,Female,Higher,High,106.7,15.8
-40,Male,Secondary,Low,92.6,6.2
-52,Female,Secondary,Low,105.3,11.8
-31,Female,Secondary,Low,104.9,14.0
-21,Male,Primary,Middle,86.2,19.9
-14,Male,Secondary,Middle,106.7,15.5
-50,Male,Secondary,Low,75.1,12.6
-36,Male,Higher,Middle,73.6,18.1
-35,Male,Primary,High,67.6,7.2
-45,Male,Secondary,Middle,73.7,16.8
-19,Female,Primary,High,91.8,7.0
-10,Female,Secondary,Low,80.3,10.7
-16,Male,Primary,Middle,89.3,13.7
-52,Female,Primary,Low,87.0,15.3
-45,Female,Primary,High,88.2,11.0
-51,Male,Primary,Middle,67.0,19.1
-31,Male,Higher,High,105.8,11.1
-24,Female,Secondary,Low,92.9,16.3
-0,Male,Higher,Low,75.4,7.5
-42,Male,No education,High,75.2,15.2
-9,Female,No education,Middle,80.5,10.4
-31,Male,Secondary,Middle,83.2,11.6
-55,Male,No education,Middle,60.1,18.8
-58,Female,Primary,High,83.5,13.6
-48,Male,Higher,Low,71.5,9.7
-42,Male,Higher,High,82.6,5.3
-59,Female,Secondary,High,84.0,19.6
-41,Female,Higher,Low,60.9,9.6
-19,Female,Secondary,Low,91.5,8.3
-24,Male,Secondary,Low,92.3,5.9
-52,Male,Primary,Low,107.2,17.4
-29,Female,No education,Low,94.1,10.3
-9,Male,Primary,Low,96.1,14.7
-26,Female,Secondary,Low,73.2,15.6
-28,Male,Higher,Middle,90.1,7.0
-19,Male,Primary,High,87.9,5.4
-6,Female,Higher,Low,81.0,10.7
-30,Female,Secondary,Low,92.5,8.1
-56,Male,No education,High,79.8,17.1
-39,Female,Secondary,Middle,103.1,13.6
-16,Male,No education,Low,109.7,8.4
-42,Male,Secondary,Middle,60.4,18.4
-34,Female,Primary,High,77.7,12.2
-53,Female,Primary,Middle,109.6,15.4
-1,Female,Higher,Middle,90.4,12.7
-35,Male,No education,Middle,87.5,8.6
-21,Male,No education,Middle,61.0,17.4
-18,Female,No education,High,82.5,8.0
-59,Female,Secondary,Middle,74.3,11.0
-41,Male,Primary,High,63.2,12.3
-53,Female,No education,Low,90.1,11.9
-16,Female,Primary,Low,96.1,15.8
-2,Female,Primary,Low,81.6,6.9
-30,Female,No education,Middle,82.7,9.6
-12,Female,Higher,High,81.5,15.4
-19,Male,No education,Low,79.5,9.0
-19,Female,Higher,Low,91.2,7.2
-43,Female,Higher,High,83.6,17.7
-38,Male,Higher,Low,94.2,9.8
-20,Female,Higher,Low,79.4,14.9
-35,Female,Secondary,Middle,102.9,8.0
-10,Male,Primary,Low,66.0,17.2
-35,Female,Higher,Low,94.7,18.5
-18,Female,No education,High,90.7,19.0
-43,Male,No education,Low,104.7,8.2
-52,Female,Secondary,Low,82.3,7.6
-7,Female,Secondary,High,97.5,11.6
-21,Male,Primary,High,71.5,8.0
-58,Male,Primary,Low,84.8,5.3
-40,Male,Higher,High,65.0,19.7
-19,Female,Secondary,High,109.5,11.1
-46,Male,Higher,Low,75.1,15.1
-59,Female,No education,High,65.4,11.2
-24,Male,Primary,Low,103.2,17.8
-49,Male,No education,Low,77.0,5.2
-57,Female,No education,Middle,105.0,9.2
-6,Male,Primary,High,75.5,14.6
-40,Female,Primary,Middle,107.6,13.3
-19,Female,No education,High,103.2,11.3
-51,Female,Higher,High,99.6,11.3
-7,Female,Secondary,High,82.5,15.7
-56,Male,Primary,High,81.5,14.9
-12,Male,No education,High,91.9,12.7
-44,Female,Higher,Low,66.2,5.3
-11,Male,Secondary,Low,108.7,8.6
-54,Male,Higher,Middle,83.3,11.4
-4,Male,Higher,High,70.0,15.6
-10,Female,Higher,Low,60.5,17.5
-32,Male,Primary,Low,101.8,17.0
-13,Male,No education,Middle,108.9,8.5
-3,Male,No education,High,70.5,9.0
-16,Female,Higher,Low,91.2,11.7
-36,Male,Secondary,Middle,106.1,15.2
-9,Female,Primary,Low,86.7,19.5
-56,Male,Higher,High,78.4,17.4
-9,Female,Primary,High,65.1,5.4
-19,Female,No education,Middle,83.4,19.5
-8,Female,Secondary,Low,109.6,17.7
-54,Male,Secondary,Low,61.5,12.8
-0,Female,Primary,High,88.7,6.1
-16,Male,Secondary,Low,91.9,11.1
-18,Male,No education,High,91.0,13.8
-7,Male,Primary,High,101.0,7.0
-57,Male,Primary,High,99.7,19.9
-55,Female,Secondary,Middle,89.7,15.1
-44,Female,Primary,Middle,91.6,19.9
-38,Female,Higher,High,93.8,17.4
-51,Male,No education,High,103.7,14.5
-38,Male,Primary,Middle,101.5,11.8
-6,Female,Higher,Low,68.1,17.9
-46,Male,Secondary,High,96.2,19.6
-25,Female,Higher,Middle,82.3,6.4
-13,Female,Primary,Middle,73.3,8.2
-4,Male,Primary,Low,108.2,13.9
-37,Male,Secondary,High,72.3,12.3
-30,Female,Secondary,Low,80.1,5.6
-43,Male,No education,High,97.5,8.0
-11,Male,Higher,Middle,95.7,14.6
-41,Female,Primary,Middle,62.5,10.1
-1,Male,Secondary,Middle,81.4,10.9
-8,Male,No education,Middle,84.9,19.0
-37,Male,Primary,Middle,74.4,14.0
-59,Male,Higher,Low,83.8,11.2
-19,Female,Higher,Low,103.9,8.9
-53,Female,Secondary,Low,77.7,15.0
-16,Male,No education,Low,84.6,14.0
-46,Female,Primary,Low,79.4,18.4
-7,Male,Secondary,Low,85.4,13.0
-35,Male,Primary,Middle,64.4,16.7
-28,Female,Primary,Middle,92.6,8.7
-0,Male,No education,Low,102.5,16.4
-33,Female,Primary,Low,61.9,10.3
-46,Female,Primary,Middle,88.0,19.7
-38,Female,No education,High,75.1,14.7
-10,Female,Higher,Low,87.6,16.2
-5,Male,Higher,Middle,66.4,12.2
-59,Female,No education,High,86.9,15.4
-56,Male,Primary,High,89.6,10.0
-34,Female,Secondary,Middle,109.2,13.4
-30,Female,Secondary,Low,68.0,5.9
-2,Female,Primary,Low,101.7,10.5
-43,Female,Primary,High,90.5,15.9
-20,Female,No education,Low,84.1,11.6
-25,Female,Primary,High,86.8,18.4
-4,Male,No education,Middle,79.9,14.3
-9,Male,Secondary,Middle,88.3,5.9
-29,Female,Primary,Low,83.3,18.6
-28,Male,Primary,Middle,102.3,15.4
-17,Female,Primary,Low,97.6,6.0
-53,Female,Higher,High,91.6,9.0
-0,Female,No education,Middle,87.3,9.9
-24,Male,Higher,Low,67.1,18.5
-17,Female,No education,High,65.6,19.9
-40,Female,No education,High,107.0,7.2
-52,Female,Primary,High,81.7,18.5
-53,Female,Secondary,Low,80.9,18.2
-31,Male,Secondary,Middle,78.1,5.9
-2,Male,No education,Low,105.2,7.3
-20,Female,Secondary,Low,76.6,18.8
-0,Female,Higher,High,99.1,12.9
-42,Male,No education,High,81.7,8.5
-29,Female,Primary,Middle,75.3,19.0
-38,Female,No education,Low,62.1,16.1
-0,Female,Secondary,Low,90.8,5.9
-59,Female,No education,High,104.6,9.2
-37,Male,Secondary,Middle,60.3,7.6
-27,Male,Secondary,High,93.0,6.0
-16,Male,Primary,Low,79.9,16.5
-30,Male,Primary,Middle,92.2,11.7
-26,Female,Primary,Middle,89.4,10.8
-31,Male,Higher,High,74.5,18.9
-12,Female,Secondary,Low,61.6,9.6
-21,Female,Primary,High,64.7,13.4
-58,Female,Primary,High,80.6,13.2
-9,Female,Secondary,High,89.7,7.0
-59,Male,Secondary,Low,60.2,5.8
-11,Female,Higher,Middle,94.1,7.6
-58,Female,No education,Low,102.3,17.2
-20,Female,Higher,Middle,107.1,17.5
-19,Male,Primary,High,107.9,15.1
-19,Female,No education,Middle,84.5,9.5
-44,Male,Secondary,High,98.8,17.2
-55,Male,Secondary,Middle,91.9,12.4
-24,Male,No education,Middle,105.7,19.1
-41,Male,No education,High,95.4,14.9
-18,Male,No education,Low,80.1,15.5
-58,Female,Higher,Low,60.4,7.1
-28,Female,No education,Middle,81.2,16.7
-26,Male,No education,High,100.2,18.5
-8,Female,No education,Low,99.7,18.4
-15,Female,Secondary,Middle,69.8,13.2
-23,Female,No education,High,65.8,5.0
-7,Male,No education,Low,101.6,14.1
-10,Male,Secondary,Low,74.1,19.3
-55,Female,No education,High,82.5,8.8
-11,Female,Primary,Middle,74.6,16.6
-35,Male,Higher,Middle,84.7,18.8
-57,Female,No education,Middle,98.0,7.6
-22,Female,Secondary,High,94.7,6.6
-7,Male,Higher,Low,107.7,17.3
-1,Male,Secondary,High,81.7,19.6
-3,Male,Secondary,Middle,107.8,9.6
-19,Male,Secondary,Middle,103.0,19.4
-33,Male,Secondary,Middle,96.0,11.9
-7,Male,Primary,Middle,79.7,9.5
-57,Male,Higher,High,83.4,16.2
-49,Female,Secondary,High,75.1,13.6
-43,Female,Higher,Low,65.4,15.0
-18,Female,Secondary,Low,83.5,16.5
-28,Male,Higher,Low,93.2,10.7
-36,Female,Secondary,High,109.1,5.4
-40,Female,No education,Low,74.0,9.3
-3,Female,Secondary,Middle,92.2,8.9
-50,Female,No education,Middle,72.4,17.9
-51,Female,Primary,Middle,82.8,16.5
-27,Female,Primary,High,107.9,10.3
-10,Female,Higher,High,100.3,17.0
-59,Male,Secondary,Low,62.2,13.4
-20,Female,Higher,Low,89.1,8.1
-56,Female,Secondary,High,90.1,17.4
-24,Female,Secondary,Low,69.9,11.9
-7,Male,No education,Low,74.1,18.0
-25,Female,Primary,Middle,98.8,18.0
-26,Female,No education,Low,98.9,14.9
-15,Male,Higher,Low,71.2,10.2
-36,Male,No education,Middle,83.6,10.0
-38,Female,Primary,Middle,98.0,14.8
-45,Male,Primary,Middle,96.1,17.0
-28,Male,Secondary,Middle,82.2,12.6
-56,Male,Primary,High,83.8,11.6
-29,Male,Higher,Low,109.2,6.4
-34,Female,Higher,Low,90.8,14.2
-43,Female,Secondary,Low,78.0,8.1
-34,Male,No education,Middle,76.1,8.0
-30,Female,Primary,Middle,96.9,14.4
-4,Male,No education,Low,63.1,12.8
-48,Female,Primary,Middle,61.9,16.7
-58,Male,No education,Middle,72.0,10.0
-38,Female,No education,Low,84.4,9.3
-3,Male,Primary,Low,60.6,9.0
-41,Female,Higher,Low,97.6,9.4
-3,Male,Higher,Low,74.4,9.7
-59,Female,Secondary,Middle,60.2,8.3
-49,Male,Higher,High,84.9,9.5
-29,Female,Higher,Low,63.1,5.3
-59,Female,No education,Middle,108.9,5.7
-48,Female,Higher,High,62.3,9.7
-38,Female,Higher,Middle,63.3,7.9
-37,Male,Primary,Middle,89.3,17.3
-10,Female,No education,Low,61.7,11.6
-21,Male,Secondary,Low,78.5,12.5
-24,Female,Secondary,Middle,62.6,13.5
-39,Female,Secondary,Middle,76.9,7.9
-22,Male,No education,High,89.4,10.5
-5,Male,Secondary,High,92.6,15.2
-28,Male,Higher,Low,63.7,5.7
-16,Female,Primary,Middle,78.1,13.8
-4,Female,Primary,Middle,101.3,11.4
-2,Male,Primary,Low,87.3,9.2
-44,Male,Secondary,Low,91.5,19.0
-1,Female,Secondary,High,61.9,10.4
-45,Female,No education,High,72.4,14.0
-21,Female,No education,Low,81.2,16.8
-4,Female,No education,Low,67.7,12.5
-1,Female,No education,Low,70.9,10.5
-31,Male,Higher,High,75.7,7.9
-31,Female,Primary,Low,85.3,14.9
-50,Male,No education,Middle,76.5,5.8
-7,Female,Primary,Low,69.7,19.5
-40,Female,Higher,Low,71.4,16.1
-2,Male,Primary,Middle,85.0,9.3
-54,Female,No education,Middle,99.8,8.5
-56,Female,Higher,Low,77.1,16.1
-28,Male,Higher,Middle,70.5,9.1
-9,Female,Primary,Middle,65.0,18.8
-52,Male,Higher,Low,101.5,14.9
-20,Male,No education,High,63.7,6.9
-2,Female,No education,Low,73.2,9.6
-59,Female,Higher,Low,94.4,7.6
-21,Male,Secondary,Middle,73.5,18.7
-28,Female,No education,Middle,99.9,16.3
-8,Male,Secondary,High,93.6,8.7
-52,Male,Primary,High,91.4,12.9
-43,Male,Higher,Middle,96.1,14.7
-46,Male,No education,Low,100.0,17.4
-42,Male,Secondary,High,79.6,10.4
-54,Female,Secondary,Low,71.0,15.5
-19,Male,Higher,High,89.7,18.6
-7,Female,Higher,High,94.3,8.0
-38,Female,Secondary,High,62.5,18.8
-25,Female,No education,High,71.7,11.6
-41,Male,Higher,Low,95.1,16.5
-43,Female,Secondary,High,80.1,15.8
-29,Male,Primary,High,105.1,7.2
-36,Female,No education,High,66.4,11.1
-18,Female,Higher,High,89.4,15.0
-35,Male,Primary,Low,83.3,9.6
-46,Male,Primary,High,89.6,18.1
-47,Female,Primary,Low,102.8,8.2
-5,Female,No education,Low,106.8,17.2
-36,Female,No education,High,105.4,9.4
-45,Female,Secondary,Low,99.2,14.8
-50,Female,Primary,Middle,86.6,5.1
-7,Male,Primary,High,103.5,14.1
-4,Female,Secondary,Low,83.8,13.7
-40,Female,Secondary,Middle,62.6,9.3
-43,Male,No education,High,109.8,5.3
-59,Female,Secondary,Middle,103.0,6.7
-24,Male,No education,Middle,92.4,18.9
-19,Male,Primary,High,68.0,20.0
-51,Male,Primary,High,106.1,18.2
-14,Male,Higher,High,91.9,18.3
-22,Female,Higher,High,101.3,7.0
-56,Female,Secondary,Low,91.1,8.4
-38,Female,Primary,High,68.0,9.3
-32,Male,Secondary,Middle,92.3,5.9
-42,Male,No education,High,102.8,15.3
-10,Female,Higher,High,104.0,10.5
-34,Male,Primary,High,101.7,17.4
-59,Female,Secondary,High,74.5,7.4
-12,Male,Higher,High,82.2,17.7
-43,Female,Secondary,Low,84.3,10.4
-32,Female,No education,High,81.0,10.5
-50,Male,Primary,High,86.4,16.2
-37,Female,Secondary,High,97.1,9.4
-43,Female,Higher,Middle,80.2,17.6
-32,Male,Primary,Low,80.6,14.1
-47,Female,Secondary,Low,89.7,18.4
-48,Male,Secondary,Low,68.7,15.7
-43,Male,Secondary,Low,71.9,13.9
-29,Female,Secondary,High,96.6,7.5
-39,Female,Primary,Middle,65.4,9.2
-24,Male,Primary,High,81.6,8.6
-47,Male,Secondary,Middle,63.5,17.6
-21,Male,Higher,Middle,83.9,8.8
-29,Female,Higher,Middle,87.1,9.9
-51,Male,Higher,Low,77.7,14.1
-30,Female,Secondary,Low,106.7,10.2
-44,Female,Higher,Middle,66.9,16.5
-27,Male,Primary,High,95.0,10.6
-15,Male,Secondary,Middle,75.2,15.3
-21,Female,Primary,High,94.2,18.1
-5,Male,Primary,Middle,75.0,12.6
-11,Female,Secondary,Middle,83.4,16.3
-50,Male,Secondary,Middle,103.7,11.5
-53,Male,No education,Middle,107.5,5.4
-36,Male,Higher,Low,108.0,18.2
-1,Male,No education,Middle,78.4,11.9
-9,Male,Secondary,Middle,74.0,17.2
-38,Female,Primary,Low,82.3,7.6
-18,Male,No education,High,106.2,6.0
-15,Female,Primary,Low,96.1,13.3
-16,Female,Higher,High,91.0,11.4
-13,Female,Higher,Middle,90.3,6.9
-50,Female,No education,Low,62.5,17.1
-15,Male,Secondary,Low,68.4,11.2
-12,Female,Higher,High,69.1,17.6
-15,Male,Higher,Low,89.5,13.7
-2,Female,Primary,Low,109.9,17.1
-0,Male,Higher,Middle,68.3,17.6
-15,Male,No education,Middle,101.6,5.4
-49,Male,Secondary,High,61.2,9.9
-28,Female,Secondary,High,98.8,7.5
-21,Male,Higher,Low,108.3,5.8
-54,Male,No education,Low,93.2,18.9
-1,Female,Higher,Low,100.1,11.3
-8,Male,No education,Low,96.7,13.2
-50,Male,Higher,Low,104.0,15.4
-2,Male,Higher,Low,68.5,7.4
-44,Female,No education,Low,70.2,12.5
-33,Male,Primary,Middle,77.0,9.0
-57,Male,Higher,Middle,86.8,14.0
-58,Female,Secondary,High,66.1,5.1
-35,Male,Higher,Middle,64.1,17.6
-19,Male,Secondary,High,93.1,18.3
-52,Female,No education,Middle,107.6,14.4
-30,Male,Higher,Middle,72.0,19.6
-7,Female,Higher,Low,103.1,12.9
-59,Male,Secondary,Middle,82.2,7.5
-43,Female,Primary,Middle,85.8,11.2
-42,Male,No education,High,97.7,9.8
-6,Male,Secondary,Low,75.0,11.3
-20,Male,No education,High,96.7,17.0
-1,Male,Secondary,High,66.9,11.8
-1,Female,Higher,High,106.5,9.0
-59,Male,No education,Middle,107.9,15.6
-24,Male,Higher,Low,104.7,10.8
-2,Male,Secondary,High,94.9,15.1
-28,Female,Primary,Middle,100.6,11.9
-33,Male,Secondary,High,73.5,8.3
-24,Female,Primary,Low,106.4,7.9
-18,Female,Higher,High,82.5,13.5
-44,Female,No education,Middle,74.1,15.5
-1,Male,Primary,High,71.1,17.6
-53,Female,Higher,High,94.3,19.2
-52,Male,Primary,Low,60.5,11.0
-10,Male,Secondary,Low,89.0,10.5
-55,Female,Secondary,Low,102.6,14.9
-49,Male,No education,High,95.1,11.8
-14,Female,Primary,Low,76.1,18.1
-18,Male,Primary,High,90.7,12.7
-3,Female,Secondary,High,103.4,16.2
-16,Female,No education,High,108.2,17.6
-33,Male,Primary,Middle,74.1,11.3
-56,Male,Higher,High,77.5,15.9
-54,Female,Secondary,Low,75.7,17.2
-1,Male,No education,Low,91.6,13.6
-37,Male,No education,Middle,78.9,16.7
-45,Male,Primary,Low,60.8,17.3
-49,Female,Higher,Middle,72.3,10.8
-43,Male,Higher,Low,95.0,19.3
-33,Female,Secondary,Low,73.8,14.6
-45,Male,Higher,High,103.1,19.0
-12,Female,Higher,Middle,90.2,9.3
-24,Male,Secondary,Middle,67.7,7.5
-52,Male,Secondary,High,86.9,10.8
-53,Male,Secondary,High,101.3,17.4
-29,Male,No education,Low,64.5,8.4
-59,Female,No education,High,75.0,7.5
-12,Female,No education,High,85.9,8.2
-39,Male,Higher,Low,67.0,17.7
-43,Male,Higher,Middle,71.9,6.5
-52,Female,Primary,Middle,84.6,14.8
-28,Female,Primary,Middle,74.2,13.6
-52,Female,Higher,Middle,76.1,8.5
-50,Female,No education,Low,91.9,17.5
-16,Female,Primary,Middle,73.1,13.8
-47,Female,Secondary,High,100.5,5.6
-56,Male,Secondary,Low,92.0,10.9
-55,Female,Higher,Middle,98.5,11.0
-0,Male,No education,Low,84.6,12.9
-48,Female,Primary,Middle,83.8,11.5
-1,Male,Secondary,High,69.5,13.0
-0,Male,Higher,High,107.8,15.4
-31,Female,No education,High,95.2,6.1
-13,Male,Higher,Low,75.7,8.9
-44,Male,Secondary,High,92.7,11.2
-41,Male,Higher,Low,70.6,7.5
-20,Female,Secondary,Middle,103.7,11.9
-6,Female,Higher,Low,69.3,15.7
-4,Female,Secondary,Middle,85.4,9.8
-41,Female,Primary,Middle,100.9,8.7
-39,Male,Secondary,Middle,109.5,15.5
-7,Female,Primary,High,87.4,5.6
-52,Male,Primary,Low,101.1,19.5
-13,Male,Secondary,High,87.4,13.7
-11,Male,Higher,High,96.5,13.8
-40,Male,Secondary,Low,105.3,15.6
-56,Male,No education,High,108.1,17.2
-11,Female,No education,Middle,88.8,6.1
-36,Female,Primary,Low,81.8,16.4
-39,Male,Primary,Low,109.3,14.9
-10,Male,No education,Low,72.6,11.4
-21,Male,Primary,Middle,109.4,16.9
-55,Female,Secondary,Low,92.7,12.3
-53,Male,Primary,Low,75.2,5.8
-44,Female,No education,Middle,83.5,16.1
-41,Male,Secondary,Middle,81.6,18.5
-59,Male,Secondary,Low,73.2,16.9
-7,Female,Secondary,Middle,106.7,5.4
-33,Male,No education,Middle,104.6,6.0
-45,Female,Higher,Low,81.1,5.9
-55,Female,Higher,Middle,67.4,5.7
-48,Female,Higher,High,86.5,7.7
-38,Female,Primary,Low,97.2,14.0
-8,Female,Primary,Middle,109.9,12.9
-53,Male,Secondary,High,81.1,5.7
-40,Female,Secondary,High,63.4,9.9
-30,Male,Higher,High,72.3,9.8
-30,Female,No education,High,71.0,5.8
-20,Male,Primary,Middle,80.2,19.9
-11,Female,No education,Middle,73.9,13.7
-45,Male,Higher,High,82.2,12.5
-10,Male,No education,High,60.6,13.2
-28,Male,Higher,Middle,79.9,9.0
-15,Female,Primary,High,80.9,8.6
-45,Female,Primary,High,66.5,10.4
-54,Male,Higher,Low,79.8,7.8
-3,Female,Primary,Low,66.5,7.7
-39,Female,No education,High,99.2,12.9
-8,Male,Higher,High,91.6,18.5
-14,Male,Secondary,High,77.0,15.0
-8,Male,Secondary,Middle,82.0,6.6
-27,Female,Primary,Low,84.6,19.4
-17,Male,Secondary,Low,81.8,19.0
-20,Female,Higher,High,61.0,9.6
-50,Male,No education,High,88.2,18.4
-22,Female,Secondary,Middle,98.0,12.8
-24,Male,Secondary,Low,69.6,12.7
-20,Female,Secondary,High,69.3,19.3
-48,Female,Primary,High,63.7,7.9
-18,Male,Higher,Low,83.0,19.7
-1,Male,No education,Middle,103.2,12.8
-24,Female,Secondary,High,86.1,11.8
-50,Male,Primary,Middle,101.8,5.1
-20,Female,Higher,Low,70.9,8.3
-2,Female,Secondary,High,86.0,9.3
-50,Female,Secondary,High,76.8,9.9
-20,Female,Higher,High,82.1,11.3
-7,Male,No education,High,67.5,18.2
-24,Female,Secondary,Low,100.0,6.6
-28,Male,No education,Middle,64.6,16.0
-55,Female,No education,High,64.7,9.7
-19,Male,No education,Middle,60.2,10.1
-0,Male,Higher,Low,73.6,16.7
-51,Female,No education,High,80.8,10.0
-33,Female,Higher,Middle,67.8,15.5
-51,Female,Higher,Low,75.8,15.2
-4,Male,No education,Middle,100.3,17.1
-51,Female,Primary,High,88.0,6.2
-0,Female,Primary,Low,96.7,13.5
-35,Male,Higher,Middle,68.1,11.2
-0,Male,Higher,Middle,108.6,16.5
-39,Female,No education,Middle,63.9,18.0
-46,Female,Secondary,High,60.9,10.8
-45,Female,Primary,Low,62.9,9.3
-28,Male,Secondary,High,91.1,10.4
-26,Female,Secondary,High,84.8,13.9
-11,Female,Secondary,Middle,60.6,6.2
-36,Male,Primary,High,90.8,20.0
-36,Male,Primary,High,96.4,12.8
-44,Female,Higher,High,71.4,18.2
-43,Male,Primary,Middle,95.4,7.1
-14,Female,Higher,Middle,85.5,10.5
-23,Female,No education,Low,79.1,6.8
-22,Female,No education,Middle,69.9,10.9
-55,Male,Primary,Low,81.4,9.3
-40,Female,No education,High,101.4,11.2
-14,Male,Higher,Low,103.5,17.6
-28,Female,Primary,Low,95.8,15.6
-11,Female,No education,High,62.7,12.0
-23,Female,Primary,Low,83.9,12.6
-28,Female,Primary,High,67.8,8.7
-17,Male,Primary,High,81.3,8.9
-55,Female,No education,Low,86.2,7.7
-27,Female,Primary,Middle,77.1,19.9
-49,Female,Higher,High,83.8,16.3
-40,Male,No education,Low,85.5,19.0
-52,Female,Secondary,Low,76.6,13.0
-31,Female,Primary,High,95.4,19.7
-16,Male,Primary,Low,66.9,6.4
-22,Male,Secondary,High,97.1,16.6
-32,Male,Higher,Low,69.2,12.3
-53,Male,Primary,High,85.0,10.0
-31,Female,Primary,High,77.2,17.5
+22,Male,Secondary,Low,70.4,14.4
 30,Female,Higher,High,77.7,7.9
-22,Male,No education,Low,105.5,12.1
-41,Male,Higher,Middle,74.3,7.7
-34,Female,Primary,Low,69.8,15.9
-37,Female,Higher,Middle,72.0,8.8
-8,Female,Primary,High,69.1,6.5
-10,Male,No education,High,86.8,13.7
-25,Male,No education,Low,62.6,9.6
-43,Male,Primary,Middle,101.9,10.2
-58,Male,Secondary,Low,80.8,5.4
-36,Female,Higher,Middle,106.9,8.0
-59,Male,Higher,High,79.6,6.6
-55,Male,No education,Low,80.6,8.4
-29,Female,Primary,High,102.2,14.1
-46,Female,No education,High,63.0,15.8
-26,Male,Higher,High,96.9,14.3
-31,Male,No education,Low,95.0,9.9
-23,Male,Primary,Low,79.6,17.8
-49,Male,Primary,Middle,102.8,9.1
-33,Male,Secondary,Low,105.8,13.0
-46,Male,Secondary,High,105.9,12.6
-53,Male,Higher,High,66.9,8.0
-4,Male,Secondary,Low,82.2,6.5
-18,Male,Primary,Middle,90.1,10.1
-59,Female,Secondary,Low,77.2,12.6
-3,Male,Higher,High,108.9,11.5
-9,Male,Higher,High,95.5,14.6
-37,Male,No education,Low,99.6,19.9
-45,Male,Primary,High,75.0,14.5
-14,Female,No education,Middle,95.3,15.3
-49,Female,Primary,Middle,107.5,19.8
-47,Male,Primary,Low,106.3,17.0
-57,Male,Primary,High,83.3,17.3
-11,Male,Higher,Middle,60.3,8.0
-22,Male,Higher,Low,67.6,19.7
-2,Male,Primary,Middle,99.1,16.9
+11,Female,No education,Middle,88.8,6.1
+19,Female,Higher,Middle,64.8,9.0
+39,Male,Primary,High,95.0,10.6
+56,Male,Secondary,High,65.0,10.3
+44,Male,Higher,Middle,91.7,15.4
+3,Male,Secondary,Low,105.6,17.2
+36,Female,Secondary,High,109.1,5.4
+53,Female,Higher,Low,108.6,14.2
+19,Female,Higher,Low,106.4,15.9
+24,Female,No education,Low,66.6,9.9
 28,Male,Higher,High,78.8,13.8
-9,Female,Higher,High,63.9,7.5
-37,Male,Secondary,High,93.0,9.0
-8,Female,Higher,Middle,80.9,5.5
-30,Female,Secondary,Low,81.8,10.9
-59,Male,No education,Low,84.0,18.4
-4,Female,Primary,High,80.1,12.0
-49,Female,Higher,Low,76.0,14.9
-27,Female,Higher,Middle,91.1,9.0
-48,Male,Primary,High,84.3,15.2
-35,Female,No education,Middle,84.2,7.2
-35,Male,No education,High,68.7,17.3
-10,Male,Secondary,Middle,90.8,18.3
-31,Male,Secondary,High,69.2,8.2
-4,Female,Primary,Middle,70.9,11.7
-13,Male,No education,Middle,90.2,18.7
-10,Male,Primary,Middle,72.6,17.2
-36,Female,Primary,Low,95.6,8.6
-23,Female,Primary,Middle,84.2,17.6
-16,Male,Higher,Middle,71.7,8.5
-9,Female,No education,High,82.9,9.6
-25,Female,No education,Middle,103.7,18.0
-23,Male,No education,Low,61.6,19.9
-35,Female,Primary,Low,94.5,11.0
-22,Male,No education,Middle,72.0,6.8
-10,Female,Secondary,Middle,80.9,18.8
-56,Female,Secondary,Low,62.9,5.1
-48,Female,No education,Low,75.0,5.4
-55,Male,Higher,Middle,75.7,5.8
-32,Male,Primary,Middle,64.9,13.0
-50,Male,Primary,Low,68.2,12.2
-8,Female,No education,Low,85.5,8.1
-8,Male,Secondary,Middle,66.4,18.2
-55,Male,Primary,Middle,109.7,15.6
-56,Female,No education,Low,101.0,17.8
-21,Female,No education,Low,90.1,6.6
-6,Female,No education,High,93.7,13.7
-43,Male,Primary,Low,65.5,6.1
-31,Male,Higher,High,84.1,9.8
-24,Female,Secondary,Middle,89.1,15.9
-21,Female,Primary,Low,74.5,17.3
-3,Male,Secondary,Middle,96.0,12.4
-34,Female,No education,High,70.7,12.4
-28,Male,Primary,High,95.3,15.3
-44,Female,Secondary,Low,89.4,14.1
-30,Male,Primary,Low,105.5,11.3
-37,Female,Primary,Middle,68.3,6.1
-49,Male,No education,Middle,94.7,9.4
-24,Female,Primary,High,60.9,12.4
-4,Female,Higher,Middle,103.3,13.4
-2,Male,Secondary,High,91.3,16.2
-2,Female,Secondary,Low,75.2,10.3
-23,Male,Primary,Low,108.6,13.7
-31,Female,Secondary,Low,78.6,17.5
-32,Male,Secondary,High,87.5,12.3
-57,Female,Higher,Low,83.0,18.6
-50,Male,Primary,Middle,64.8,17.3
-52,Male,Secondary,High,95.1,17.2
-0,Male,Higher,High,100.6,15.3
-52,Male,Primary,High,101.2,13.7
-11,Female,Primary,High,84.2,12.5
-45,Female,Secondary,Low,103.5,5.7
-17,Female,Secondary,Middle,95.6,18.1
+2,Male,No education,Middle,93.3,17.0
 41,Female,Higher,Middle,104.5,10.9
-12,Female,Primary,Middle,107.5,13.1
-42,Female,Higher,Low,71.1,6.0
-37,Female,Secondary,High,64.5,13.5
-5,Male,No education,High,102.5,15.5
-51,Female,Secondary,Low,61.5,11.6
-50,Female,Primary,Low,105.6,18.8
-51,Male,Higher,Middle,103.0,5.5
-0,Male,Higher,High,62.8,19.2
-20,Female,Secondary,High,93.6,19.1
-39,Male,Higher,Middle,97.3,10.0
-58,Male,No education,High,97.7,7.7
-15,Male,Primary,Low,63.8,19.4
-55,Male,Secondary,High,68.6,17.1
-5,Female,Primary,Middle,96.1,17.2
-15,Male,Primary,High,101.1,13.2
-33,Male,No education,High,79.9,17.9
-46,Male,Secondary,Middle,84.2,19.8
-37,Male,No education,Middle,64.5,9.0
-41,Male,Primary,Middle,74.1,10.7
-25,Male,Secondary,High,75.0,6.3
-51,Male,No education,High,65.4,16.6
-52,Female,Secondary,High,91.1,18.6
-24,Male,Secondary,High,68.3,18.2
-29,Female,No education,Low,65.0,7.0
-23,Female,Higher,High,75.5,11.9
-11,Male,Higher,Middle,91.7,16.9
-13,Male,No education,Low,82.0,14.4
-22,Male,Secondary,Middle,107.4,14.5
-56,Male,No education,Middle,97.1,17.5
-55,Male,Secondary,Middle,91.2,11.3
-17,Female,No education,Low,108.6,6.8
-53,Male,No education,Middle,68.2,9.3
-33,Male,Higher,Middle,101.4,15.6
-21,Female,Secondary,Middle,96.9,15.9
-7,Male,Secondary,High,69.4,8.7
-33,Female,Secondary,Low,92.5,11.1
-48,Male,Secondary,High,91.0,17.7
-24,Female,No education,Middle,91.0,18.5
-53,Female,Primary,High,91.3,11.3
-55,Female,Primary,High,82.9,6.5
-24,Male,Secondary,High,109.4,9.6
-25,Female,No education,Middle,103.2,17.8
-20,Female,Primary,Low,73.2,19.4
-34,Female,Higher,Low,87.0,9.6
-35,Male,Higher,Low,72.9,18.6
-29,Male,Secondary,Low,85.8,12.9
-55,Female,Primary,Middle,102.0,13.6
-6,Female,Higher,Low,77.0,19.5
-13,Female,Primary,Middle,64.1,13.7
-56,Male,No education,High,78.6,19.0
-57,Male,Primary,Middle,82.8,7.3
-16,Male,Higher,Low,89.3,11.6
-54,Female,Secondary,Low,97.4,7.8
-5,Female,Primary,High,94.5,11.2
-23,Male,Secondary,High,84.5,13.4
-50,Male,Secondary,Middle,87.6,9.1
-19,Female,Secondary,Low,93.8,15.2
-25,Male,Secondary,Low,68.9,8.6
-50,Female,Secondary,High,92.8,16.3
-5,Female,Primary,Low,79.2,10.6
-0,Female,Secondary,Middle,70.8,12.2
-30,Male,Secondary,Low,65.0,19.0
-21,Male,Higher,High,79.8,14.9
-36,Male,Higher,Middle,66.0,6.3
-15,Female,Primary,Middle,75.6,7.1
-28,Male,Higher,Middle,105.6,19.7
-43,Female,Primary,Middle,65.4,18.8
-6,Female,No education,Middle,104.8,15.2
-59,Female,No education,High,77.9,12.8
-12,Male,Primary,Low,100.7,11.7
-46,Female,Secondary,High,92.6,11.2
-59,Male,Primary,Low,90.7,17.6
-36,Female,Secondary,High,88.8,6.3
-55,Female,Secondary,High,98.5,9.8
-21,Female,Secondary,High,101.9,16.8
+15,Female,Primary,Middle,107.7,16.5
+43,Male,Higher,High,106.3,11.9
+29,Female,Higher,High,70.8,19.8
+47,Male,Higher,Middle,93.9,10.1
+30,Female,Secondary,High,90.8,9.4
+7,Female,Secondary,Middle,61.4,5.8
+39,Female,Higher,Low,77.4,6.7
+40,Female,Higher,Middle,79.4,5.8
+35,Female,Secondary,Middle,102.9,8.0
+55,Female,Higher,Middle,98.5,11.0
+45,Male,Primary,Low,65.3,19.6
+31,Female,Primary,High,60.8,12.8
+18,Female,Higher,High,68.0,6.1
+28,Female,No education,Low,60.2,5.2
+30,Female,No education,Middle,103.9,8.4
+16,Female,Higher,High,61.9,9.4
+1,Male,Higher,Low,99.0,12.9
+2,Male,Secondary,Middle,94.9,18.3
+16,Male,No education,High,104.4,6.8
+22,Female,Higher,High,101.3,7.0
+7,Female,Higher,Low,103.1,12.9
+22,Female,No education,Middle,69.9,10.9
+48,Male,Higher,Middle,74.9,6.1
+30,Female,Secondary,Low,80.1,5.6
+2,Female,Higher,High,94.3,11.1
+21,Male,Secondary,Low,78.6,13.1
+18,Male,Higher,Middle,82.9,17.7
+36,Female,No education,High,66.4,11.1
+41,Male,No education,Low,81.8,8.0
+53,Female,Primary,Low,79.2,9.1
+23,Female,Primary,Middle,84.2,17.6
+37,Male,No education,Low,85.6,5.6
+24,Male,Higher,High,91.9,17.0
 59,Male,Higher,Middle,81.6,17.7
-30,Male,No education,Low,104.0,15.8
-8,Male,Higher,Low,73.6,5.9
-11,Female,Primary,Low,67.5,16.1
-6,Male,No education,High,80.4,19.1
-0,Male,No education,High,65.7,5.7
-25,Female,Primary,Low,93.1,14.1
-54,Male,No education,Middle,97.1,18.8
-43,Male,No education,High,70.4,10.7
-0,Male,Secondary,Middle,60.4,5.7
-17,Male,No education,High,102.5,13.2
-48,Male,Secondary,Low,66.3,19.5
-12,Female,Secondary,Low,87.3,12.7
-10,Female,Secondary,Low,103.4,7.0
-27,Male,No education,Low,109.1,10.1
-7,Female,No education,Low,77.7,12.6
-57,Female,Primary,Middle,67.6,15.9
-42,Female,Secondary,Middle,60.0,19.6
-28,Male,Secondary,Middle,64.6,13.6
-18,Female,Primary,Middle,84.7,13.3
-5,Female,No education,Middle,102.9,11.2
-0,Male,Higher,High,104.1,18.5
-36,Male,No education,High,91.5,7.5
-13,Male,No education,Middle,87.6,19.3
-18,Female,Secondary,High,86.2,19.4
-17,Female,Higher,High,91.0,16.9
-52,Female,No education,Low,95.9,15.1
-10,Male,No education,Middle,98.8,19.4
-0,Female,Secondary,High,64.9,11.9
-57,Female,Primary,High,64.4,18.5
-7,Male,No education,Middle,63.3,8.1
-4,Female,No education,Low,63.8,11.1
-29,Female,Secondary,High,64.2,10.3
-54,Female,No education,High,84.7,14.8
-36,Male,Higher,Low,68.7,12.7
-30,Female,Secondary,High,77.0,6.0
-45,Male,Secondary,High,83.7,19.9
-41,Female,Higher,High,65.3,18.5
-23,Female,Primary,High,73.1,8.4
-51,Male,Higher,Middle,86.7,15.4
-34,Male,Secondary,Low,85.7,9.6
-5,Female,Primary,Middle,71.4,6.6
-15,Female,Primary,Low,96.1,18.6
-9,Female,Secondary,High,84.9,5.3
-15,Female,Primary,High,69.5,19.5
-29,Female,No education,Low,99.7,11.3
-52,Female,Primary,High,88.4,19.1
-18,Female,Higher,Low,109.8,10.9
-17,Male,Higher,High,89.3,13.4
-25,Male,No education,High,99.1,7.0
-2,Female,Secondary,Middle,96.1,13.0
-49,Female,Secondary,High,101.6,6.9
-19,Male,No education,High,72.2,19.1
-44,Female,No education,High,103.2,19.4
-37,Male,Higher,Middle,61.5,5.3
-38,Male,No education,Low,92.3,14.8
-3,Female,Higher,Middle,104.8,13.0
-4,Female,No education,Middle,61.4,5.9
-59,Female,Higher,Middle,71.0,5.4
-54,Male,Secondary,Low,74.9,5.3
-49,Female,Primary,High,63.7,17.4
-38,Male,Higher,Middle,109.6,18.1
-35,Male,Secondary,High,82.3,6.7
-47,Male,Primary,Low,71.8,16.0
-45,Female,Primary,High,98.4,19.3
-20,Female,Secondary,High,95.5,9.6
-59,Female,Higher,Low,66.9,14.2
-44,Male,Secondary,Middle,76.0,9.4
-5,Male,Secondary,Low,94.7,18.8
-56,Male,Secondary,Middle,63.0,10.9
-46,Male,Primary,Low,97.1,15.2
-2,Male,Higher,Middle,91.0,10.7
-40,Male,Higher,Middle,109.7,8.7
-18,Male,Secondary,Middle,107.7,18.9
-9,Female,Higher,Middle,79.7,19.3
-20,Female,Secondary,Middle,88.1,5.4
-41,Female,No education,Middle,94.7,15.1
-16,Female,Higher,Middle,83.0,9.4
-55,Male,Primary,High,74.5,9.2
-21,Female,Primary,High,91.0,9.4
-28,Female,Secondary,Middle,101.4,18.0
-57,Female,Primary,High,104.2,14.5
-17,Female,Secondary,Middle,101.2,5.4
-25,Male,Secondary,Low,95.6,12.3
-23,Female,Secondary,Middle,105.5,8.5
+2,Female,Secondary,High,94.8,5.6
+0,Male,No education,Low,73.6,19.9
+50,Female,Higher,Middle,75.1,18.1
+5,Male,Higher,Middle,65.2,18.9
+28,Male,Higher,Low,63.7,5.7
+6,Male,Secondary,Low,75.0,11.3
+19,Female,No education,High,68.5,12.3
+49,Female,Higher,Middle,103.9,10.8
+40,Male,Secondary,Low,92.6,6.2
+45,Male,Higher,High,88.9,15.6
+17,Female,No education,Low,108.6,6.8
+41,Male,Primary,Middle,74.1,10.7
+56,Female,No education,High,83.8,16.1
+34,Male,Secondary,High,82.6,10.4
+56,Female,No education,Middle,93.8,13.2
+55,Female,Secondary,Low,64.6,10.2
+17,Female,No education,Low,75.2,14.9
+20,Female,Secondary,Middle,96.9,5.5
+3,Female,No education,Middle,92.2,14.8
+5,Female,Secondary,Middle,98.7,18.4
+50,Male,Primary,Middle,101.8,5.1
+52,Male,Primary,High,101.2,13.7
+19,Male,Primary,Middle,79.9,19.3
+28,Male,No education,Middle,64.6,16.0
+57,Female,No education,Middle,105.0,9.2
+20,Male,No education,Middle,81.6,16.4
+52,Male,Primary,Low,107.2,17.4
+9,Male,Higher,Low,91.2,6.9
+57,Female,No education,Middle,61.9,9.5
+23,Female,Secondary,High,81.0,10.9
+2,Female,Secondary,Low,90.1,15.4
 15,Female,Secondary,Low,77.5,12.0
-38,Female,Higher,Middle,61.4,18.3
-41,Female,Secondary,Middle,85.2,6.0
-39,Female,No education,Low,73.5,8.1
-19,Female,No education,Low,69.2,11.0
-14,Male,Secondary,High,72.2,8.5
-40,Male,No education,Low,84.2,17.2
-35,Female,Secondary,Middle,106.8,7.3
-20,Female,No education,High,62.4,18.2
-17,Male,Higher,Middle,98.6,14.8
-39,Male,No education,Low,105.2,15.0
-37,Male,Primary,Middle,60.8,19.0
-28,Female,Primary,High,109.5,10.1
-27,Female,Higher,Middle,79.8,12.6
-14,Male,No education,High,97.5,16.6
-39,Female,No education,Middle,69.0,11.5
-54,Male,No education,High,100.5,16.5
-20,Female,Higher,Low,88.8,5.8
-28,Female,Primary,Middle,61.8,19.9
-59,Male,Higher,Middle,80.9,15.2
-31,Male,Higher,Low,61.1,14.3
-37,Male,Primary,Middle,74.7,12.6
-59,Female,Higher,Middle,71.6,8.3
-18,Male,Primary,Low,92.1,11.7
-4,Male,Higher,High,83.0,12.1
-59,Female,No education,Middle,63.4,11.9
-47,Female,Higher,Middle,71.2,13.5
-45,Male,Secondary,High,107.8,14.7
-56,Male,No education,Low,67.8,17.4
-41,Male,Secondary,Middle,95.2,5.6
-44,Female,Primary,High,92.0,6.4
-54,Male,Secondary,Low,82.9,12.9
-29,Male,No education,Middle,62.4,19.0
-56,Male,Secondary,Middle,76.9,12.7
-55,Male,Primary,High,65.1,5.0
-38,Male,Higher,Middle,90.3,10.0
-42,Female,No education,Low,73.5,12.3
-40,Female,Primary,Middle,72.9,12.2
-36,Male,Secondary,Middle,65.8,8.8
-21,Male,No education,High,61.5,12.7
-31,Male,Secondary,Middle,85.8,14.9
-9,Female,No education,High,81.1,17.5
-53,Female,Higher,Middle,108.5,7.4
+46,Female,Secondary,High,60.9,10.8
+7,Male,Secondary,Low,91.7,16.2
+39,Female,Primary,High,66.2,11.9
+21,Male,Secondary,Low,78.5,12.5
+44,Female,No education,Low,70.2,12.5
+40,Male,No education,Low,85.5,19.0
+38,Female,Higher,Middle,91.5,9.0
+35,Male,Higher,Low,94.3,6.9
+10,Female,Higher,High,100.3,17.0
+58,Male,No education,High,94.8,9.6
+23,Female,No education,High,65.8,5.0
+46,Female,Primary,Middle,88.0,19.7
+59,Female,Higher,High,66.6,5.7
+10,Male,No education,High,72.6,8.0
+22,Male,Secondary,High,97.1,16.6
+28,Male,Higher,High,107.1,7.8
+38,Male,Secondary,High,102.1,17.5
+2,Female,Primary,Low,77.1,19.0
+51,Male,Primary,High,61.1,19.6
+28,Female,Primary,Low,66.4,9.7
+29,Female,Higher,Low,65.6,6.2
+13,Female,Primary,Middle,73.8,13.1
+42,Male,Primary,High,75.4,15.6
+34,Male,Higher,High,107.9,5.1
+27,Female,Higher,Middle,102.4,18.2
+21,Male,No education,Low,95.3,16.4
+59,Female,No education,High,77.2,18.1
+11,Female,Higher,Middle,67.8,8.7
+27,Female,Higher,Middle,91.1,9.0
+31,Male,Primary,High,76.0,14.6
+59,Male,No education,Middle,107.9,15.6
+25,Male,Secondary,High,86.2,18.4
 24,Female,Secondary,Middle,73.3,11.0
+58,Female,No education,Low,86.7,18.8
+54,Female,Secondary,Low,97.4,7.8
+35,Male,Primary,High,67.6,7.2
+53,Male,Secondary,High,81.1,5.7
+50,Female,No education,Middle,80.6,16.8
+37,Male,Secondary,High,72.3,12.3
+54,Female,Secondary,Middle,93.4,5.8
+22,Female,Secondary,Low,84.6,11.2
+12,Male,Secondary,Middle,71.8,16.2
+7,Male,No education,Low,74.1,18.0
+0,Female,Secondary,Middle,70.8,12.2
+48,Female,Primary,Low,106.1,17.3
+31,Male,No education,High,103.6,9.1
+5,Male,Higher,Middle,66.4,12.2
+26,Male,Primary,Middle,72.3,18.1
+31,Male,Higher,Middle,84.1,19.2
+59,Female,Higher,Low,63.6,7.9
+40,Male,Higher,High,65.0,19.7
+20,Male,No education,Middle,83.8,18.9
+31,Male,Higher,Low,61.1,14.3
+8,Male,Primary,Middle,67.7,12.4
+4,Female,Primary,Middle,101.3,11.4
+8,Male,Secondary,Middle,66.4,18.2
+0,Male,Secondary,Middle,60.4,5.7
+48,Female,Primary,Middle,83.8,11.5
+57,Female,Higher,Middle,83.3,17.0
+14,Female,No education,Low,83.7,9.7
+51,Female,Secondary,Low,95.1,9.6
+27,Male,Primary,High,85.5,10.3
+27,Male,No education,Low,109.1,10.1
+26,Male,No education,High,94.7,10.1
+13,Male,No education,Middle,108.9,8.5
+1,Female,Higher,Low,70.6,12.3
+19,Male,Higher,Low,83.4,14.3
+52,Male,No education,High,93.3,15.4
+24,Female,No education,Low,104.2,9.7
+43,Female,Secondary,High,80.1,15.8
+27,Male,Primary,High,61.9,8.1
+22,Female,Secondary,Middle,98.5,6.6
+20,Female,No education,Low,84.1,11.6
+20,Male,No education,Middle,103.2,18.0
+45,Male,Higher,High,89.6,8.8
+7,Male,No education,Middle,109.1,6.5
+59,Male,Primary,Low,100.8,9.9
+47,Male,Secondary,High,73.6,15.5
+3,Male,No education,High,70.5,9.0
+45,Male,Secondary,Middle,73.7,16.8
+59,Male,Primary,High,81.5,19.2
+8,Male,No education,Low,96.7,13.2
+37,Male,No education,Low,99.6,19.9
+44,Female,Secondary,Low,89.4,14.1
+27,Male,Secondary,Low,61.0,15.7
+5,Female,Higher,Middle,70.4,16.4
+24,Male,No education,Low,60.3,14.5
+5,Female,Secondary,Low,91.0,5.5
+5,Male,No education,Middle,90.9,10.0
+46,Male,Higher,Low,75.1,15.1
+56,Female,No education,High,72.1,10.8
+5,Male,Primary,Middle,80.4,12.8
+24,Male,Secondary,Low,63.4,19.9
+55,Male,Secondary,Middle,94.8,11.4
+45,Female,No education,High,85.3,15.0
+12,Male,Primary,High,91.6,18.1
+39,Male,Primary,High,90.9,13.7
+4,Female,No education,Middle,61.4,5.9
+14,Male,Primary,Low,100.7,10.2
+47,Male,Secondary,Middle,105.5,13.0
+9,Male,Secondary,Low,63.1,15.7
+1,Male,Primary,Low,87.2,14.4
+42,Female,Higher,Low,104.7,18.1
+56,Male,Primary,High,81.5,14.9
+5,Male,Higher,Low,70.1,19.8
+55,Male,Higher,High,99.4,13.2
+40,Male,Higher,High,80.0,15.5
+0,Male,No education,High,87.5,13.0
+10,Male,Secondary,High,101.0,7.2
+27,Male,Primary,Low,103.0,5.2
+16,Female,Primary,Middle,71.8,17.7
+8,Female,No education,High,102.6,10.8
+16,Female,Primary,High,83.2,13.8
+41,Male,Higher,Low,60.8,13.5
+27,Male,Secondary,High,93.0,6.0
+42,Male,No education,High,97.7,9.8
+51,Male,No education,High,65.4,16.6
+16,Female,Higher,High,91.0,11.4
+29,Male,Secondary,High,65.9,15.0
+16,Female,Secondary,High,97.9,11.5
+22,Male,No education,High,92.1,7.4
+10,Male,Primary,Low,104.4,6.6
+30,Male,Secondary,High,65.6,6.5
+57,Male,Primary,High,92.5,13.8
+29,Female,Higher,Low,63.1,5.3
+41,Male,Secondary,Low,80.0,5.6
+43,Male,Primary,Low,88.2,12.8
+39,Female,No education,Low,73.5,8.1
+55,Male,Primary,Middle,86.8,7.9
+28,Male,Higher,High,88.5,18.6
+45,Male,Higher,Low,94.3,13.5
+38,Female,Higher,High,93.8,17.4
+25,Male,Primary,Middle,63.0,9.1
+13,Male,Secondary,High,108.3,12.3
+25,Female,Secondary,Middle,107.5,14.4
+2,Male,No education,Low,69.0,9.4
+52,Male,No education,High,72.3,16.1
+52,Female,Higher,Low,86.9,16.1
+24,Male,Secondary,High,100.3,11.3
+13,Male,No education,Middle,82.1,13.1
+7,Female,Primary,Middle,84.6,7.2
+55,Female,No education,High,105.9,5.9
+8,Female,Primary,Middle,109.9,12.9
+20,Male,Primary,Low,64.6,18.3
+0,Male,No education,Low,102.5,16.4
+11,Female,Higher,Low,101.5,12.0
+48,Male,Higher,High,100.4,12.7
+14,Female,Primary,Low,68.3,10.5
+12,Female,Secondary,Low,81.4,8.3
+11,Male,Primary,Low,65.6,16.2
+50,Female,No education,Low,74.5,6.1
+8,Male,No education,Low,84.4,13.0
+6,Female,No education,Middle,91.6,10.9
+43,Male,Higher,Middle,96.1,14.7
+24,Female,Primary,High,60.9,12.4
+24,Male,Primary,Low,83.1,17.4
+58,Male,No education,High,83.4,9.1
+36,Male,Higher,Low,108.0,18.2
+58,Male,Primary,High,84.2,16.5
+4,Male,No education,High,94.2,14.7
+37,Female,Secondary,Low,67.2,19.5
+15,Male,Primary,Low,71.1,15.9
+1,Female,No education,Middle,83.8,11.4
+2,Male,Primary,Middle,99.1,16.9
+8,Male,Secondary,High,103.5,14.9
+29,Female,Higher,High,107.4,16.6
+54,Female,Secondary,High,74.4,11.6
+29,Female,Higher,Middle,97.2,12.0
+22,Male,No education,Low,105.5,12.1
+40,Male,Higher,Middle,79.0,19.8
+49,Female,Primary,Middle,76.7,14.0
+39,Female,Primary,Low,108.3,9.1
+51,Male,Primary,High,106.1,18.2
 37,Female,Primary,High,80.0,14.9
-36,Female,No education,Low,80.4,13.3
-52,Male,Primary,Middle,65.1,6.8
-8,Female,Higher,Middle,106.4,10.5
-14,Female,No education,Low,98.6,19.9
-21,Female,Primary,Low,92.5,18.0
-56,Female,No education,High,65.9,14.9
+59,Male,Secondary,Middle,82.2,7.5
+19,Male,Higher,Low,76.9,18.7
+58,Male,Higher,High,96.6,18.2
+38,Female,Higher,Middle,66.8,18.0
+38,Male,Higher,High,93.8,6.3
+8,Female,Secondary,Middle,91.0,16.6
 14,Male,Higher,Middle,104.8,6.1
 34,Male,Secondary,High,62.3,9.8
-11,Male,Secondary,Middle,102.8,14.9
-0,Male,Higher,Middle,105.4,9.8
-58,Female,Primary,Middle,100.5,13.8
-36,Female,Primary,High,105.1,10.5
-33,Female,Primary,High,109.7,7.9
+55,Female,Higher,Middle,67.4,5.7
+46,Male,Primary,Low,81.7,19.5
+2,Female,Primary,High,78.8,15.8
+4,Male,No education,Middle,100.3,17.1
+58,Female,No education,Middle,109.4,16.6
 52,Male,Higher,Low,92.6,11.5
-22,Male,No education,Middle,86.9,7.9
-54,Female,Primary,Middle,75.1,15.2
-5,Male,Secondary,Low,108.3,7.9
-55,Male,Higher,Low,71.0,10.3
-21,Female,Primary,High,86.5,7.7
-26,Female,Primary,Low,68.6,8.1
-21,Male,Higher,Middle,76.5,13.8
-18,Female,Primary,Low,76.6,16.4
+45,Female,Primary,High,66.5,10.4
+20,Male,No education,Middle,60.9,19.0
+9,Male,Higher,Low,86.9,19.1
+21,Male,Higher,High,79.8,14.9
+56,Female,Primary,Middle,107.4,6.5
+57,Male,No education,Middle,103.5,5.5
+43,Male,Higher,Middle,89.1,13.9
+34,Female,Higher,Low,90.8,14.2
 33,Female,Higher,High,94.1,9.5
-56,Male,Secondary,Low,85.1,10.0
-0,Female,Secondary,Middle,89.7,6.5
-32,Male,Secondary,Middle,68.7,11.4
-49,Male,Secondary,Middle,83.9,11.4
-18,Male,Higher,High,71.6,12.3
-12,Male,Higher,Middle,101.5,12.9
-44,Male,Secondary,High,79.2,18.3
-7,Male,Secondary,High,104.6,6.4
-0,Female,No education,Low,68.8,17.6
-2,Male,Secondary,Low,85.8,12.9
-47,Male,No education,High,104.0,19.8
-17,Female,No education,Low,79.9,18.9
-37,Male,Higher,High,105.8,6.9
-3,Male,Primary,Low,109.4,12.7
-20,Female,Primary,Middle,65.1,12.9
-55,Male,No education,High,97.2,8.0
-19,Male,Higher,Low,83.4,14.3
-57,Female,Higher,High,95.8,6.6
-53,Male,Primary,High,66.6,7.6
-2,Female,No education,Low,86.6,18.4
+28,Female,Primary,High,109.5,10.1
+55,Female,No education,Low,91.1,10.7
+32,Male,Primary,Middle,106.9,10.8
+14,Female,Higher,Middle,85.5,10.5
+12,Male,No education,High,91.9,12.7
+48,Male,Higher,Low,71.5,9.7
+14,Female,No education,Low,82.1,19.5
+49,Female,No education,High,81.4,7.0
+59,Female,Secondary,High,104.1,11.3
+2,Female,Primary,High,106.1,8.6
+12,Male,Higher,Middle,89.9,6.0
+17,Male,Primary,Low,109.3,12.6
+35,Male,Secondary,Low,89.6,6.3
+41,Male,Higher,Low,105.4,13.2
+27,Male,Higher,Low,67.3,10.2
+40,Male,Primary,Low,102.2,9.5
+21,Male,Primary,Middle,109.4,16.9
+40,Female,Secondary,High,99.9,15.7
+35,Male,Higher,Low,91.0,7.4
+35,Female,Secondary,Middle,106.8,7.3
+36,Male,Higher,High,72.3,11.0
+28,Male,Secondary,Middle,82.2,12.6
+10,Male,Higher,Low,77.4,8.7
+53,Female,Higher,Middle,96.4,16.4
+24,Male,Higher,Low,107.5,5.9
+25,Male,Primary,High,66.6,16.3
+9,Male,No education,Low,91.6,6.6
+34,Female,No education,Middle,66.7,17.5
+51,Male,Primary,Middle,95.2,9.3
 21,Male,Primary,High,61.0,12.5
-14,Female,No education,Middle,88.2,15.2
-3,Female,No education,Middle,97.6,13.4
-1,Female,Secondary,Low,86.0,9.8
-20,Male,Secondary,High,108.4,14.2
-32,Female,Higher,Middle,97.3,16.7
-14,Female,Primary,Low,68.0,5.9
-2,Female,Primary,Middle,106.8,6.0
-54,Male,Secondary,High,72.3,14.6
-28,Female,No education,Middle,60.7,18.2
-9,Female,Secondary,Low,65.8,7.8
-44,Female,Higher,High,80.6,16.1
-34,Female,Secondary,Middle,63.2,6.2
-11,Female,Higher,Low,68.1,10.2
-27,Male,Primary,Middle,97.4,5.7
-52,Female,Primary,High,104.9,7.5
-56,Female,No education,Low,96.7,7.3
-1,Female,Secondary,Low,91.0,7.2
+56,Male,Primary,Low,90.0,11.2
+11,Male,No education,Low,76.0,9.2
+16,Male,Primary,Low,66.9,6.4
+24,Female,Primary,Low,65.6,11.3
+31,Male,Higher,Middle,72.4,6.4
+7,Male,Primary,Low,89.4,19.7
+49,Female,Secondary,Middle,87.7,8.3
 30,Male,Primary,Low,101.6,6.8
-35,Male,No education,Middle,93.3,15.5
-49,Female,Secondary,Middle,85.2,11.4
-34,Male,Higher,High,92.4,14.4
-47,Male,Higher,High,83.6,9.7
-28,Male,Higher,High,72.5,12.9
-7,Female,Higher,Low,78.5,7.9
-15,Male,No education,High,103.7,13.9
-8,Male,Primary,Middle,109.9,5.4
-34,Female,Secondary,Low,82.8,16.4
-53,Female,No education,Middle,65.2,18.4
-28,Female,Higher,Middle,85.9,6.9
-16,Female,No education,High,84.4,6.3
-12,Female,Primary,High,107.5,15.6
-45,Female,Higher,Middle,75.7,9.5
-52,Female,No education,Low,105.4,14.5
-32,Male,Secondary,Middle,67.9,9.2
-54,Male,Higher,High,100.3,15.3
-39,Female,Secondary,Low,86.3,19.4
-26,Female,Higher,Middle,86.8,12.6
-38,Male,Primary,High,61.6,15.8
-27,Female,Higher,High,64.0,12.8
-52,Male,Primary,High,95.4,19.6
-26,Male,Primary,Middle,80.0,8.8
-21,Male,Secondary,Low,60.2,15.8
-52,Female,Secondary,Middle,65.0,9.5
+51,Female,Primary,High,88.0,6.2
+33,Female,Primary,Middle,89.2,17.3
+58,Female,Higher,High,63.1,15.5
+17,Male,Primary,Low,71.7,19.7
+41,Female,Secondary,Middle,66.2,5.1
+8,Female,Primary,Middle,64.6,16.1
+33,Male,No education,Middle,101.2,19.8
+24,Female,No education,High,101.7,9.6
+29,Female,Higher,High,104.2,9.2
+38,Female,Primary,Low,82.3,7.6
+28,Female,Primary,Low,95.8,15.6
+53,Male,Secondary,High,101.3,17.4
+0,Female,Secondary,Middle,89.7,6.5
+55,Male,Secondary,Low,98.2,8.0
+26,Male,Higher,High,96.9,14.3
 17,Male,Higher,High,78.6,18.8
-26,Female,Primary,Middle,92.1,7.9
-14,Male,Secondary,High,72.3,13.8
-2,Male,Primary,High,100.1,11.2
-56,Female,Higher,Low,73.1,19.5
-7,Male,No education,Middle,109.1,6.5
-20,Male,Primary,Middle,107.0,8.4
-48,Female,Primary,Low,106.1,17.3
-49,Female,Secondary,Low,102.2,14.9
-30,Female,Secondary,High,102.0,9.6
-30,Female,Secondary,High,90.8,9.4
-39,Male,Primary,Middle,64.4,9.8
+19,Female,No education,Low,69.2,11.0
+42,Male,Higher,High,82.6,5.3
+37,Female,Higher,Middle,72.0,8.8
+16,Female,Primary,High,89.7,7.2
+6,Male,No education,Middle,100.5,19.5
+18,Female,No education,High,82.5,8.0
 40,Female,Secondary,Middle,77.1,15.7
-59,Female,No education,High,76.6,18.7
-51,Female,Secondary,Middle,71.3,8.3
-33,Female,No education,Low,66.2,7.5
-44,Male,Higher,Low,107.4,18.5
+19,Male,Secondary,High,93.1,18.3
+54,Male,Higher,Middle,83.3,11.4
 52,Female,Higher,Middle,87.8,18.1
-37,Female,Secondary,Low,67.2,19.5
-42,Female,Higher,Middle,102.6,16.6
-0,Male,Higher,Middle,90.5,17.0
-17,Male,Secondary,High,92.8,19.8
-33,Male,Secondary,Middle,64.9,8.2
-25,Female,No education,High,104.6,9.6
-33,Female,Secondary,High,62.9,7.8
-57,Female,Primary,Middle,89.3,12.4
-19,Male,Higher,High,74.2,12.6
+14,Female,No education,Low,98.6,19.9
+48,Male,Higher,Middle,91.6,7.6
+57,Male,Higher,High,83.4,16.2
 0,Female,Secondary,Middle,105.9,10.5
-23,Female,Secondary,High,79.4,10.1
-10,Male,Higher,Low,74.1,17.0
-22,Female,No education,Low,86.0,5.5
-14,Male,Primary,Low,102.5,8.1
-35,Female,Secondary,High,95.7,11.6
-11,Female,Primary,Middle,105.1,12.5
-47,Female,No education,Low,82.9,9.2
-38,Male,Primary,High,92.4,16.3
-1,Female,No education,Middle,64.1,18.8
-39,Male,No education,High,87.5,14.7
-34,Male,Higher,Middle,94.9,18.8
-52,Female,Secondary,High,81.9,20.0
+45,Female,Higher,Low,81.1,5.9
+17,Female,Secondary,Middle,102.9,14.0
+14,Male,Secondary,Middle,69.1,9.7
+43,Female,No education,High,60.7,19.8
+33,Male,Higher,Middle,93.8,12.0
 7,Male,No education,Low,73.1,15.2
 25,Female,Primary,High,67.5,7.6
-0,Female,Secondary,Low,90.1,9.8
-31,Male,Primary,Middle,93.1,7.7
-14,Male,Primary,High,67.7,18.5
-22,Male,Higher,Low,64.6,11.8
 33,Female,No education,High,61.1,5.5
-42,Female,Secondary,Middle,82.0,14.8
-50,Female,Secondary,High,62.3,8.0
-37,Male,No education,Low,85.6,5.6
-49,Female,No education,High,81.4,7.0
-59,Male,Primary,High,81.5,19.2
-31,Female,Secondary,Low,65.4,13.2
-24,Female,Higher,Low,69.7,14.3
-0,Male,No education,High,78.9,7.4
-46,Female,Primary,Middle,62.3,18.8
-58,Male,Secondary,Low,76.3,11.4
-16,Male,Secondary,Middle,109.5,13.0
-23,Male,Higher,Middle,94.0,18.4
-10,Male,Primary,Middle,79.2,18.6
-38,Female,Secondary,Middle,62.5,13.6
-20,Male,No education,Low,75.0,17.0
-43,Male,Higher,Low,82.9,6.4
-22,Male,No education,High,69.9,7.2
-14,Female,No education,Low,95.2,17.8
-12,Female,Primary,Low,98.2,17.7
-59,Male,Primary,Middle,106.9,16.7
-31,Male,Primary,Low,63.0,12.4
-48,Female,Secondary,High,91.8,5.6
-8,Female,Primary,Low,94.7,10.2
-26,Female,Secondary,Middle,78.9,9.5
-17,Male,Higher,Middle,75.8,7.8
-24,Female,Primary,Middle,80.9,16.5
-59,Male,Secondary,Middle,104.2,5.0
-43,Male,No education,Middle,77.2,13.9
+33,Female,Secondary,High,63.0,16.9
+46,Female,Secondary,Middle,60.2,14.6
+4,Male,Secondary,Low,61.8,17.5
+44,Female,No education,High,67.4,15.2
+16,Male,Higher,Low,86.1,11.8
+3,Male,Primary,Middle,100.8,10.1
+21,Female,Primary,Middle,91.5,19.0
+21,Male,No education,High,61.5,12.7
+14,Female,Secondary,Middle,97.5,9.3
+17,Female,Primary,Low,97.6,6.0
+40,Female,No education,High,107.0,7.2
+41,Male,Primary,Middle,77.9,16.0
+35,Male,Secondary,Middle,86.1,14.0
+47,Female,Higher,Middle,92.7,6.2
 26,Female,Primary,High,65.3,8.2
-55,Female,Secondary,Middle,104.9,17.2
-37,Female,Primary,Middle,64.0,6.6
-19,Female,Higher,High,109.3,15.1
-27,Male,Secondary,Middle,102.7,16.6
-8,Female,Primary,Middle,64.6,16.1
-32,Female,No education,High,90.7,15.2
-11,Female,Secondary,High,80.6,9.3
-22,Female,Higher,Middle,75.3,19.0
-52,Female,Higher,Low,73.7,13.9
-57,Male,Primary,High,85.4,11.5
-52,Male,No education,Middle,96.3,13.9
-14,Female,No education,Low,73.1,10.9
+32,Female,Primary,Middle,61.5,6.4
+37,Male,Higher,High,68.5,15.9
+59,Female,Primary,High,86.9,8.1
+24,Female,No education,Middle,91.0,18.5
 17,Female,No education,Low,69.4,14.2
-40,Male,Higher,High,66.3,10.2
-22,Male,Higher,High,108.0,12.7
-39,Female,No education,Middle,62.1,9.9
-53,Female,Higher,Middle,96.4,16.4
-40,Female,Primary,High,86.0,7.5
-11,Male,Primary,High,70.9,13.3
-14,Female,Secondary,Middle,79.6,12.5
-51,Female,Primary,Low,60.4,16.9
-40,Male,No education,Middle,71.2,8.3
-28,Male,Higher,Low,86.9,18.3
-41,Male,Secondary,Low,80.0,5.6
-1,Female,Higher,Low,80.2,14.1
-17,Male,Primary,Middle,61.4,10.8
-19,Female,No education,High,73.5,12.2
-21,Male,Secondary,Low,85.6,12.5
-40,Male,Higher,Low,106.0,18.1
-33,Female,Primary,High,93.1,12.6
-31,Female,Higher,Low,76.1,5.6
-29,Male,Higher,Middle,76.8,7.1
-48,Male,No education,Middle,63.7,6.0
-21,Female,Higher,High,105.7,8.0
-48,Female,Higher,Middle,87.5,7.7
-17,Female,Secondary,Low,100.7,8.2
-43,Male,Secondary,Low,97.1,5.4
-25,Female,Secondary,Low,98.2,5.3
-32,Female,Secondary,Low,92.2,9.8
-53,Female,No education,Low,78.6,9.4
-37,Female,Primary,High,76.5,19.8
-13,Female,Primary,Middle,96.4,19.6
-38,Female,Higher,High,64.6,17.9
 5,Female,Primary,Middle,98.9,13.7
-0,Female,No education,Low,66.0,13.9
-44,Male,Higher,Low,81.7,12.0
-58,Male,Secondary,Middle,68.6,6.2
+32,Male,Primary,Low,80.6,14.1
+39,Female,No education,Middle,62.1,9.9
+47,Female,Higher,Low,60.2,12.8
+43,Male,Secondary,Middle,90.7,19.0
+16,Female,No education,Low,71.9,11.2
+38,Female,Higher,Middle,85.6,12.3
+19,Female,No education,High,73.5,12.2
+6,Male,No education,Middle,75.7,9.6
+48,Male,Secondary,Low,66.3,19.5
+20,Male,No education,Low,75.1,15.5
+48,Male,No education,Middle,63.7,6.0
+30,Male,No education,Low,104.0,15.8
+56,Male,No education,Middle,97.1,17.5
+45,Female,No education,Low,97.9,13.4
+44,Female,No education,Middle,108.4,10.5
+32,Female,Secondary,Low,92.2,9.8
+35,Male,Primary,Low,91.7,15.7
+18,Male,Higher,Middle,100.9,12.8
 34,Female,Primary,Middle,78.5,14.2
-19,Female,No education,High,79.2,19.6
-49,Male,Higher,Low,82.3,10.4
-50,Female,Secondary,Low,88.8,18.7
-46,Male,Primary,Middle,108.2,7.9
+27,Male,No education,Middle,83.4,12.9
+8,Male,No education,Low,86.3,9.6
 45,Female,Primary,High,106.8,14.5
-24,Female,Primary,Middle,65.1,6.2
-5,Female,No education,Middle,97.5,8.2
-29,Female,Higher,Middle,87.6,15.5
-56,Male,Primary,Low,89.5,15.9
-25,Female,No education,Middle,86.7,17.5
-53,Female,No education,High,60.1,18.7
-51,Male,Secondary,Middle,77.8,7.3
+8,Female,Secondary,Low,100.8,13.0
+12,Female,Primary,Middle,107.5,13.1
+25,Female,Primary,Low,95.3,11.9
+11,Female,Primary,High,83.2,11.6
 29,Female,Higher,Low,71.7,9.4
-5,Female,Higher,High,82.6,8.1
-56,Female,Secondary,Low,91.4,12.2
-1,Male,Secondary,Low,91.0,19.3
-43,Female,Higher,Middle,72.8,10.4
+23,Male,Primary,Middle,94.4,18.4
+56,Female,No education,High,65.9,14.9
 48,Male,No education,High,79.8,18.6
 14,Male,Higher,Middle,77.8,9.4
 43,Female,No education,High,84.9,14.3
-59,Female,Secondary,Low,89.5,18.5
-26,Female,Secondary,High,108.7,12.1
-54,Male,Secondary,High,106.2,17.2
-25,Male,Higher,Low,99.3,13.9
-45,Male,Secondary,Low,77.7,9.6
-39,Female,Secondary,High,69.3,19.3
-32,Female,Higher,Low,102.6,18.5
-44,Male,No education,Low,88.3,15.4
-21,Male,Higher,Middle,97.5,17.8
-11,Female,Higher,Middle,77.0,8.9
-47,Female,Secondary,High,60.3,18.4
-52,Male,No education,High,76.9,6.5
-33,Male,Secondary,Middle,60.5,17.1
+2,Male,Secondary,Low,96.2,12.1
+4,Female,Secondary,Low,92.8,7.6
+50,Female,No education,Low,62.5,17.1
+23,Female,Secondary,Low,79.6,10.9
+40,Male,Secondary,Low,79.0,12.9
+50,Male,Primary,Low,68.2,12.2
+3,Female,Secondary,Middle,92.2,8.9
+38,Female,Secondary,High,95.0,15.0
+10,Female,Higher,Low,60.5,17.5
+13,Male,No education,Low,66.1,17.7
+20,Female,Primary,Middle,65.1,12.9
+36,Male,No education,Low,107.8,17.4
 18,Female,No education,Middle,78.7,5.6
-3,Male,Primary,High,72.9,6.1
-45,Female,Higher,High,74.7,9.8
-29,Male,Primary,Low,109.9,10.8
-43,Female,Secondary,High,108.4,12.2
-38,Male,Secondary,Middle,75.6,9.1
-33,Male,Primary,High,75.5,16.2
-38,Female,No education,Low,109.0,6.1
-15,Male,Secondary,High,103.2,9.1
-24,Female,Primary,High,90.2,8.9
-55,Male,No education,Low,83.8,7.8
-45,Male,No education,High,99.6,13.5
-36,Male,No education,Low,96.0,6.9
-12,Male,Primary,Middle,90.5,13.7
-9,Male,Higher,Low,91.2,6.9
-27,Female,Secondary,Middle,61.7,8.6
-18,Female,Primary,Middle,78.7,14.0
-38,Male,Secondary,High,109.3,13.2
-7,Female,Secondary,Low,102.9,14.6
-3,Female,Secondary,High,105.6,14.8
-53,Male,Secondary,Middle,103.8,13.3
-41,Male,Secondary,High,70.2,12.7
-50,Male,Primary,Low,98.3,6.8
-3,Male,Higher,High,103.3,13.0
-53,Female,No education,Low,106.5,12.2
-3,Female,Higher,Low,76.0,5.1
-15,Male,Secondary,Middle,88.5,15.4
-21,Female,Primary,High,73.3,19.0
-17,Male,Primary,Low,87.8,6.9
-15,Female,No education,Low,72.0,9.5
-53,Female,Secondary,Low,60.9,11.3
-23,Male,Secondary,Middle,100.8,16.9
-33,Female,Higher,High,109.8,6.6
-22,Female,No education,Middle,75.3,15.5
-16,Female,Primary,Low,101.2,15.0
-4,Female,Primary,High,98.4,11.9
-46,Female,Higher,High,66.2,18.8
-24,Male,Secondary,Middle,87.9,11.7
-41,Male,Primary,High,72.2,8.3
-9,Female,Primary,Middle,107.9,13.9
-34,Male,Higher,High,69.3,19.3
-10,Male,No education,Middle,99.9,10.9
-11,Male,Primary,Low,67.2,9.5
-32,Female,Secondary,Low,80.4,19.6
-55,Male,Primary,Low,86.2,15.6
-32,Male,Secondary,Middle,76.7,14.9
-53,Female,Primary,Low,89.2,11.9
-35,Female,No education,Middle,97.3,7.5
-25,Male,Primary,High,66.6,16.3
-29,Male,Higher,Middle,90.6,16.6
-7,Female,Primary,Low,67.3,11.6
-50,Male,Secondary,Middle,107.4,9.4
+2,Male,Secondary,High,106.2,6.7
+11,Male,Higher,Middle,82.0,14.0
+52,Male,No education,Middle,96.3,13.9
+51,Male,Higher,Low,92.3,5.0
+1,Female,Secondary,Low,86.0,9.8
+28,Female,Secondary,Low,91.3,7.3
+33,Female,Secondary,Middle,68.1,9.2
+2,Female,No education,Low,83.0,13.0
+58,Female,Higher,Middle,108.5,18.2
 4,Male,Primary,Low,79.8,6.3
-3,Female,No education,Low,77.9,8.9
-29,Male,No education,Middle,109.4,18.5
-58,Male,Higher,Middle,63.0,10.3
-52,Male,Higher,Low,94.2,11.7
-40,Male,No education,Middle,89.1,10.3
-31,Male,Secondary,Low,62.9,9.4
-47,Female,Higher,High,75.0,14.6
-58,Female,Primary,High,69.7,12.6
-9,Male,Primary,High,99.1,9.7
-58,Female,No education,High,86.5,11.5
+18,Female,Primary,Middle,78.7,14.0
+56,Female,No education,Middle,90.9,5.1
+53,Female,Secondary,Low,60.9,11.3
+22,Male,Higher,Low,67.6,19.7
+59,Female,No education,High,86.9,15.4
+59,Male,Secondary,Low,73.2,16.9
+15,Female,No education,Low,93.0,19.3
+20,Male,No education,High,84.2,12.2
+46,Female,Secondary,High,81.7,15.3
+34,Male,Secondary,High,92.0,9.4
+15,Female,No education,Low,72.0,9.5
+53,Male,No education,Middle,68.2,9.3
+25,Male,Secondary,Low,95.6,12.3
+6,Male,Secondary,Middle,97.1,10.7
+30,Female,Primary,Middle,73.9,18.7
+27,Female,Secondary,Low,80.4,5.2
+27,Female,Higher,Low,88.6,19.7
+11,Female,No education,Low,108.0,12.9
+37,Male,Primary,Low,99.4,6.8
+51,Male,Higher,High,72.1,17.6
+11,Female,Primary,Middle,105.1,12.5
+47,Male,Higher,Middle,105.9,7.3
+34,Female,Primary,Low,106.6,18.9
+55,Female,Secondary,Low,108.1,5.5
+11,Male,Higher,Middle,103.9,9.3
+46,Female,Primary,High,68.6,6.2
+22,Male,Higher,Low,106.5,16.1
+17,Female,Higher,Low,61.3,11.5
+29,Female,Primary,High,78.0,6.4
+21,Male,Secondary,Middle,87.6,10.6
+30,Male,No education,Middle,84.3,19.8
+24,Female,Secondary,Middle,89.1,15.9
 31,Female,No education,Middle,109.6,14.0
-28,Female,Higher,High,82.6,17.7
-6,Male,Primary,Middle,79.5,11.7
-50,Female,Secondary,Low,67.3,5.9
+22,Male,Primary,Low,63.1,12.1
+5,Male,Secondary,High,92.6,15.2
+38,Male,No education,Low,92.3,14.8
 32,Female,Higher,Low,85.3,12.9
-50,Female,Secondary,Low,64.5,17.6
-35,Female,Higher,Low,68.3,12.5
-13,Male,Secondary,Low,94.8,15.8
-51,Female,Primary,Low,89.0,12.1
-24,Female,Primary,Middle,60.1,8.3
+45,Male,No education,Low,90.8,5.3
+25,Male,Primary,High,85.9,15.0
+47,Female,No education,Low,82.9,9.2
+26,Female,No education,Middle,89.2,12.9
+16,Male,Primary,Middle,76.5,6.2
 35,Male,Higher,Middle,69.8,13.0
-20,Male,No education,High,74.6,6.0
-0,Male,Primary,Low,105.0,13.1
-25,Male,No education,Low,94.2,8.3
-38,Female,Higher,Middle,108.3,18.6
-36,Male,Primary,High,77.0,8.5
-4,Male,Secondary,High,75.3,18.4
-39,Male,Primary,Low,101.9,5.8
-41,Male,No education,High,67.0,13.7
-57,Male,Higher,Middle,79.1,9.9
-50,Female,Secondary,Middle,99.7,12.7
+54,Female,Primary,Middle,73.2,8.2
+49,Female,Secondary,Middle,107.1,8.8
+33,Male,Primary,High,75.5,16.2
+37,Male,No education,High,60.2,6.9
+3,Male,Higher,High,108.9,11.5
+26,Female,Primary,High,80.9,7.5
+53,Male,Primary,Middle,75.3,7.3
+59,Female,No education,Middle,63.4,11.9
 43,Male,Higher,High,76.9,15.5
-45,Male,Primary,Low,108.5,6.5
-17,Male,Primary,Middle,73.6,14.6
-9,Male,Secondary,Middle,86.0,15.2
-39,Male,Secondary,Middle,80.3,18.8
-26,Male,No education,High,101.9,15.1
-42,Male,No education,Middle,105.9,6.6
-36,Male,Higher,Low,85.9,7.5
-39,Female,Primary,Middle,74.2,16.3
+32,Female,Primary,Low,81.6,13.3
+58,Female,No education,High,86.5,11.5
+4,Male,Secondary,Middle,68.1,17.7
+5,Female,Secondary,Low,64.2,6.4
+30,Male,No education,Low,62.3,9.5
 52,Male,Higher,High,108.9,10.4
-33,Female,No education,Middle,95.5,9.2
-29,Male,Primary,Middle,80.5,7.0
-51,Female,Higher,Low,109.0,14.4
+59,Female,Higher,Middle,71.0,5.4
+53,Male,Primary,Low,60.5,6.8
 15,Female,Secondary,Low,107.8,8.4
-22,Female,Primary,Middle,97.3,6.7
-57,Male,No education,Middle,108.9,15.5
-30,Male,Primary,High,86.6,7.1
-32,Female,Primary,Low,79.6,12.3
-31,Female,Secondary,High,67.3,7.4
-5,Female,Secondary,High,65.6,8.8
-17,Male,No education,Low,67.0,12.1
+56,Male,Higher,Low,68.5,11.5
+27,Female,Secondary,High,73.6,13.9
+6,Female,Secondary,High,105.2,18.5
+22,Female,Secondary,Middle,68.4,7.4
+29,Male,Primary,Middle,77.0,9.2
 44,Male,No education,Middle,108.3,10.9
-40,Male,No education,Low,107.3,12.0
-6,Female,Higher,Low,75.0,6.4
-0,Female,No education,High,74.2,12.4
-29,Female,Higher,Low,74.0,12.4
-36,Female,Secondary,Middle,97.9,10.6
-22,Male,Primary,Low,101.7,17.8
+0,Female,Primary,High,66.3,10.0
+28,Male,Higher,High,72.5,12.9
+51,Male,No education,Middle,60.9,18.5
 28,Male,Secondary,Middle,76.6,7.4
-53,Female,Secondary,Middle,72.3,18.8
-45,Male,Primary,High,96.5,11.7
-18,Male,Primary,High,97.9,19.5
-51,Male,Primary,Middle,61.3,17.8
+53,Female,Higher,High,91.6,9.0
 35,Male,Primary,Low,69.8,19.8
-31,Male,Secondary,Low,65.7,19.9
-2,Female,Primary,High,86.1,12.8
-53,Male,Primary,High,70.1,5.4
-39,Male,No education,Middle,74.9,6.4
-55,Female,Primary,High,71.4,11.8
-24,Male,Higher,High,92.1,12.4
-22,Female,Higher,High,81.2,7.9
+50,Male,Higher,Low,63.2,11.6
+57,Male,Secondary,High,79.1,18.3
+46,Male,Secondary,Middle,84.2,19.8
 27,Male,Higher,High,109.4,15.2
-48,Female,Higher,Middle,98.9,7.1
-34,Female,Higher,Middle,76.4,11.2
-48,Male,No education,High,73.3,17.1
-3,Male,No education,Middle,82.0,12.2
+15,Female,No education,High,82.8,19.5
+30,Female,Primary,High,61.7,19.3
+38,Female,Secondary,Low,100.1,15.6
 29,Male,Secondary,Low,61.6,19.0
-15,Female,Secondary,Low,73.6,13.6
-30,Female,No education,Middle,60.4,17.9
+14,Female,Higher,High,65.8,7.7
+55,Female,Secondary,Middle,104.9,17.2
 29,Male,No education,Middle,72.4,17.6
-28,Female,Primary,High,70.6,13.7
-9,Male,Primary,Middle,84.3,5.3
-28,Female,No education,Middle,108.2,12.4
-36,Male,Higher,Middle,103.0,18.3
-3,Male,Primary,High,109.8,15.3
+57,Female,Primary,High,104.2,14.5
+22,Female,Higher,High,85.8,7.2
 14,Female,Primary,Middle,68.1,19.3
-58,Male,No education,High,105.8,18.9
-7,Female,Primary,Low,99.7,16.6
-55,Male,No education,High,101.7,16.7
+58,Female,Primary,High,83.5,13.6
+17,Male,No education,Middle,80.5,13.1
 17,Female,Secondary,Low,60.3,19.7
-38,Female,Secondary,Middle,87.8,19.5
 51,Male,Higher,Middle,80.9,17.7
 55,Female,Secondary,Low,79.8,16.9
-4,Male,No education,Low,97.8,12.9
+1,Male,No education,Middle,76.2,15.0
 9,Male,Secondary,Low,79.7,12.6
-29,Female,Secondary,Middle,65.1,16.2
+13,Female,Secondary,High,104.9,7.0
+21,Male,No education,High,100.4,5.1
+42,Female,Primary,Middle,75.0,5.1
+6,Female,Secondary,High,74.4,16.6
+53,Female,No education,High,65.3,12.1
+55,Female,Primary,Low,60.9,7.0
 18,Female,Secondary,Low,107.2,18.7
-41,Male,No education,Middle,74.6,10.8
-22,Male,Secondary,High,101.8,14.5
-5,Male,Primary,Low,60.1,12.4
-40,Male,Secondary,Middle,81.5,7.3
-53,Male,Secondary,Middle,61.4,10.9
-16,Female,Higher,Middle,98.1,10.7
-25,Female,Higher,Middle,62.4,5.0
-9,Female,Higher,Middle,82.5,6.1
-5,Male,Primary,Low,74.1,19.0
-43,Female,Secondary,High,69.9,9.3
-26,Male,Secondary,High,98.1,17.6
-57,Male,Primary,Middle,75.8,15.1
-46,Male,Higher,Middle,75.3,5.3
-27,Female,Higher,Low,88.6,19.7
-53,Male,No education,Middle,78.5,14.3
-55,Male,Primary,Low,70.6,16.6
+43,Male,Secondary,High,88.2,6.6
+43,Female,Secondary,Low,78.0,8.1
+21,Female,No education,Low,97.5,13.1
+2,Female,No education,High,101.1,17.6
+17,Female,Secondary,Low,100.7,8.2
+57,Male,Primary,High,83.3,17.3
+16,Female,Primary,Low,96.1,15.8
+13,Male,No education,Low,68.7,8.0
+18,Female,Higher,Low,65.2,9.2
 21,Female,Primary,Low,81.9,11.1
-38,Female,Higher,Middle,91.0,6.3
-7,Male,Higher,Middle,65.6,5.0
-37,Female,Primary,High,64.7,19.5
-42,Male,Primary,High,87.3,10.6
-49,Female,No education,Middle,71.5,6.1
-38,Male,Secondary,High,77.0,14.4
-56,Female,Secondary,High,69.8,13.7
-31,Male,No education,Low,74.6,16.3
-47,Female,Primary,Low,65.6,10.6
-3,Female,No education,Middle,89.6,12.2
-33,Male,Secondary,High,65.7,12.0
-29,Male,Secondary,Low,87.4,8.7
-47,Female,Primary,Low,103.1,7.9
-23,Female,Higher,Middle,80.3,7.7
-23,Male,Primary,High,64.7,8.2
-44,Male,No education,Middle,61.3,12.3
-18,Male,No education,Middle,63.8,13.9
-31,Male,Primary,Low,89.0,13.2
-58,Female,No education,High,60.3,5.5
-48,Male,Higher,Middle,64.4,10.2
-53,Male,Primary,High,66.3,19.8
-17,Female,Higher,High,91.7,12.9
-15,Female,Higher,High,61.2,14.3
-16,Male,Higher,High,62.7,7.7
-51,Female,Secondary,Middle,100.8,13.9
-0,Female,No education,Middle,63.3,5.0
-50,Male,Primary,Low,87.1,8.5
-10,Male,No education,High,74.7,7.7
-22,Male,Higher,High,67.3,17.6
+34,Female,Secondary,Middle,81.2,7.1
+51,Female,Higher,Low,109.9,7.3
+52,Female,Primary,Middle,77.7,6.0
+1,Male,Secondary,High,66.9,11.8
+11,Female,No education,Middle,73.9,13.7
+6,Male,Primary,Low,73.9,7.2
+36,Male,Primary,High,96.4,12.8
+46,Male,Primary,High,105.6,13.4
+2,Male,Higher,Middle,71.5,7.8
+52,Male,No education,High,78.8,16.9
+47,Male,Primary,Low,106.3,17.0
+51,Male,Higher,Low,84.0,18.0
+42,Male,Secondary,Middle,60.4,18.4
+57,Female,Higher,High,95.8,6.6
+15,Female,Primary,Low,96.1,13.3
+56,Male,No education,Middle,75.5,19.2
+52,Female,Higher,Middle,76.1,8.5
+53,Female,No education,High,91.3,13.1
+15,Female,Higher,High,101.8,14.5
+51,Female,Higher,Low,75.8,15.2
+2,Female,Secondary,Low,75.2,10.3
+15,Female,Secondary,Low,96.8,16.4
+4,Female,No education,High,82.4,8.0
+11,Female,Primary,Low,108.2,6.0
+25,Female,Primary,Middle,81.7,16.4
+52,Female,Higher,Middle,83.7,9.2
 41,Female,Primary,High,65.8,11.2
 6,Male,No education,Middle,94.0,11.7
-46,Female,Primary,Low,83.8,6.8
-36,Female,Higher,High,91.8,11.2
+50,Female,Higher,Low,97.9,17.4
+31,Male,No education,Low,68.2,8.2
 7,Male,Higher,Middle,107.5,5.9
-50,Female,Higher,High,90.1,16.1
-47,Male,No education,Low,108.8,9.7
-33,Female,No education,Middle,69.0,8.7
-2,Male,Higher,Middle,71.5,7.8
-2,Male,Secondary,High,80.3,16.7
-9,Male,No education,High,108.4,13.0
-12,Female,Higher,High,74.0,10.7
-25,Female,Primary,Low,62.0,18.9
-14,Female,No education,Middle,82.0,6.9
-40,Male,Primary,High,99.5,16.7
-50,Female,No education,Middle,63.3,9.8
-10,Male,Secondary,High,110.0,19.0
-0,Male,Primary,Middle,86.4,15.9
-0,Female,Primary,Low,70.1,17.1
-0,Male,No education,High,66.5,19.6
-1,Female,Secondary,High,106.4,10.9
-31,Female,Secondary,Low,96.6,5.3
-51,Male,Secondary,Middle,107.6,10.9
-55,Female,Higher,Low,97.4,7.5
-22,Female,Primary,Low,83.6,18.6
-17,Female,Primary,Middle,107.6,10.0
-43,Male,No education,High,84.7,14.7
-19,Female,Primary,High,97.6,8.4
-45,Male,Secondary,High,105.7,9.4
+14,Female,Secondary,Middle,104.8,16.7
+19,Male,No education,Middle,69.5,18.0
+0,Male,Higher,Middle,80.8,15.8
+50,Female,Secondary,Low,64.5,17.6
+19,Female,No education,High,101.2,6.3
+39,Female,Higher,High,90.0,18.8
+37,Male,No education,Low,88.6,17.3
+55,Male,Primary,Middle,109.7,15.6
+13,Female,Higher,Middle,90.3,6.9
+49,Female,Secondary,High,101.6,6.9
+23,Male,Secondary,High,84.5,13.4
+0,Male,Higher,Low,66.5,8.8
+20,Male,Higher,Middle,106.1,19.9
+38,Female,Higher,Middle,87.4,14.3
+16,Female,Primary,Low,101.2,15.0
+19,Female,Higher,Low,103.9,8.9
+36,Male,Higher,Middle,66.0,6.3
+41,Female,Higher,Middle,66.0,14.2
+6,Male,Primary,High,107.4,12.6
+5,Female,Secondary,Middle,73.4,10.4
+36,Female,Secondary,Middle,94.1,12.1
+52,Female,No education,Middle,107.6,14.4
+1,Female,Higher,Low,100.1,11.3
+31,Male,Higher,Middle,66.9,14.5
+45,Female,Higher,Middle,75.7,9.5
+23,Male,Primary,Low,79.6,17.8
 1,Female,No education,Middle,101.6,9.2
-56,Male,Higher,High,105.0,11.7
-48,Male,Primary,Middle,92.7,5.7
-34,Male,Primary,Low,80.2,7.2
-4,Female,Primary,High,99.6,10.8
-49,Female,No education,Low,79.4,10.4
-32,Female,Secondary,Low,90.4,13.8
-48,Female,No education,High,103.1,5.1
-35,Male,Higher,Low,81.3,15.5
-39,Male,Higher,Middle,62.4,14.8
-52,Female,Secondary,Middle,98.9,8.8
-22,Female,No education,Low,102.2,8.6
-47,Male,Higher,Middle,86.9,16.9
-33,Male,Higher,Low,79.5,6.4
+48,Female,Secondary,Middle,94.8,12.8
+28,Female,Primary,Middle,100.6,11.9
+37,Female,Primary,High,64.7,19.5
+27,Female,Primary,Middle,68.9,15.8
+40,Male,No education,Middle,71.2,8.3
+40,Female,Primary,High,86.0,7.5
 1,Female,Higher,Low,87.8,20.0
-23,Female,No education,High,88.9,9.8
-51,Female,Primary,Middle,74.5,10.0
-36,Female,Primary,High,84.1,9.5
-12,Male,Secondary,Middle,105.2,7.5
-58,Male,Secondary,Middle,98.6,5.1
-30,Male,Higher,Low,63.0,19.2
-57,Male,Secondary,High,62.1,8.9
-59,Male,Secondary,High,74.9,5.7
+24,Male,No education,Middle,102.0,18.9
+10,Female,Higher,High,109.3,17.8
+52,Male,Higher,Low,100.0,7.2
+32,Female,Primary,Middle,96.8,8.7
+29,Male,Secondary,Middle,67.2,18.1
+23,Female,Higher,Middle,68.1,17.0
+30,Male,No education,Low,104.1,16.6
 57,Female,Primary,High,60.5,10.3
-2,Male,Secondary,Low,63.8,9.5
 40,Female,Primary,Low,76.5,16.6
-31,Male,No education,Middle,89.2,5.2
-39,Male,Higher,Low,71.2,8.2
-43,Female,No education,High,60.7,19.8
-47,Male,No education,High,85.5,6.9
-49,Female,Higher,Low,69.5,8.4
-57,Male,Primary,High,68.9,12.5
-17,Male,Secondary,Low,60.3,16.0
-44,Male,No education,Low,97.8,13.4
-29,Male,Primary,Low,89.9,12.9
-46,Female,Secondary,Low,97.3,7.1
+10,Female,Higher,High,70.6,13.6
+19,Male,Higher,Middle,75.1,13.5
+43,Male,No education,Middle,77.2,13.9
+34,Female,Primary,High,108.3,14.1
+28,Female,Secondary,Middle,75.4,6.2
+53,Male,Higher,High,72.1,8.7
+13,Male,Primary,High,106.6,5.2
 47,Male,Primary,Low,94.5,15.9
 9,Female,No education,Low,64.9,12.6
-6,Male,Primary,Middle,63.1,7.9
-40,Male,Primary,Low,102.2,9.5
+40,Male,No education,High,72.5,5.7
 45,Female,No education,Low,72.4,11.0
-34,Female,Primary,Middle,78.8,14.2
-51,Female,No education,Middle,76.9,16.5
-55,Male,No education,Low,61.1,11.8
-41,Female,Secondary,Low,87.5,13.9
-43,Male,Higher,High,74.4,11.6
-17,Male,Primary,Low,65.8,11.0
-58,Female,No education,Low,83.2,10.9
-28,Male,Primary,Low,61.2,16.3
-46,Male,Primary,High,106.1,16.9
-10,Male,Higher,Low,77.4,8.7
-24,Male,Higher,Low,70.3,14.1
-5,Female,No education,Middle,62.6,15.3
-33,Male,Higher,Middle,72.7,13.5
-43,Female,Secondary,High,60.7,13.5
-6,Male,No education,High,90.5,10.0
+38,Female,Secondary,Middle,87.8,19.5
+17,Female,No education,High,65.6,19.9
+58,Male,Secondary,Middle,66.4,11.5
+0,Male,No education,High,78.9,7.4
+35,Male,Primary,Middle,64.4,16.7
+31,Female,Secondary,Low,66.1,16.8
+39,Male,Secondary,Low,105.4,8.1
+35,Female,Primary,Middle,74.7,8.0
+53,Female,No education,Low,100.2,19.7
+43,Female,Secondary,High,108.4,12.2
+48,Female,Higher,High,86.5,7.7
+0,Female,No education,Middle,63.3,5.0
+40,Male,No education,Middle,89.1,10.3
 35,Female,Secondary,Middle,79.9,18.5
-30,Female,Primary,Low,91.0,15.9
-54,Female,No education,High,65.2,10.7
-34,Female,No education,High,95.4,17.2
+16,Male,No education,Low,73.0,19.5
+53,Male,Higher,Middle,73.4,18.6
+16,Female,Primary,Middle,64.6,5.4
 46,Female,Primary,Middle,97.6,17.6
-59,Male,Secondary,High,91.6,8.3
-29,Female,No education,Middle,94.4,16.8
-43,Female,Primary,High,72.3,6.9
+54,Male,Higher,Low,79.8,7.8
+21,Female,Primary,High,104.1,12.2
 2,Female,No education,Middle,91.1,12.0
-39,Male,Higher,Middle,64.7,5.5
+58,Male,Secondary,Middle,105.9,11.2
 23,Female,Primary,Low,93.5,15.6
-41,Male,Higher,Low,87.2,11.9
-44,Male,Primary,Middle,68.4,6.1
-38,Female,Higher,Low,79.8,11.6
-16,Male,Secondary,Low,64.1,12.2
-56,Male,Higher,Low,103.0,9.2
-37,Male,Primary,Middle,71.4,8.3
-5,Female,Higher,Middle,80.5,19.6
+4,Female,Secondary,High,103.2,19.2
+33,Male,No education,Middle,104.6,6.0
+42,Male,No education,Middle,105.9,6.6
+21,Male,No education,Low,83.5,5.0
+28,Male,No education,Low,65.7,10.8
+20,Female,Primary,Low,107.6,18.1
 29,Male,Higher,Middle,60.1,14.5
-37,Female,Secondary,Middle,75.8,6.9
+44,Female,No education,Low,108.8,14.9
 3,Male,No education,Low,89.8,15.0
-47,Female,Higher,Low,60.3,11.4
+3,Female,Secondary,Middle,71.3,14.1
 21,Female,Secondary,High,92.2,9.0
-48,Male,Higher,Middle,71.2,11.7
-18,Male,No education,Middle,67.1,12.1
-13,Male,Primary,Low,99.7,15.1
-22,Male,No education,Low,82.6,13.3
-58,Male,Primary,High,90.3,7.3
-27,Female,Primary,Low,69.1,11.0
-43,Female,Secondary,High,106.1,15.5
-44,Male,Higher,Middle,99.5,16.1
-14,Female,Higher,Middle,72.7,15.7
-32,Male,No education,Middle,90.9,8.6
-3,Female,Higher,Middle,78.9,9.5
-16,Female,No education,High,90.2,14.5
+12,Female,Higher,High,81.5,15.4
+47,Male,Primary,High,63.5,15.6
+21,Female,Primary,High,94.2,18.1
+28,Male,Primary,High,95.3,15.3
+27,Male,No education,Middle,71.4,11.2
+26,Male,Secondary,High,92.8,17.7
+0,Female,Secondary,Middle,95.3,17.1
+20,Male,No education,High,74.1,7.1
+41,Male,Primary,High,63.2,12.3
+12,Female,Higher,Low,107.4,10.4
+7,Male,Primary,High,102.5,11.5
 32,Male,No education,Middle,108.0,10.8
-50,Female,Higher,Low,91.4,12.4
-3,Female,Secondary,High,68.2,18.6
-24,Female,Higher,High,78.2,14.3
-13,Female,Higher,Middle,64.7,19.9
+5,Male,Secondary,Middle,99.8,9.7
+28,Female,Primary,Low,82.8,11.9
+11,Male,Secondary,Low,105.7,17.7
+37,Male,No education,Middle,64.5,9.0
 26,Male,Higher,High,98.0,7.9
 10,Female,No education,Middle,63.0,11.1
-49,Female,Secondary,Low,83.7,19.1
+42,Male,Secondary,High,88.0,20.0
 35,Male,No education,Low,109.7,8.6
-25,Female,Higher,Middle,69.7,10.4
+18,Female,Secondary,High,86.2,19.4
 10,Male,Higher,High,70.1,6.1
-40,Female,No education,High,89.7,8.3
+2,Male,No education,High,90.1,14.9
 41,Female,Primary,High,68.0,17.2
 43,Male,Higher,High,105.3,14.3
-27,Male,No education,Low,74.1,7.1
-58,Male,Secondary,Low,76.8,9.7
-14,Female,No education,High,79.6,16.2
-8,Male,No education,High,96.1,7.3
-41,Male,Higher,High,92.4,12.2
-29,Female,Primary,High,104.5,14.2
-0,Female,Higher,Middle,91.4,5.8
-27,Female,Higher,Middle,65.0,7.5
-32,Female,No education,High,93.1,12.4
+36,Male,No education,Low,64.3,17.1
+35,Male,No education,High,90.4,9.1
+35,Male,Primary,Low,83.3,9.6
+33,Male,No education,Middle,101.2,5.8
+24,Female,Secondary,Low,92.9,16.3
+22,Male,Higher,Middle,87.5,13.6
+7,Female,Primary,Middle,96.2,18.3
+41,Female,Primary,High,72.1,6.2
 58,Male,No education,Low,106.2,17.8
-27,Female,No education,High,108.6,8.2
+21,Male,Secondary,Low,60.2,15.8
 24,Female,Higher,Low,65.2,16.9
-57,Male,Primary,Middle,91.0,9.0
-26,Female,Higher,Low,104.8,14.7
-46,Male,Primary,Low,92.0,19.2
-21,Male,Primary,Low,62.5,20.0
+12,Male,Secondary,High,106.2,15.8
+57,Male,Higher,High,97.3,8.0
 43,Female,Secondary,Low,72.7,17.8
 45,Male,Secondary,Middle,76.0,12.3
-18,Female,Secondary,High,68.6,10.9
-38,Male,Higher,Middle,75.2,9.4
-49,Male,Higher,High,102.5,7.4
+40,Female,No education,High,87.0,19.9
+47,Female,Secondary,Low,82.1,10.9
+41,Female,Secondary,High,105.7,12.6
 18,Female,No education,High,88.1,19.5
-24,Female,No education,Middle,109.5,10.4
-54,Male,Higher,Low,62.9,15.5
-43,Male,Secondary,High,88.9,16.4
-13,Female,Primary,Low,69.7,18.7
-31,Female,No education,Middle,102.5,13.8
-25,Male,No education,Low,93.7,9.2
-19,Male,No education,High,71.8,7.5
-17,Male,Higher,Low,84.6,7.7
-15,Female,Higher,High,96.0,15.0
-49,Female,No education,Middle,65.8,18.9
-13,Female,No education,Low,66.2,6.3
-38,Female,Secondary,Low,97.0,15.1
-41,Male,Primary,Low,105.3,16.6
-48,Male,Higher,Low,102.4,13.9
+30,Male,Primary,Low,77.9,12.6
+39,Male,No education,High,79.2,8.1
+18,Female,Primary,Middle,72.1,8.0
+11,Female,No education,Low,96.5,14.7
+58,Male,No education,Middle,94.8,6.4
+5,Male,No education,High,102.5,15.5
+38,Female,Higher,Middle,91.0,6.3
+12,Male,No education,Low,99.6,14.3
+16,Female,No education,Middle,61.3,7.2
+5,Female,Primary,Middle,99.2,10.2
+34,Female,No education,Middle,96.1,8.0
+57,Male,No education,Middle,88.8,5.3
 55,Male,No education,High,69.1,8.5
-14,Male,No education,High,97.9,6.2
 42,Male,Primary,Middle,106.7,12.9
-26,Female,Secondary,Middle,60.6,11.6
-6,Male,Secondary,Middle,64.4,15.3
-55,Female,No education,High,99.2,13.6
-38,Female,No education,Middle,66.9,13.8
-37,Female,No education,Middle,85.9,11.7
-30,Male,Secondary,High,64.0,12.9
-54,Male,Higher,High,97.1,5.1
-58,Female,Higher,Middle,99.5,17.4
-55,Female,Primary,Middle,98.6,10.1
-11,Male,Higher,Middle,109.1,18.2
-26,Male,Higher,Middle,72.8,10.2
-30,Female,No education,Low,106.5,8.8
+1,Female,Primary,Middle,83.4,19.0
+55,Male,Primary,Low,61.5,18.1
+42,Male,No education,High,75.2,15.2
+44,Male,No education,High,106.9,14.8
+8,Male,No education,High,78.2,14.7
+55,Male,Secondary,Middle,81.4,17.9
+29,Female,Primary,High,106.2,13.3
+0,Female,Higher,Middle,97.9,8.9
+20,Female,Higher,Low,89.1,8.1
+24,Female,Primary,Low,60.4,15.1
 3,Female,Higher,High,95.7,5.2
-44,Male,Primary,High,71.6,14.9
-41,Female,Primary,High,87.8,8.1
+59,Male,Higher,Middle,90.5,17.6
+13,Female,No education,High,100.6,11.4
 21,Male,Secondary,High,60.6,14.0
-9,Female,Primary,Low,68.3,12.5
-19,Female,Higher,Low,108.6,13.6
-30,Female,No education,Low,63.8,10.4
-52,Male,Secondary,High,94.9,19.8
-13,Male,Primary,Low,86.6,5.8
+44,Male,Primary,Low,100.8,6.9
+36,Female,Primary,High,65.0,15.8
+7,Female,No education,Middle,109.0,7.8
+27,Male,Higher,High,106.7,18.5
+56,Female,Secondary,Low,91.4,12.2
 58,Female,No education,Low,60.2,11.8
-7,Female,Secondary,Middle,61.6,7.1
-59,Male,Primary,Low,102.1,7.5
-43,Male,Secondary,High,84.0,16.6
-1,Male,Higher,High,72.9,7.7
-9,Female,Secondary,High,96.4,12.7
-12,Female,Higher,High,70.5,13.5
-46,Female,Secondary,Middle,94.9,12.4
-42,Male,Higher,High,77.1,17.3
+0,Male,Secondary,Middle,100.2,14.8
+6,Female,Higher,Low,69.3,15.7
+53,Female,No education,High,60.1,18.7
+6,Female,No education,Middle,104.8,15.2
+29,Male,Higher,Low,65.5,15.5
+46,Female,No education,High,62.4,19.7
+10,Male,Secondary,Low,74.1,19.3
+12,Female,Secondary,Low,61.6,9.6
 19,Male,No education,Low,89.3,7.3
-37,Female,Secondary,Middle,72.5,17.5
-55,Male,No education,Low,74.8,8.3
-48,Male,Primary,Low,62.7,19.6
+39,Female,No education,High,67.3,13.9
 16,Male,Higher,Low,66.1,6.4
-50,Female,No education,High,70.7,16.9
-29,Female,Higher,High,70.8,19.8
-59,Male,No education,Low,106.8,7.4
-45,Female,Secondary,High,62.3,10.3
-27,Female,Secondary,High,78.8,13.6
-15,Female,Secondary,Low,94.4,13.1
-59,Male,Higher,High,95.9,10.4
-58,Female,Secondary,Low,81.6,15.0
+45,Male,Higher,High,62.9,19.8
+1,Male,Secondary,Low,91.0,19.3
+32,Male,Primary,Middle,64.9,13.0
+12,Female,Primary,Low,98.2,17.7
+17,Female,Higher,High,91.0,16.9
+15,Female,No education,High,100.5,5.8
 1,Male,Primary,Middle,72.1,8.7
-47,Female,Primary,Middle,96.1,12.5
-33,Male,No education,Low,89.4,15.0
+49,Female,Higher,Low,80.0,13.3
+4,Male,Secondary,Middle,100.6,19.6
 7,Male,Secondary,High,78.0,13.4
-15,Male,Secondary,High,91.7,10.9
+36,Male,No education,High,99.1,6.0
 10,Male,Higher,Low,107.6,18.3
-50,Male,Higher,High,100.5,17.4
+29,Female,Secondary,High,107.7,19.4
 25,Female,Higher,High,108.2,12.9
-25,Female,No education,High,86.3,10.6
-14,Male,Secondary,Low,73.0,14.5
+53,Female,Primary,Low,89.2,11.9
+10,Male,Primary,High,72.7,11.0
 42,Female,Higher,Middle,70.1,12.2
-45,Female,Primary,Middle,91.0,5.6
-51,Female,Primary,High,86.5,17.8
-52,Female,No education,Middle,61.0,10.1
-2,Male,Primary,Middle,100.3,17.0
-17,Male,Higher,Middle,106.9,16.2
-25,Male,Secondary,Middle,96.7,8.1
+30,Male,Higher,Low,97.2,10.4
+20,Female,Higher,Middle,107.1,17.5
+40,Female,Higher,High,94.7,19.4
+2,Female,Primary,High,62.6,7.9
+5,Female,Secondary,Low,96.1,18.1
+5,Male,Higher,Low,95.4,11.2
 8,Male,Higher,High,77.9,8.6
-49,Male,No education,Low,85.7,9.8
-33,Female,No education,Middle,93.9,19.1
+16,Female,Higher,Low,102.0,8.2
+31,Male,Secondary,Middle,78.1,5.9
 59,Female,No education,Low,101.5,19.0
-38,Male,Higher,Low,95.8,19.6
-51,Female,No education,High,77.6,19.4
-41,Male,Secondary,Middle,102.4,13.2
-16,Female,Secondary,High,94.2,8.0
-16,Male,No education,Low,103.9,11.8
-47,Male,Secondary,Middle,65.2,8.9
+51,Female,Secondary,Middle,100.8,13.9
+20,Female,Higher,Middle,101.1,13.5
+14,Male,Secondary,High,73.2,5.9
+22,Male,Secondary,Middle,107.4,14.5
+22,Female,No education,High,91.3,9.0
+4,Male,Primary,Middle,86.8,11.8
 0,Female,No education,High,84.7,9.8
-37,Male,Secondary,Middle,101.7,7.5
+39,Male,Primary,High,80.1,5.6
 5,Female,Higher,Low,95.4,17.3
-7,Male,Secondary,High,100.7,14.9
-43,Male,No education,High,82.7,17.2
-17,Male,Primary,High,105.3,11.9
-11,Male,Primary,Low,85.3,15.2
+8,Male,Primary,High,74.9,10.0
+42,Female,Primary,High,84.9,7.6
+35,Female,Primary,Low,72.9,19.2
+16,Female,No education,High,73.4,11.8
+39,Male,Secondary,Middle,72.3,12.2
+39,Female,No education,High,99.2,12.9
+6,Female,Primary,Middle,80.5,7.3
 59,Female,Higher,High,72.7,11.2
+21,Female,Secondary,Middle,104.5,19.3
+34,Female,Higher,High,104.5,15.5

@@ -1,5 +1,5 @@
 import pandas as pd
-# import model_evaluation.py
+import matplotlib.pyplot as plt
 import joblib
 import shap
 
@@ -20,28 +20,32 @@ class ChildRiskSHAPExplainer:
             self.xtest = pd.read_csv(self.xtest_file)
             self.ytest = pd.read_csv(self.ytest_file)
             self.model = joblib.load(self.model_file)
-            print("Shape of X_Train:", self.xtrain.shape)
-            print("Shape of X_Test:", self.xtest.shape)
-            print("Shape of Y_Test:", self.ytest.shape)
+            # print("Shape of X_Train:", self.xtrain.shape)
+            # print("Shape of X_Test:", self.xtest.shape)
+            # print("Shape of Y_Test:", self.ytest.shape)
         except FileNotFoundError as e:
             print(f"Failed to load file: {e.filename} does not exist.")
 
     def create_explainer(self):
         print("Creating SHAP Explainer...")
         preprocessor = self.model.named_steps['preprocessing']
-        classifier = self.model.named_steps['classfier']  
-        xtrain_transformed = preprocessor.transform(self.xtrain)
+        classifier = self.model.named_steps['classifier'] 
         xtest_transformed = preprocessor.transform(self.xtest)
+        feature_names = preprocessor.get_feature_names_out()
+        self.xtest_trans_df= pd.DataFrame(xtest_transformed, columns=feature_names)
         self.explainer = shap.TreeExplainer(classifier)
-        self.shap_values = self.explainer(xtest_transformed)
+        self.shap_values = self.explainer(self.xtest_trans_df)
         print("SHAP values computed successfully with TreeExplainer!")
 
     def create_summary_plot(self):
         print("Creating SHAP Summary Plot...")
-        xtest_encoded = pd.get_dummies(self.xtest, columns=['Gender',"Mother_Education","Household_Wealth_Index"], drop_first=True)
-        self.shap_values = self.explainer.shap_interaction_values(xtest_encoded)
-        shap.plots.waterfall(self.shap_values[0], feature_names=xtest_encoded.columns)
-        print("SHAP Summary Plot created successfully!")
+        if len(self.shap_values.shape) == 3:
+            shap.summary_plot(self.shap_values[:, :, 1], self.xtest_trans_df)
+        else:
+            shap.summary_plot(self.shap_values, self.xtest_trans_df)
+        plt.savefig("charts/shap_summary_plot.png")
+
+
 
 child = ChildRiskSHAPExplainer("x_train.csv", "x_test.csv", "y_test.csv", "Random Forest Model.pkl")
 child.load_model_and_data()
