@@ -40,10 +40,10 @@ class ChildRiskSHAPExplainer:
     def create_summary_plot(self):
         print("Creating SHAP Summary Plot...")
         if len(self.shap_values.shape) == 3:
-            shap.summary_plot(self.shap_values[:, :, 1], self.xtest_trans_df)
+            shap.summary_plot(self.shap_values[:, :, 1], self.xtest_trans_df, show=False)
         else:
-            shap.summary_plot(self.shap_values, self.xtest_trans_df)
-        plt.savefig("charts/shap_summary_plot.png")
+            shap.summary_plot(self.shap_values, self.xtest_trans_df, show = False)
+        plt.savefig("charts/shap_summary_plot.png",bbox_inches='tight', dpi=300)
 
 
 
