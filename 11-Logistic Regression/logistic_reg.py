@@ -1,6 +1,9 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler
 import joblib
 
 class ChildRiskLogisticRegression():
@@ -23,9 +26,24 @@ class ChildRiskLogisticRegression():
         self.ytrain = pd.read_csv(self.ytrain_file)
         self.ytest = pd.read_csv(self.ytest_file)
 
+    def fe(self):
+            numeric_col=["Age (months)", 'Height_cm', 'Weight_kg']
+            ordinal_cols = ["Mother_Education", "Household_Wealth_Index"]
+            nominal_cols = ["Gender"]
+    
+            edu_order=["No education", "Primary", "Secondary", "Higher"]
+            wealth_order= ["Low", "Middle", "High"]
+    
+            self.preprocessor= ColumnTransformer(transformers=[
+                ("num", StandardScaler(), numeric_col),
+                ("ord", OrdinalEncoder(categories=[edu_order,wealth_order]), ordinal_cols),
+                ("nom", OneHotEncoder(drop="if_binary"),nominal_cols),
+            ])
+
     def create_model(self):
-        self.model = LogisticRegression(max_iter=1000)
-        return self.model
+        self.model = self.dt_model= Pipeline(steps=[
+                   ("preprocessing", self.preprocessor),
+                   ("classfier", LogisticRegression())])
 
     def train_model(self):
         print("Model Training is Loading....")
@@ -47,6 +65,7 @@ class ChildRiskLogisticRegression():
     def pipeline(self):  
         print("===== Logistic Regression Model Evaluation =====")
         self.load_data()
+        self.fe()
         self.create_model()
         self.train_model()
         self.make_predictions()
@@ -58,8 +77,8 @@ class ChildRiskLogisticRegression():
 
 
     def predict_single_child(self ):
-        new_child = pd.DataFrame([{'Age (months)':54,'Gender':0,'Region':3,'Mother_Education':1,
-                                   'Household_Wealth_Index':1,'Height_cm':65,'Weight_kg':55}])
+        new_child = pd.DataFrame([{'Age (months)':54,'Gender':"Male",'Mother_Education':"Higher",
+                                   'Household_Wealth_Index':"Low",'Height_cm':65,'Weight_kg':55}])
         
         prediction = self.model.predict(new_child)
         self.probability = self.model.predict_proba(new_child)

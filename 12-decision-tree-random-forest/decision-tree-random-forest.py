@@ -53,7 +53,7 @@ class ChildRiskModelComparison:
 
     def create_random_forest_model(self):
         print("Random Forest Model")
-        self.rf_model= Pipeline([
+        self.rf_model= Pipeline(steps=[
             ("preprocessing", self.preprocessor),
             ("classfier", RandomForestClassifier(n_estimators=500,random_state=42 ,max_depth=None, min_samples_split=2,min_samples_leaf=2))
         ])
