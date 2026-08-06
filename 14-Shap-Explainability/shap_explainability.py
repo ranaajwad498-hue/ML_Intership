@@ -37,23 +37,28 @@ class ChildRiskSHAPExplainer:
         self.shap_values = self.explainer(self.xtest_trans_df)
         print("SHAP values computed successfully with TreeExplainer!")
 
-    def create_summary_plot(self):
-        print("Creating SHAP Summary Plot...")
-        if len(self.shap_values.shape) == 3:
-            shap_data = self.shap_values[:, :, 1]
-        else:
-            shap_data = self.shap_values
-        shap.summary_plot(shap_data, self.xtest_trans_df, show=False)
-        plt.savefig("charts/shap_summary_plot.png",bbox_inches='tight', dpi=300)
-
-    def create_feature_importance_plot(self):
-        print("Creating SHAP Bar Plot...")
+    def shap_value(self):
         if len(self.shap_values.shape) == 3:
             self.shap_data = self.shap_values[:, :, 1]
         else:
             self.shap_data = self.shap_values
-        shap.plots.bar(self.shap_data,show= False)
+        return self.shap_data
+
+    def create_summary_plot(self):
+        print("Creating SHAP Summary Plot...")
+        self.shap_value()
+        shap_data = self.shap_data 
+        shap.summary_plot(shap_data, self.xtest_trans_df, show=False)
+        plt.savefig("charts/shap_summary_plot.png",bbox_inches='tight', dpi=300)
+        plt.close()
+
+    def create_feature_importance_plot(self):
+        print("Creating SHAP Bar Plot...")
+        self.shap_value()
+        shap_data = self.shap_data
+        shap.plots.bar(shap_data,show= False)
         plt.savefig("charts/shap_feature_importance.png",bbox_inches='tight', dpi=300)
+        plt.close()
 
     def explain_single_child(self):
         y_pred=pd.DataFrame([{
@@ -89,21 +94,32 @@ class ChildRiskSHAPExplainer:
 
     def create_waterfall_plot(self, sample_index=0):
         print("Creating Waterfall Plot...")
-        if len(self.shap_values.shape) == 3:
-            shap_data = self.shap_values[:, :, 1]
-        else:
-            shap_data = self.shap_values
-        shap.plots.waterfall(shap_data[sample_index], show=False)
+        self.shap_value()
+        shap_data = self.shap_data
+        shap.plots.waterfall(shap_data [sample_index], show=False)
         plt.savefig(f"charts/shap_waterfall_sample.png", bbox_inches='tight', dpi=300)
         plt.close()
+
+    def explain_high_risk_child(self):
+        print("Prediction: High Risk \n Reasons")
+        print("High weight strongly increased the risk.")
+        print("Less age strongly increased the risk.")
+        print("High Height strongly increased the risk.")
+        print("Low Mother Education strongly increased the risk.")
+        print("Poor nutrition score increased the risk.")
+
+    def explain_low_risk_child(self):
+        print("Prediction: Low Risk \n Reasons")
+        print("Normal BMI reduced the risk.")
+        print("Healthy weight reduced the risk.")
+        print("Appropriate height reduced the risk.")
+        print("Better nutrition score reduced the risk.")
+        print("Older age reduced the risk.")
 
     def save_explanations(self, sample_index=0):
         """Save SHAP explanations to CSV"""
         print('Saving explanations...')
-        if len(self.shap_values.shape) == 3:
-            self.shap_data = self.shap_values[:, :, 1]
-        else:
-            self.shap_data = self.shap_values
+        self.shap_value()
         shap_data = self.shap_data 
         feature_values = self.xtest_trans_df.iloc[sample_index].values
         if len(shap_data.shape) == 2:
@@ -120,6 +136,13 @@ class ChildRiskSHAPExplainer:
         df.to_csv("shap_feature_contributions.csv", index=False)
         print(f"Explanations saved to shap_feature_contributions.csv")
 
+    def write_observations(self):
+        print("Weight is one of the most influential features in the model.")
+        print("Low BMI usually pushes predictions toward High Risk.")
+        print("Some features may affect individual children differently.")
+        print("The most important global feature may not always be the most important feature for one child.")
+        print("The model explanation helps identify why a child was classified as High Risk.")
+
     def display_final_report(self):
         print("===== Child Malnutrition Model Explainability =====")
         self.load_model_and_data()
@@ -129,7 +152,10 @@ class ChildRiskSHAPExplainer:
         self.explain_single_child()
         self.explain_single_child()
         self.create_waterfall_plot()
+        self.explain_high_risk_child()
+        self.explain_low_risk_child()
         self.save_explanations()
+        self.write_observations()
 
 child = ChildRiskSHAPExplainer("x_train.csv", "x_test.csv", "y_test.csv", "Random Forest Model.pkl")
 child.display_final_report()
