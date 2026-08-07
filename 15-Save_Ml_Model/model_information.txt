@@ -1,0 +1,12 @@
+Model name: Random Forest Classifier
+Model file name: Random_Forest_Classifier.joblib
+Model file size: 10.4 MB
+Date of training: 07/08/2026
+Features used:Index(['Age (months)', 'Gender', 'Mother_Education', 'Household_Wealth_Index',
+       'Height_cm', 'Weight_kg'],
+      dtype='str')
+Target classes;Index(['Stunting'], dtype='str')
+Accuracy of the Model:0.5195121951219512
+Precision Score:0.5228915662650603
+Recall Score:0.5254237288135594
+F1 Score:0.5241545893719807
