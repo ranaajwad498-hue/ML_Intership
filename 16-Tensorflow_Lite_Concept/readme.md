@@ -1,4 +1,3 @@
-```markdown
 # Child Malnutrition Risk Assessment App: On-Device ML with TensorFlow Lite & Flutter
 
 An offline-first mobile application designed for real-time child malnutrition risk assessment using local machine learning inference powered by **TensorFlow Lite** and **Flutter**.
@@ -18,7 +17,7 @@ An offline-first mobile application designed for real-time child malnutrition ri
 
 ## What is TensorFlow Lite?
 
-**TensorFlow Lite (TFLite)** is an open-source, lightweight cross-platform machine learning framework designed by Google for running inference on mobile, embedded, and edge devices. 
+**TensorFlow Lite (TFLite)** is an open-source, lightweight cross-platform machine learning framework designed by Google for running inference on mobile, embedded, and edge devices.
 
 Instead of sending user data over the internet to a cloud server to run predictions, TensorFlow Lite enables machine learning models to run directly on local mobile hardware (CPU, GPU, or Neural Processing Units).
 
@@ -33,12 +32,10 @@ Offline prediction allows a mobile app to generate AI predictions without an act
 3. **Local Inference Execution:** The TFLite interpreter loads the model weights into device memory and processes the input tensors directly on the phone's hardware.
 4. **Instant Prediction:** The output is calculated and displayed on screen in milliseconds without sending any data over the internet.
 
-
 ```
-
 +-------------------------------------------------------------------+
 |                        Mobile Device                              |
-|                                                                   |
+|                                                                     |
 |  [ User Input ] ---> [ Local Preprocessing ]                      |
 |                              |                                    |
 |                              v                                    |
@@ -47,7 +44,6 @@ Offline prediction allows a mobile app to generate AI predictions without an act
 |                               |                                   |
 |                     [ bundled .tflite Asset ]                     |
 +-------------------------------------------------------------------+
-
 ```
 
 ---
@@ -69,37 +65,34 @@ The full pipeline from raw dataset to mobile app deployment follows six core ste
 
 Flutter connects to the TensorFlow Lite C++ runtime using the `tflite_flutter` package via Dart FFI (Foreign Function Interface).
 
-### Core Steps in Dart:
+### Core Steps in Dart
 
 1. **Register Asset (`pubspec.yaml`):**
+
    ```yaml
    flutter:
      assets:
        - assets/models/malnutrition_model.tflite
-
-```
+   ```
 
 2. **Load Model Interpreter:**
-```dart
-final interpreter = await Interpreter.fromAsset('assets/models/malnutrition_model.tflite');
 
-```
-
+   ```dart
+   final interpreter = await Interpreter.fromAsset('assets/models/malnutrition_model.tflite');
+   ```
 
 3. **Format Inputs:** Convert user inputs into a structured array and apply the same normalization parameters used during model training.
-```dart
-var inputTensor = [[normAge, normWeight, normHeight, normMUAC]];
 
-```
-
+   ```dart
+   var inputTensor = [[normAge, normWeight, normHeight, normMUAC]];
+   ```
 
 4. **Execute Inference:** Allocate an output tensor buffer and run prediction.
-```dart
-var outputTensor = List.filled(1 * 3, 0.0).reshape([1, 3]);
-interpreter.run(inputTensor, outputTensor);
 
-```
-
+   ```dart
+   var outputTensor = List.filled(1 * 3, 0.0).reshape([1, 3]);
+   interpreter.run(inputTensor, outputTensor);
+   ```
 
 5. **Update UI:** Parse class probabilities to render status labels (e.g., Normal, MAM, SAM).
 
@@ -122,16 +115,16 @@ interpreter.run(inputTensor, outputTensor);
 
 ### Advantages
 
-* **Offline Functionality:** Works seamlessly in off-grid rural areas with zero cellular or Wi-Fi coverage.
-* **Instant Triage Results:** Provides instant risk assessment in low-latency clinical environments.
-* **Enhanced Privacy & Compliance:** Patient records remain on the local hardware, mitigating data-leak risks.
-* **Zero Operating Costs:** Avoids per-request cloud API and server infrastructure fees.
+- **Offline Functionality:** Works seamlessly in off-grid rural areas with zero cellular or Wi-Fi coverage.
+- **Instant Triage Results:** Provides instant risk assessment in low-latency clinical environments.
+- **Enhanced Privacy & Compliance:** Patient records remain on the local hardware, mitigating data-leak risks.
+- **Zero Operating Costs:** Avoids per-request cloud API and server infrastructure fees.
 
 ### Limitations
 
-* **Increased Application Footprint:** Adding `.tflite` models increases overall APK/IPA package size.
-* **Hardware Limitations:** Constrained by the mobile device's local memory (RAM) and processing power.
-* **Update Friction:** Updating model weights requires rolling out a new app release or an over-the-air file update.
+- **Increased Application Footprint:** Adding `.tflite` models increases overall APK/IPA package size.
+- **Hardware Limitations:** Constrained by the mobile device's local memory (RAM) and processing power.
+- **Update Friction:** Updating model weights requires rolling out a new app release or an over-the-air file update.
 
 ---
 
@@ -139,21 +132,18 @@ interpreter.run(inputTensor, outputTensor);
 
 In field health settings, healthcare practitioners require immediate diagnostic support to detect child malnutrition early.
 
-### Application Workflow:
+### Application Workflow
 
 1. **User Input:** A health worker enters:
-* Child Age (months)
-* Weight (kg)
-* Height / Length (cm)
-* Gender
-* Mother Education
-* house Hold Wealth
-
-
+   - Child Age (months)
+   - Weight (kg)
+   - Height / Length (cm)
+   - Gender
+   - Mother's Education
+   - Household Wealth
 2. **Local Processing:** Flutter normalizes variables against WHO growth standard baseline figures.
 3. **Model Prediction:** The `.tflite` model evaluates inputs and calculates risk probabilities.
 4. **Clinical Output:** The app renders color-coded indicators:
-* 🟢 **Green (Normal):** Routine dietary counseling and scheduled monitoring.
-* 🟡 **Yellow (Moderate Acute Malnutrition - MAM):** Supplementary feeding recommendations.
-* 🔴 **Red (Severe Acute Malnutrition - SAM):** Immediate referral to therapeutic care centers.
-
+   - 🟢 **Green (Normal):** Routine dietary counseling and scheduled monitoring.
+   - 🟡 **Yellow (Moderate Acute Malnutrition - MAM):** Supplementary feeding recommendations.
+   - 🔴 **Red (Severe Acute Malnutrition - SAM):** Immediate referral to therapeutic care centers.
