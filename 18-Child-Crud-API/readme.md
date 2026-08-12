@@ -12,8 +12,6 @@ An asynchronous, high-performance RESTful API built with **FastAPI**, **Pydantic
 4. [API Endpoints Overview](#api-endpoints-overview)
 5. [HTTP Methods & Status Codes](#http-methods--status-codes)
 6. [Sample Requests & Responses](#sample-requests--responses)
-7. [Swagger UI Testing & Screenshots](#swagger-ui-testing--screenshots)
-8. [NourishPak System Architecture & ML Integration](#nourishpak-system-architecture--ml-integration)
 
 ---
 
