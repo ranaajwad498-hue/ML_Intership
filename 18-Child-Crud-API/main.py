@@ -14,7 +14,7 @@ class Child(BaseModel):
 class ChildService:
     def __init__(self):
         self._children: Dict[int, Child] = {}
-
+ 
     def add_child(self, child: Child) -> Child:
         if child.child_id in self._children:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Child with ID {child.child_id} already exists.")
