@@ -52,7 +52,7 @@ INSERT INTO health_worker VALUES
 (2, 2, 2, '+92 319 6511008', 'Employ');
 
 
-
+ 
 
 
 
