@@ -25,3 +25,6 @@ def model_info():
             "task": "Child Malnutrition Risk Classification",
             "status": "trained",
             "classes": ["Low Risk", "High Risk"]}
+
+
+
