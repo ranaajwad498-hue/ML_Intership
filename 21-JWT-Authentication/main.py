@@ -1,23 +1,26 @@
+from fastapi import Depends, FastAPI, status, Header, Query, HTTPException
+from sqlalchemy.orm import Session
+from typing import Optional
+from auth import verify_token
 from database import base, engine, session
-from fastapi import Depends, FastAPI, status
-from auth import verify_password, verify_token
+from model import User
 from schemas import TokenResponse, UserCreate, UserLogin, UserResponse
 from services import AuthService
-from sqlalchemy.orm import Session
 
 base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Authentication System")
 
+
 def get_db():
-    db= session()
+    db = session()
     try:
         yield db
     finally:
         db.close()
 
 
-@app.post("/signup",response_model=UserResponse,status_code=status.HTTP_201_CREATED)
+@app.post("/signup", response_model=UserResponse, status_code=status.HTTP_201_CREATED)
 def signup(user_data: UserCreate, db: Session = Depends(get_db)):
     return AuthService.create_user(user_data=user_data, db=db)
 
@@ -27,30 +30,54 @@ def login(user_data: UserLogin, db: Session = Depends(get_db)):
     user = AuthService.authenticate_user(user_data=user_data, db=db)
 
     access_token = AuthService.create_access_token(
-        data={"sub": str(user.u_id)}
+        user_id=user.u_id, email=user.email, role=user.u_role
     )
 
     return TokenResponse(
-        message="Login Sucessfuly",
         access_token=access_token,
         token_type="bearer",
+        u_id=user.u_id,
+        u_name=user.u_name,
+        email= user.email,
         u_role=user.u_role,
     )
 
 
-@app.get("/me", response_model=UserResponse)
-def get_profile(current_user: User = Depends(verify_token)):
+@app.get("/auth/me", response_model=UserResponse)
+def auth_me(token: Optional[str] = Query(None, description="Raw JWT token string"),db: Session = Depends(get_db)):
+    if token:
+        return verify_token(token=token, db=db)
 
-    return current_user {
-        "message": "Authenticated successfully",
-        "user_id": current_user["user_id"],
-        "email": current_user["email"],
-        "role": current_user["role"],}
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Not authenticated. Provide a Bearer token or ?token= parameter.",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
 
 
-@app.get("/role-check")
-def check_user_role(
-    current_user_id: int = Depends(verify_password), db: Session = Depends(get_db)
-):
-    user = AuthService.get_current_user(id=current_user_id, db=db)
-    return AuthService.check_role(user)
+@app.post("/admin/dashboard")
+def admin_dashboard(user_data: UserLogin, db: Session = Depends(get_db)):
+    user = AuthService.authenticate_user(user_data=user_data, db=db)
+    if user.u_role != "Admin":
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="You cannot Access",
+        )
+
+    return {
+        "message": "Welcome Admin",
+        "Role": user.u_role,
+    }
+    
+
+@app.post("/worker/dashboard")
+def health_worker_dashboard(user_data:UserLogin, db:Session=Depends(get_db)):
+    user = AuthService.authenticate_user(user_data=user_data, db=db)
+    if user.email == "worker@gmail.com":
+        return{
+            "message": "Welcome Health Worker",
+            "Role": user.u_role,
+        }
+
+
+ 
