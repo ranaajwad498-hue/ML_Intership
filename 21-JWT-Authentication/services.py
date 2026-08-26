@@ -1,5 +1,10 @@
 from datetime import datetime, timedelta, timezone
-from auth import hash_password, verify_password, SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES
+from auth import (
+    hash_password, 
+    verify_password, 
+    SECRET_KEY, 
+    ALGORITHM, 
+    ACCESS_TOKEN_EXPIRE_MINUTES)
 from fastapi import HTTPException, status
 import jwt
 from model import User, children, prediction
