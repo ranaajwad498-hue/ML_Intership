@@ -1,23 +1,18 @@
 from datetime import datetime, timedelta, timezone
-from auth import hash_password, verify_password
+from auth import hash_password, verify_password, SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES
 from fastapi import HTTPException, status
 import jwt
-from model import User
-from schemas import UserCreate, UserLogin
+from model import User, children, prediction
+from schemas import UserCreate, UserLogin, ChildUpdate
 from sqlalchemy.orm import Session
-
-SECRET_KEY = "ajwad321"
-ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 30
+from typing import List
 
 
 class AuthService:
 
     @staticmethod
     def create_user(user_data: UserCreate, db: Session):
-        existing_user = (
-            db.query(User).filter(User.email == user_data.email).first()
-        )
+        existing_user = db.query(User).filter(User.email == user_data.email).first()
         if existing_user:
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
@@ -36,7 +31,6 @@ class AuthService:
         db.commit()
         db.refresh(db_user)
         return db_user
-    
 
     @staticmethod
     def authenticate_user(user_data: UserLogin, db: Session):
@@ -51,15 +45,12 @@ class AuthService:
 
         return user
 
-
     @staticmethod
     def create_access_token(user_id: int, email: str, role: str, expires_delta: timedelta = None) -> str:
         if expires_delta:
             expire = datetime.now(timezone.utc) + expires_delta
         else:
-            expire = datetime.now(timezone.utc) + timedelta(
-                minutes=ACCESS_TOKEN_EXPIRE_MINUTES
-            )
+            expire = datetime.now(timezone.utc) + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
 
         payload = {
             "sub": str(user_id),  
@@ -81,8 +72,39 @@ class AuthService:
         return db_user
 
     @staticmethod
-    def check_role(user: User):
-        if user.u_role == "Admin":
-            return {"message": "Welcome Admin", "role": "Admin"}
-        else:
-            return {"message": "Welcome Worker", "role": user.u_role}
+    def get_all_children(db: Session, skip: int = 0, limit: int = 100) -> List[children]:
+        return db.query(children).offset(skip).limit(limit).all()
+
+    @staticmethod
+    def get_child_by_id(child_id: int, db: Session):
+        db_child = db.query(children).filter(children.c_id == child_id).first()
+        if not db_child:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Child record with ID {child_id} not found.",
+            )
+        return db_child
+
+    @staticmethod
+    def update_child(child_id: int, update_child: ChildUpdate, db: Session):
+        db_child = AuthService.get_child_by_id(child_id, db)
+        update_data = update_child.model_dump(exclude_unset=True)
+        for key, value in update_data.items():
+            setattr(db_child, key, value)
+
+        db.commit()
+        db.refresh(db_child)
+        return db_child
+
+    @staticmethod
+    def delete_child(child_id: int, db: Session):
+        db_child = AuthService.get_child_by_id(child_id, db)
+        db.delete(db_child)
+        db.commit()
+        return {
+            "message": f"Child Record with ID {child_id} deleted successfully"
+        }
+
+    @staticmethod
+    def view_prediction(db: Session, skip: int = 0, limit: int = 100) -> List[prediction]:
+        return db.query(prediction).offset(skip).limit(limit).all()
