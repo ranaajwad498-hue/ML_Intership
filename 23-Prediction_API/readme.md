@@ -38,49 +38,47 @@ The model artifact is loaded once at application startup (not per-request) to av
 import joblib
 from pathlib import Path
 
-MODEL_PATH = Path("models/risk_model.joblib")
-SCALER_PATH = Path("models/scaler.joblib")
+MODEL_PATH = Path("ml_models/Random_Forest_Classifier.joblib")
 
 model = joblib.load(MODEL_PATH)
-scaler = joblib.load(SCALER_PATH)
+
 ```
 
 ```python
 @app.on_event("startup")
 async def load_ml_artifacts():
     app.state.model = joblib.load(MODEL_PATH)
-    app.state.scaler = joblib.load(SCALER_PATH)
 ```
 
 ---
 
 ## Input Features
 
-| Feature | Type | Description |
-|---|---|---|
-| `age` | int | Age in years |
-| `bmi` | float | Body Mass Index |
-| `blood_pressure` | float | Systolic BP (mmHg) |
-| `glucose_level` | float | Fasting blood glucose (mg/dL) |
-| `cholesterol` | float | Total cholesterol (mg/dL) |
-| `smoking_status` | int (0/1) | 0 = non-smoker, 1 = smoker |
-| `physical_activity` | int (0/1/2) | 0 = sedentary, 1 = moderate, 2 = active |
-| `family_history` | int (0/1) | Family history of the condition |
+| Feature | Type | 
+|---|---|
+| `age (months)` | int |
+| `gender` | string |  
+| `houshold_wealth` | string | 
+| `mother_education` | string | 
+| `weight_kg` | float | 
+| `height_cm` | float | 
 
 Pydantic schema enforces types and ranges at the request boundary:
 
 ```python
 from pydantic import BaseModel, Field
-
-class RiskPredictionInput(BaseModel):
-    age: int = Field(..., ge=0, le=120)
-    bmi: float = Field(..., ge=10, le=70)
-    blood_pressure: float = Field(..., ge=60, le=250)
-    glucose_level: float = Field(..., ge=40, le=500)
-    cholesterol: float = Field(..., ge=100, le=400)
-    smoking_status: int = Field(..., ge=0, le=1)
-    physical_activity: int = Field(..., ge=0, le=2)
-    family_history: int = Field(..., ge=0, le=1)
+class ChildPredictionRequest(BaseModel):
+    child_id: int = Field(..., gt=0, example=101)
+    age_months: float = Field(..., ge=0, example=18.0)
+    gender: Literal["Male", "Female"]
+    mother_education: Literal["No education", "Primary", "Secondary", "Higher"] = Field(
+        "Secondary", example="Secondary"
+    )
+    household_wealth_index: Literal["Poorest", "Poor", "Middle", "Richer", "Richest"] = Field(
+        "Middle", example="Middle"
+    )
+    weight_kg: float = Field(..., gt=0, example=7.8)
+    height_cm: float = Field(..., gt=0, example=74.0)
 ```
 
 ---
@@ -88,7 +86,7 @@ class RiskPredictionInput(BaseModel):
 ## Prediction Endpoint
 
 ```
-POST /api/v1/predict
+POST /predict
 ```
 
 - **Auth**: Required (JWT bearer token)
@@ -108,14 +106,14 @@ async def predict_risk(
     category = categorize_risk(score)
     advice = generate_advice(category, payload)
 
-    prediction = Prediction(
+    record = prediction_record(
         user_id=current_user.id,
         input_data=payload.dict(),
         risk_score=score,
         risk_category=category,
         advice=advice,
     )
-    db.add(prediction)
+    db.add(record)
     db.commit()
     db.refresh(prediction)
 
@@ -130,24 +128,11 @@ Raw JSON input is transformed into the exact numerical format the model expects,
 
 1. **Schema validation** — Pydantic rejects malformed or out-of-range values before preprocessing starts.
 2. **Ordering** — features are arranged into a fixed column order matching the training pipeline (order matters for the model, not field names).
-3. **Encoding** — categorical fields (`smoking_status`, `physical_activity`, `family_history`) are already integer-encoded at input time, matching the encoding used during training.
-4. **Scaling** — continuous features (`age`, `bmi`, `blood_pressure`, `glucose_level`, `cholesterol`) are transformed with the same `StandardScaler` fitted during training.
+3. **Encoding** — categorical fields (`houshold_wealth`, `mother_education`) are already integer-encoded at input time, matching the encoding used during training.
+4. **Scaling** — continuous features (`age`, `height_cm`, `weight_kg`) are transformed with the same `StandardScaler` fitted during training.
 5. **Reshape** — flattened into a single-row 2D array (`1 x n_features`) since scikit-learn expects a 2D input even for one sample.
 
-```python
-import numpy as np
 
-FEATURE_ORDER = [
-    "age", "bmi", "blood_pressure", "glucose_level",
-    "cholesterol", "smoking_status", "physical_activity", "family_history",
-]
-
-def preprocess(payload: RiskPredictionInput) -> np.ndarray:
-    raw = np.array([[getattr(payload, f) for f in FEATURE_ORDER]])
-    continuous_idx = [0, 1, 2, 3, 4]  # age, bmi, bp, glucose, cholesterol
-    raw[:, continuous_idx] = scaler.transform(raw[:, continuous_idx])
-    return raw
-```
 
 ---
 
@@ -197,26 +182,13 @@ RISK_THRESHOLDS = {"low_max": 33, "moderate_max": 66}
 Advice is **rule-based**, not model-generated — the ML model only produces a score; a separate deterministic layer maps `(category, input features)` to actionable guidance. This keeps advice auditable and easy to update without retraining the model.
 
 ```python
-def generate_advice(category: str, payload: RiskPredictionInput) -> list[str]:
-    advice = []
-
-    if category == "High":
-        advice.append("Consult a healthcare provider promptly for a full evaluation.")
-    elif category == "Moderate":
-        advice.append("Consider scheduling a check-up in the coming weeks.")
-    else:
-        advice.append("Maintain your current healthy habits.")
-
-    if payload.smoking_status == 1:
-        advice.append("Quitting smoking would meaningfully lower your risk profile.")
-    if payload.physical_activity == 0:
-        advice.append("Increasing physical activity, even light walking, can help.")
-    if payload.bmi >= 30:
-        advice.append("A gradual, sustainable weight management plan may help.")
-    if payload.glucose_level >= 126:
-        advice.append("Elevated glucose levels warrant discussion with a clinician.")
-
-    return advice
+    def generate_advice(cls, category: str) -> str:
+        if category == "Low Risk":
+            return "Continue regular growth monitoring and healthy nutrition practices."
+        elif category == "Medium Risk":
+            return "Schedule follow-up assessment and review feeding practices."
+        else:
+            return "Refer child for nutrition support and further clinical assessment."
 ```
 
 This produces a small, ordered list of relevant tips rather than a generic paragraph, and each rule is independently testable.
@@ -360,30 +332,27 @@ curl -X POST "https://api.example.com/api/v1/predict" \
   -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIs..." \
   -H "Content-Type: application/json" \
   -d '{
-        "age": 52,
-        "bmi": 31.4,
-        "blood_pressure": 142,
-        "glucose_level": 138,
-        "cholesterol": 220,
-        "smoking_status": 1,
-        "physical_activity": 0,
-        "family_history": 1
-      }'
+  "child_id": 1,
+  "age_months": 18,
+  "gender": "Male",
+  "mother_education": "Secondary",
+  "household_wealth_index": "Middle",
+  "weight_kg": 7.8,
+  "height_cm": 74
+}'
 ```
 
 **Response `200 OK`**
 
 ```json
 {
-  "id": "7c9e6679-7425-40de-944b-e07fc1f90ae7",
-  "risk_score": 78.42,
-  "risk_category": "High",
-  "advice": [
-    "Consult a healthcare provider promptly for a full evaluation.",
-    "Quitting smoking would meaningfully lower your risk profile.",
-    "Increasing physical activity, even light walking, can help.",
-    "A gradual, sustainable weight management plan may help.",
-    "Elevated glucose levels warrant discussion with a clinician."
+  "p_id": 3,
+  "child_id": 1,
+  "risk_score": 47,
+  "category": "Medium Risk",
+  "confidence": 46.54,
+  "advice": "Schedule follow-up assessment and review feeding practices.",
+  "created_at": "2026-09-02T16:21:38.951290+05:00"
   ],
   "model_version": "v1",
   "created_at": "2026-09-01T09:20:00Z"
@@ -403,18 +372,15 @@ curl -X GET "https://api.example.com/api/v1/predict/history?limit=5" \
 
 ```json
 [
-  {
-    "id": "7c9e6679-7425-40de-944b-e07fc1f90ae7",
-    "risk_score": 78.42,
-    "risk_category": "High",
-    "created_at": "2026-09-01T09:20:00Z"
-  },
-  {
-    "id": "a3f1e9c2-1b2d-4e3f-8a9b-0c1d2e3f4a5b",
-    "risk_score": 41.10,
-    "risk_category": "Moderate",
-    "created_at": "2026-08-20T14:05:00Z"
-  }
+  "child_id": 1,
+  "total_predictions": 3,
+  "predictions": [
+    {
+      "risk_score": 47,
+      "category": "Medium Risk",
+      "confidence": 46.54,
+      "created_at": "2026-09-02T16:21:38.951290+05:00"
+    }
 ]
 ```
 
@@ -424,8 +390,8 @@ curl -X GET "https://api.example.com/api/v1/predict/history?limit=5" \
 {
   "detail": [
     {
-      "loc": ["body", "bmi"],
-      "msg": "ensure this value is less than or equal to 70",
+      "loc": ["body","age_months"],
+      "msg": "ensure this value is greator than or equal to 1",
       "type": "value_error.number.not_le"
     }
   ]
@@ -456,7 +422,7 @@ In short, the Day 15 engine proved the model works; this API turns that engine i
 
 Because the service is a standard JSON-over-HTTPS REST API with JWT auth, it can be consumed by a Flutter app the same way any other backend would be, with no ML-specific tooling needed on the mobile side:
 
-1. **Authentication** — the Flutter app calls the existing `/api/v1/auth/login` endpoint, stores the returned JWT securely (e.g., via `flutter_secure_storage`), and attaches it as an `Authorization: Bearer <token>` header on subsequent requests.
+1. **Authentication** — the Flutter app calls the existing `/login` endpoint, stores the returned JWT securely (e.g., via `flutter_secure_storage`), and attaches it as an `Authorization: Bearer <token>` header on subsequent requests.
 
 2. **HTTP client** — using a package like `dio` or `http`, the app builds a request body matching `RiskPredictionInput` from form fields (age, BMI, blood pressure, etc.) collected in a Flutter form/wizard UI.
 
@@ -464,14 +430,13 @@ Because the service is a standard JSON-over-HTTPS REST API with JWT auth, it can
    final response = await dio.post(
      'https://api.example.com/api/v1/predict',
      data: {
-       "age": 52,
-       "bmi": 31.4,
-       "blood_pressure": 142,
-       "glucose_level": 138,
-       "cholesterol": 220,
-       "smoking_status": 1,
-       "physical_activity": 0,
-       "family_history": 1,
+      "child_id": 1,
+      "age_months": 18,
+      "gender": "Male",
+      "mother_education": "Secondary",
+      "household_wealth_index": "Middle",
+      "weight_kg": 7.8,
+      "height_cm": 74
      },
      options: Options(headers: {"Authorization": "Bearer $jwtToken"}),
    );
