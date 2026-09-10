@@ -42,7 +42,7 @@ class health_worker(base):
     h_id= Column(Integer, primary_key=True, index= True)
     user_id= Column(Integer, ForeignKey("users.u_id"))
     district_id= Column(Integer, ForeignKey("districts.d_id"))
-    phone= Column(Integer, nullable=False, index=False)
+    phone= Column(BigInteger, nullable=False, index=False)
     desgination= Column(String, nullable=False, index=True)
     created_at= Column(DateTime(timezone=True), server_default=func.now())
     updated_at= Column(DateTime(timezone=True),onupdate=func.now(), server_default=func.now())

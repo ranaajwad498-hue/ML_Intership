@@ -30,3 +30,4 @@ class auth_services():
                 headers={"WWW-Authenticate": "Bearer"},
             )
         return db_user
+    
