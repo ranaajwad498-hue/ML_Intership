@@ -20,6 +20,8 @@ class child(base):
     c_name = Column(String, nullable=False, index=True)
     age_months = Column(Integer, nullable=False, index=True)
     gender = Column(String, nullable=False, index=True)
+    mother_education=Column(String, nullable=False, index=True)
+    household_wealth_index=Column(String, nullable=False, index=True)
     weight_kg = Column(Float, nullable=False, index=True)
     height_cm = Column(Float, nullable=False, index=True)
     district_id = Column(BigInteger, nullable=False, index=True)
