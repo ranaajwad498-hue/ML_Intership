@@ -1,9 +1,10 @@
 import os
 import joblib
 import pandas as pd
+from fastapi import HTTPException, status
 from typing import Dict, Any
 from sqlalchemy.orm import Session
-from app.models import prediction
+from app.models import prediction, child
 
 
 class PredictionService:
@@ -37,9 +38,9 @@ class PredictionService:
             "mother_education": "Mother_Education",
             "weight_kg": "Weight_kg",
         }
-        
+
         df = df.rename(columns=column_mapping)
-        
+
         feature_columns = [
             "Age (months)",
             "Gender",
@@ -53,7 +54,6 @@ class PredictionService:
                 df[col] = None
 
         return df[feature_columns]
-
 
     @classmethod
     def calculate_risk_score(cls, df_prepared: pd.DataFrame) -> tuple[int, float]:
@@ -110,41 +110,52 @@ class PredictionService:
         return record
 
     @classmethod
-    def evaluate_direct_prediction(cls, data: dict, db: Session, child_id: int = None) -> dict:
-        df_prepared = cls.prepare_input(data)
-        risk_score, confidence = cls.calculate_risk_score(df_prepared)
-        category = cls.determine_risk_category(risk_score)
-        advice = cls.generate_advice(category)
-
-        if child_id is not None:
-            cls.save_prediction(
-                db=db,
-                child_id=child_id,
-                risk_score=risk_score,
-                risk_category=category,
-                confidence=confidence,
-                advice=advice
+    def predict_health_by_child_id(cls, db: Session, child_id: int):
+        db_child = db.query(child).filter(child.c_id == child_id).first()
+        if not db_child:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail="Child not found in the database"
             )
 
-        return {
-            "risk_score": risk_score,
-            "category": category,
-            "confidence": confidence,
-            "advice": advice,
+        if cls.model is None:
+            cls.load_model()
+
+        payload = {
+            "age_months": db_child.age_months,
+            "gender": db_child.gender,
+            "mother_education": db_child.mother_education,
+            "household_wealth_index": db_child.household_wealth_index,
+            "weight_kg": db_child.weight_kg,
+            "height_cm": db_child.height_cm,
         }
 
+        input_feature = cls.prepare_input(payload)
+        risk_score, confidence = cls.calculate_risk_score(input_feature)
+        risk_category = cls.determine_risk_category(risk_score)
+        advice = cls.generate_advice(risk_category)
+
+        return cls.save_prediction(
+            db=db,
+            child_id=child_id,
+            risk_score=risk_score,
+            risk_category=risk_category,
+            confidence=confidence,
+            advice=advice
+        )
+
     @classmethod
-    def get_latest_prediction(cls, db: Session, child_id: int):
+    def get_latest_prediction(cls, db: Session):
         latest_record = (
             db.query(prediction)
-            .filter(prediction.child_id == child_id)
             .order_by(prediction.created_at.desc())
             .first()
         )
         if not latest_record:
-            return{
-                "message":"No prediction found for this child"
+            return {
+                "message": "No prediction found for this child"
             }
         return latest_record
+
 
 PredictionService.load_model()

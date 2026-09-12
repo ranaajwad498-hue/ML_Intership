@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from fastapi import HTTPException, status
-from app.models import child
+from app.models import child,prediction
 from app.schemas import ChildCreate, ChildUpdate
 
 class child_services:
@@ -45,6 +45,7 @@ class child_services:
     @staticmethod
     def delete_child(db: Session, c_id: int):
         db_child = child_services.get_child_by_id(db, c_id)
+        db.query(prediction).filter(prediction.child_id == c_id).delete()
         if not db_child:
             raise HTTPException(
                 status_code= status.HTTP_404_NOT_FOUND,

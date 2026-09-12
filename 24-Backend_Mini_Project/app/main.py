@@ -3,7 +3,7 @@ from datetime import timedelta
 from fastapi import FastAPI, Depends, HTTPException, status
 from app.services.auth_services import auth_services
 from app.schemas import (tokenresponse, userCreate, userlogin, ChildCreate,ChildResponse,ChildUpdate,
-ChildPredictionRequest,PredictionResponse,PredictionHistoryResponse, DirectPredictionResponse, DirectPredictionRequest)
+ChildPredictionRequest,PredictionResponse,PredictionHistoryResponse)
 from sqlalchemy.orm import Session
 from app.database import get_db
 from app.auth import authentication, ACCESS_TOKEN_EXPIRE_MINUTES
@@ -96,11 +96,25 @@ def get_single_child(c_id: int, db: Session = Depends(get_db), current_user: use
 
 @app.put("/children/{c_id}")
 def update_child(c_id: int, child_data: ChildUpdate, db: Session = Depends(get_db), current_user: users = Depends(authentication.verify_token)):
+    db_child=db.query(child).filter(child.c_id == c_id).first()
     if current_user.u_role not in {"Admin", "Health_worker"}:
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="Access Denined"
         )
+    
+    if not db_child:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Child Record not Found"
+        )
+
+    if current_user.u_role =="Health_worker" and db_child.health_worker_id != current_user.u_id:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Access Denined"
+        )
+
     child_update=child_services.update_child(db=db, c_id=c_id, child_data=child_data)
     return {
         "message": "Child Updated Successfully",
@@ -109,14 +123,28 @@ def update_child(c_id: int, child_data: ChildUpdate, db: Session = Depends(get_d
 
 @app.delete("/children/{c_id}")
 def delete_child(c_id: int, db: Session = Depends(get_db), current_user: users = Depends(authentication.verify_token)):
+    db_child=db.query(child).filter(child.c_id == c_id).first()
+
     if current_user.u_role not in {"Admin", "Health_worker"}:
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="Access Denined"
         )
+    if not db_child:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Child Record not Found"
+        )
+
+    if current_user.u_role =="Health_worker" and db_child.health_worker_id != current_user.u_id:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Access Denined"
+        ) 
+
     return child_services.delete_child(db=db, c_id=c_id)
 
-@app.get("/children")
+@app.get("/children/count")
 def children_count(db:Session=Depends(get_db), current_user: users = Depends(authentication.verify_token)):
     if current_user.u_role not in {"Admin", "Health_worker"}:
         raise HTTPException(
@@ -127,14 +155,13 @@ def children_count(db:Session=Depends(get_db), current_user: users = Depends(aut
     return{
         "Total Children": total_count
     }
-
+    
 @app.post("/predict",response_model=PredictionResponse,status_code=status.HTTP_201_CREATED,)
 def predict_child_health(request: ChildPredictionRequest,db: Session = Depends(get_db),current_user: users = Depends(authentication.verify_token)):
     if current_user.u_role not in {"Admin", "Health Worker", "Worker"}:
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN, detail="Access Denied"
         )
-
     childs = db.query(child).filter(child.c_id == request.child_id).first()
     if not childs:
         raise HTTPException(
@@ -164,7 +191,7 @@ def predict_child_health(request: ChildPredictionRequest,db: Session = Depends(g
             p_id=saved_record.p_id,
             child_id=saved_record.child_id,
             risk_score=saved_record.risk_score,
-            category=saved_record.risk_category,
+            risk_category=saved_record.risk_category,
             confidence=saved_record.confidence,
             advice=saved_record.advice,
             created_at=saved_record.created_at,
@@ -177,23 +204,26 @@ def predict_child_health(request: ChildPredictionRequest,db: Session = Depends(g
         )
 
 
-@app.post("/predict/", response_model=DirectPredictionResponse)
-def direct_prediction(
-    prediction_data: DirectPredictionRequest,
-    child_id:int,
-    db: Session = Depends(get_db),
-    current_user: users = Depends(authentication.verify_token)
-):
-    result = PredictionService.evaluate_direct_prediction(
-        data=prediction_data.model_dump(),
-        db=db,
-        child_id=child_id
-    )
-    return DirectPredictionResponse(**result)
+@app.post("/children/{child_id}/predict", response_model=PredictionResponse)
+def predict_child_health_by_id(child_id: int,db: Session = Depends(get_db),current_user: users = Depends(authentication.verify_token),):
+    if current_user.u_role not in {"Admin", "Health_worker"}:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN, detail="Access Denied"
+        )
+    record = PredictionService.predict_health_by_child_id(db=db, child_id=child_id)
+    return PredictionResponse(
+    p_id=record.p_id,
+    child_id=record.child_id,
+    risk_score=record.risk_score,
+    risk_category=record.risk_category,
+    confidence=float(record.confidence),
+    advice=record.advice,
+    created_at=record.created_at
+)
 
 
 @app.get("/children/{child_id}/predictions",response_model=PredictionHistoryResponse,status_code=status.HTTP_200_OK,)
-def get_child_predictions(child_id: int,db: Session = Depends(get_db),current_user: users = Depends(authentication.verify_token),):
+def get_child_predictions_history(child_id: int,db: Session = Depends(get_db),current_user: users = Depends(authentication.verify_token),):
     if current_user.u_role not in {"Admin", "Health_worker"}:
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN, detail="Access Denied"
@@ -214,7 +244,7 @@ def get_child_predictions(child_id: int,db: Session = Depends(get_db),current_us
     formatted_predictions = [
         {
             "risk_score": r.risk_score,
-            "category": r.risk_category,
+            "risk_category": r.risk_category,
             "confidence": r.confidence,
             "created_at": r.created_at,
         }
@@ -227,3 +257,7 @@ def get_child_predictions(child_id: int,db: Session = Depends(get_db),current_us
         predictions=formatted_predictions,
     )
 
+@app.get("/prediction/latest", response_model=PredictionResponse)
+def get_latest_prediction(db: Session = Depends(get_db)):
+    record = PredictionService.get_latest_prediction(db=db)
+    return PredictionResponse.model_validate(record)

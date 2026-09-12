@@ -24,17 +24,18 @@ class tokenresponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 class ChildCreate(BaseModel):
-    child_id: int = Field(..., gt=0, example=101)
-    age_months: float = Field(..., ge=0, example=18.0)
+    c_name:str
+    age_months: int = Field(..., ge=0, example=18.0)
     gender: Literal["Male", "Female"]
     mother_education: Literal["No education", "Primary", "Secondary", "Higher"] = Field(
         "Secondary", example="Secondary"
     )
-    household_wealth_index: Literal["Poorest", "Poor", "Middle", "Richer", "Richest"] = Field(
+    household_wealth_index: Literal["Low", "Middle", "High""Low", "Middle", "High"] = Field(
         "Middle", example="Middle"
     )
     weight_kg: float = Field(..., gt=0, example=7.8)
     height_cm: float = Field(..., gt=0, example=74.0)
+    district_id: int
     health_worker_id: int
     profile_photo: Optional[str] = None
 
@@ -58,13 +59,13 @@ class ChildResponse(ChildCreate):
 
 
 class ChildPredictionRequest(BaseModel):
-    child_id: int = Field(..., gt=0, example=101)
+    child_id: int = Field(..., gt=0)
     age_months: float = Field(..., ge=0, example=18.0)
     gender: Literal["Male", "Female"]
     mother_education: Literal["No education", "Primary", "Secondary", "Higher"] = Field(
         "Secondary", example="Secondary"
     )
-    household_wealth_index: Literal["Poorest", "Poor", "Middle", "Richer", "Richest"] = Field(
+    household_wealth_index: Literal["Low", "Middle", "High"] = Field(
         "Middle", example="Middle"
     )
     weight_kg: float = Field(..., gt=0, example=7.8)
@@ -75,7 +76,7 @@ class PredictionResponse(BaseModel):
     p_id: int
     child_id: int
     risk_score: int
-    category: str
+    risk_category: str
     confidence: float
     advice: str
     created_at: datetime
@@ -85,7 +86,7 @@ class PredictionResponse(BaseModel):
 
 class PredictionHistoryItem(BaseModel):
     risk_score: int
-    category: str
+    risk_category: str
     confidence: float
     created_at: datetime
 
@@ -97,22 +98,4 @@ class PredictionHistoryResponse(BaseModel):
     total_predictions: int
     predictions: List[PredictionHistoryItem]
 
-class DirectPredictionRequest(BaseModel):
-    age_months: float = Field(..., ge=0, example=18.0)
-    gender: Literal["Male", "Female"]
-    mother_education: Literal["No education", "Primary", "Secondary", "Higher"] = Field(
-        "Secondary", example="Secondary"
-    )
-    household_wealth_index: Literal["Poorest", "Poor", "Middle", "Richer", "Richest"] = Field(
-        "Middle", example="Middle"
-    )
-    weight_kg: float = Field(..., gt=0, example=7.8)
-    height_cm: float = Field(..., gt=0, example=74.0)
-
-class DirectPredictionResponse(BaseModel):
-    risk_score: int
-    category: str
-    confidence: float
-    advice: str
-    model_config = ConfigDict(from_attributes=True)
 

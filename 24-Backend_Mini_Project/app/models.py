@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, BigInteger, DateTime, ForeignKey, Float
+from sqlalchemy import Column, Integer, String, BigInteger, DateTime, ForeignKey, Float,Double
 from app.database import base
 from sqlalchemy import func
 
@@ -22,10 +22,10 @@ class child(base):
     gender = Column(String, nullable=False, index=True)
     mother_education=Column(String, nullable=False, index=True)
     household_wealth_index=Column(String, nullable=False, index=True)
-    weight_kg = Column(Float, nullable=False, index=True)
-    height_cm = Column(Float, nullable=False, index=True)
-    district_id = Column(BigInteger, nullable=False, index=True)
-    health_worker_id = Column(BigInteger, nullable=False, index=True)
+    weight_kg = Column(Double, nullable=False, index=True)
+    height_cm = Column(Double, nullable=False, index=True)
+    district_id = Column(BigInteger, ForeignKey("districts.d_id"), index=True)
+    health_worker_id = Column(BigInteger, ForeignKey("health_worker.h_id"), index=True)
     profile_photo = Column(String, index=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now(), server_default=func.now())
@@ -55,8 +55,8 @@ class prediction(base):
     p_id=Column(Integer, primary_key=True, autoincrement=True, index=True)
     child_id= Column(Integer, ForeignKey("child.c_id"))
     risk_score= Column(Integer, nullable=False, index=True)
-    risk_catagory= Column(String, nullable=False, index=True)
+    risk_category= Column(String, nullable=False, index=True)
     confidence= Column(String, nullable=False, index=True)
     model_name= Column(String, nullable=False, index=True)
     advice= Column(String, nullable=False, index=True)
-    created_at= Column(DateTime(timezone=True), server_default=func.now())
+    created_at= Column(DateTime(timezone=True), server_default=func.now()) 
