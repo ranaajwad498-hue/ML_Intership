@@ -388,7 +388,3 @@ FastAPI auto-generates interactive documentation:
 12. **Confirm cascading behavior** — check whether related predictions are deleted or retained (TODO: define your intended behavior)
 
 ---
-
-## License
-
-TODO: add license.
