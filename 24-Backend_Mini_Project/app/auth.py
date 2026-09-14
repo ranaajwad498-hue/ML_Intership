@@ -16,7 +16,7 @@ ALGORITHM = os.getenv("ALGORITHM", "HS256")
 ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", 30))
 
 password_hash = PasswordHash((BcryptHasher(),))
-oauth_scheme = OAuth2PasswordBearer(tokenUrl="/login")
+oauth_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
 
 class authentication():
     @staticmethod
