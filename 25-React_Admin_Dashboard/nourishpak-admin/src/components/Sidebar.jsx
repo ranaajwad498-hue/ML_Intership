@@ -46,7 +46,6 @@ const Sidebar = ({ isOpen = true, onClose }) => {
           md:translate-x-0 md:static md:flex
         `}
       >
-        {/* Brand */}
         <div className="px-6 py-5 border-b border-slate-700 flex items-center gap-2">
           <Leaf className="text-emerald-400" size={22} />
           <div>
@@ -55,7 +54,6 @@ const Sidebar = ({ isOpen = true, onClose }) => {
           </div>
         </div>
 
-        {/* Navigation */}
         <nav className="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
           {menuItems.map((item) => {
             const Icon = item.icon;
@@ -81,7 +79,7 @@ const Sidebar = ({ isOpen = true, onClose }) => {
           })}
         </nav>
 
-        {/* Logout */}
+    
         <div className="px-3 py-4 border-t border-slate-700">
           <button
             className="

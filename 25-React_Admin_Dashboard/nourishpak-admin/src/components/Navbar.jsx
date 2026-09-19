@@ -10,7 +10,6 @@ const Navbar = ({ onMenuClick }) => {
   return (
     <header className="sticky top-0 z-20 bg-white border-b border-slate-200 shadow-sm">
       <div className="flex items-center justify-between px-4 md:px-6 py-3">
-        {/* LEFT: Hamburger + Title */}
         <div className="flex items-center gap-3">
           <button
             onClick={onMenuClick}
@@ -30,7 +29,6 @@ const Navbar = ({ onMenuClick }) => {
           </div>
         </div>
 
-        {/* RIGHT: Admin info + Logout */}
         <div className="flex items-center gap-3 md:gap-4">
           <div className="hidden sm:block text-right leading-tight">
             <p className="text-sm font-medium text-slate-800">

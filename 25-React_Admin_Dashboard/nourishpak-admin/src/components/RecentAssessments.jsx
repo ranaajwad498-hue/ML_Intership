@@ -44,7 +44,6 @@ const RecentAssessments = () => {
         </button>
       </div>
 
-      {/* Table wrapper — allows horizontal scroll on small screens */}
       <div className="overflow-x-auto">
         <table className="min-w-full text-sm">
           <thead className="bg-slate-50 text-slate-600">
