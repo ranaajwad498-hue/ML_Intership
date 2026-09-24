@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments & Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets (Keep your DB passwords & JWT keys safe!)
+.env
+.env.*
+!.env.example
+
+# Database & SQLite files
+*.sqlite3
+*.db
+*.log
+
+# Pytest / Coverage reporting
+.cache
+.pytest_cache/
+.coverage
+htmlcov/
+.hypothesis/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+
+# Alembic / Migration caches (keep migration files, ignore cache)
+alembic/versions/__pycache__/
