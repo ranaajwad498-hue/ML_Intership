@@ -1,15 +1,3 @@
-/**
- * DashboardCard Component
- * -----------------------
- * A reusable statistic card.
- *
- * Props:
- *  - title       (string)         : Card heading
- *  - value       (string|number)  : Main metric
- *  - description (string)         : Optional helper text
- *  - icon        (ReactComponent) : Lucide icon component (e.g. Baby)
- *  - color       (string)         : "emerald" | "red" | "amber" | "sky" | "slate"
- */
 const colorMap = {
   emerald: {
     iconBg: "bg-emerald-100",

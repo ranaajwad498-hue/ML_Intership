@@ -1,26 +1,9 @@
 import { AlertCircle } from "lucide-react";
 
-/**
- * FormInput Component
- * -------------------
- * Reusable input/select field with label + error message.
- *
- * Props:
- *  - label       (string)  : Field label
- *  - name        (string)  : Field name (used by parent onChange)
- *  - value       (any)     : Current value
- *  - onChange    (function): Change handler
- *  - type        (string)  : "text" | "number" | "email" | "select" | ...
- *  - placeholder (string)  : Placeholder text
- *  - error       (string)  : Error message (if any)
- *  - required    (boolean) : Show red asterisk
- *  - options     (array)   : For type="select" — [{ value, label }]
- *  - min, max, step        : Passed through to native input
- */
 const FormInput = ({
   label,
   name,
-  value,
+  value = "",  
   onChange,
   type = "text",
   placeholder = "",

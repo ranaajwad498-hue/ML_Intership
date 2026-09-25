@@ -3,19 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { ArrowLeft, CheckCircle, Loader2, Sparkles, UserPlus } from "lucide-react";
 import ChildForm from "../components/ChildForm";
 import PredictionResult from "../components/PredictionResult";
+import api from "../api/api";
 
-/**
- * AddChild Page
- * -------------
- * Full flow:
- *  1. Admin/Health Worker fills ChildForm
- *  2. POST /children  →  child saved in PostgreSQL, ID returned
- *  3. Click "Generate Prediction"
- *  4. POST /children/{id}/predict  →  ML result
- *  5. PredictionResult component shows it
- */
-
-// -------- TEMPORARY dummy data (replace with API later) --------
 const dummyDistricts = [
   { id: 1, name: "Mardan" },
   { id: 2, name: "Peshawar" },
@@ -27,95 +16,87 @@ const dummyHealthWorkers = [
   { id: 2, name: "Mr. Imran Ali" },
   { id: 3, name: "Ms. Hina Yousaf" },
 ];
-// ----------------------------------------------------------------
 
 const AddChild = () => {
   const navigate = useNavigate();
 
-  // Registered child info (returned by backend)
   const [childId, setChildId] = useState(null);
   const [childName, setChildName] = useState("");
 
-  // Prediction result (returned by backend)
   const [prediction, setPrediction] = useState(null);
 
-  // Loading + error states
   const [registering, setRegistering] = useState(false);
   const [predicting, setPredicting] = useState(false);
   const [error, setError] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
 
-  // -------- Step 9: POST /children --------
-  const handleRegisterChild = async (formData) => {
-    setError("");
-    setSuccessMsg("");
-    setPrediction(null);
-    setRegistering(true);
+const handleRegisterChild = async (formData) => {
+  setError("");
+  setSuccessMsg("");
+  setPrediction(null);
+  setRegistering(true);
 
-    try {
-      // TODO: replace with real Axios call
-      // const res = await api.post("/children", formData);
-      // const { id, name } = res.data;
+  try {
+    const res = await api.post("/add_child", formData);
 
-      // ---- MOCK response for now ----
-      await new Promise((r) => setTimeout(r, 800));
-      const mockResponse = { id: 101, name: formData.name };
-      // --------------------------------
+    const savedChild = res.data;
 
-      setChildId(mockResponse.id);
-      setChildName(mockResponse.name);
-      setSuccessMsg(
-        `Child Registered Successfully. Child ID: ${mockResponse.id}`
-      );
-    } catch (err) {
-      setError("Unable to register child. Please check the entered information.");
-    } finally {
-      setRegistering(false);
+    setChildId(savedChild.id);
+    setChildName(savedChild.name);
+    setSuccessMsg(
+      `Child Registered Successfully. Child ID: ${savedChild.id}`
+    );
+  } catch (err) {
+    console.error("Register error:", err);
+
+    if (!err.response) {
+      setError("Cannot reach server. Please check your connection.");
+    } else if (err.response.status === 401) {
+      setError("Session expired. Please login again.");
+    } else if (err.response.status === 422) {
+      setError("Please check the entered information.");
+    } else {
+      setError("Unable to register child. Please try again.");
     }
-  };
+  } finally {
+    setRegistering(false);
+  }
+};
 
-  // -------- Step 13: POST /children/{id}/predict --------
-  const handleGeneratePrediction = async () => {
-    if (!childId) return;
+const handleGeneratePrediction = async () => {
+  if (!childId) return;
 
-    setError("");
-    setPredicting(true);
+  setError("");
+  setPredicting(true);
 
-    try {
-      // TODO: replace with real Axios call
-      // const res = await api.post(`/children/${childId}/predict`);
-      // setPrediction(res.data);
+  try {
+    const res = await api.post(`/children/${childId}/predict`);
+    setPrediction(res.data);
+  } catch (err) {
+    console.error("Predict error:", err);
 
-      // ---- MOCK response for now ----
-      await new Promise((r) => setTimeout(r, 800));
-      setPrediction({
-        risk_score: 76,
-        category: "High Risk",
-        confidence: 76,
-        advice: "Refer child for nutrition support and further assessment.",
-      });
-      // --------------------------------
-    } catch (err) {
+    if (!err.response) {
+      setError("Cannot reach server. Please check your connection.");
+    } else if (err.response.status === 404) {
+      setError("Child not found.");
+    } else {
       setError("Unable to generate prediction. Please try again.");
-    } finally {
-      setPredicting(false);
     }
-  };
-
-  // -------- Bonus: Reset for another child --------
+  } finally {
+    setPredicting(false);
+  }
+};
   const handleRegisterAnother = () => {
     setChildId(null);
     setChildName("");
     setPrediction(null);
     setError("");
     setSuccessMsg("");
-    // Force ChildForm to re-mount with blank fields
     window.location.reload();
   };
 
   return (
     <div>
-      {/* Header */}
       <div className="mb-6 flex items-start gap-3">
         <button
           onClick={() => navigate(-1)}
@@ -132,22 +113,19 @@ const AddChild = () => {
         </div>
       </div>
 
-      {/* Global error */}
+
       {error && (
         <div className="mb-5 px-4 py-3 rounded-lg bg-red-50 border border-red-200 text-sm text-red-700">
           {error}
         </div>
       )}
 
-      {/* Success banner */}
       {successMsg && (
         <div className="mb-5 flex items-center gap-2 px-4 py-3 rounded-lg bg-emerald-50 border border-emerald-200 text-sm text-emerald-700">
           <CheckCircle size={16} />
           {successMsg}
         </div>
       )}
-
-      {/* Form (only shows when no child registered yet) */}
       {!childId && (
         <ChildForm
           onSubmit={handleRegisterChild}
@@ -156,8 +134,6 @@ const AddChild = () => {
           healthWorkers={dummyHealthWorkers}
         />
       )}
-
-      {/* After successful registration → Prediction section */}
       {childId && (
         <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
           <div className="flex items-center gap-2 mb-4">
@@ -194,7 +170,6 @@ const AddChild = () => {
         </div>
       )}
 
-      {/* Prediction result */}
       {prediction && (
         <>
           <PredictionResult
@@ -205,7 +180,7 @@ const AddChild = () => {
             advice={prediction.advice}
           />
 
-          {/* Bonus actions */}
+      
           <div className="flex flex-col sm:flex-row gap-3 mt-6">
             <button
               onClick={handleRegisterAnother}

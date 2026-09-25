@@ -10,10 +10,20 @@ from schemas import (
 )
 from services import AuthService
 from fastapi.security import OAuth2PasswordRequestForm
+from fastapi.middleware.cors import CORSMiddleware
 
 base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Authentication System")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],   # Your React dev URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 @app.get("/")
 def read_root():
@@ -69,17 +79,7 @@ def view_children(current_user: User = Depends(verify_token), db: Session = Depe
 
 
 @app.post("/add_child", response_model=ChildResponse)
-def add_child(child: ChildBase, current_user: User = Depends(verify_token), db: Session = Depends(get_db)):
-    if current_user.u_role not in {"Admin", "Worker", "Health Worker"}:
-        raise HTTPException(
-            status_code=status.HTTP_403_FORBIDDEN,
-            detail="Access Denied"
-        )
-    
-    assigned_id = child.health_worker_id
-    if current_user.u_role in {"Worker", "Health Worker"}:
-        assigned_id = current_user.u_id
-        
+def add_child(child: ChildBase, db:Session= Depends(get_db)):
 
     new_child = children(
         name=child.name,
@@ -90,7 +90,6 @@ def add_child(child: ChildBase, current_user: User = Depends(verify_token), db: 
         weight_kg=child.weight_kg,
         height_cm=child.height_cm,
         district_id=child.district_id,
-        health_worker_id=assigned_id
     )
     db.add(new_child)
     db.commit()

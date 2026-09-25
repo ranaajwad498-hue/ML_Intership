@@ -38,7 +38,6 @@ const Dashboard = () => {
 
   return (
     <div>
-      {/* ---------- Page Header ---------- */}
       <div className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold text-slate-800">Dashboard</h1>
@@ -47,9 +46,8 @@ const Dashboard = () => {
           </p>
         </div>
 
-        {/* Primary CTA — jumps to Add Child page */}
         <button
-          onClick={() => navigate("/children/add")}
+          onClick={() => navigate("/children")}
           className="
             inline-flex items-center justify-center gap-2
             px-4 py-2.5 rounded-lg text-sm font-medium
@@ -62,7 +60,6 @@ const Dashboard = () => {
         </button>
       </div>
 
-      {/* ---------- Stat Cards Grid ---------- */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {stats.map((stat) => (
           <DashboardCard

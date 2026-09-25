@@ -3,9 +3,11 @@ import { Loader2, UserPlus, RotateCcw } from "lucide-react";
 import FormInput from "./FormInput";
 
 const emptyForm = {
-  c_name: "",
+  name: "",
   age_months: "",
   gender: "",
+  mother_education:"",
+  household_wealth_index:"",
   weight_kg: "",
   height_cm: "",
   district_id: "",
@@ -143,6 +145,38 @@ const ChildForm = ({
             { value: "", label: "Select Gender" },
             { value: "Male", label: "Male" },
             { value: "Female", label: "Female" },
+          ]}
+        />
+
+        {/* Mother Education */}
+        <FormInput
+          label="Mother Education"
+          name="mother_education"
+          type="select"
+          value={formData.mother_education}
+          onChange={handleChange}
+          error={errors.mother_education}
+          required
+          options={[
+            { value: "", label: "Select Mother Education" },
+            { value: "Low", label: "Low" },
+            { value: "High", label: "High" },
+          ]}
+        />
+
+                {/* Mother Education */}
+        <FormInput
+          label="Household Wealth Index"
+          name="household_wealth_index"
+          type="select"
+          value={formData.household_wealth_index}
+          onChange={handleChange}
+          error={errors.household_wealth_index}
+          required
+          options={[
+            { value: "", label: "Select Household Wealth Index" },
+            { value: "Low", label: "Low" },
+            { value: "High", label: "High" },
           ]}
         />
 
